@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+body{margin:0;padding:20px;background:#fffdfa;font-family:'DM Sans',sans-serif;}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
+.swatch{border:1px solid rgba(0,0,0,0.08);}
+.swatch-body{height:80px;}
+.swatch-info{padding:8px 10px;}
+.swatch-name{font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#102040;}
+.swatch-hex{font-size:0.65rem;color:#4a5a7a;margin-top:2px;font-family:monospace;}
+.swatch-use{font-size:0.6rem;color:#4a5a7a;margin-top:3px;line-height:1.4;}
+</style></head>
+<body>
+<div class="grid">
+  <div class="swatch">
+    <div class="swatch-body" style="background:#B80000;"></div>
+    <div class="swatch-info"><div class="swatch-name">Red</div><div class="swatch-hex">#B80000</div><div class="swatch-use">Primary accent · CTAs · Tags</div></div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-body" style="background:#7a0000;"></div>
+    <div class="swatch-info"><div class="swatch-name">Red Dark</div><div class="swatch-hex">#7a0000</div><div class="swatch-use">Hover state</div></div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-body" style="background:#D42B2B;"></div>
+    <div class="swatch-info"><div class="swatch-name">Red (Map)</div><div class="swatch-hex">#D42B2B</div><div class="swatch-use">YoYo Map variant</div></div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-body" style="background:#C9A84C;"></div>
+    <div class="swatch-info"><div class="swatch-name">Gold</div><div class="swatch-hex">#C9A84C</div><div class="swatch-use">VSYC-26 accent</div></div>
+  </div>
+  <div class="swatch" style="opacity:0.5;">
+    <div class="swatch-body" style="background:#13C3A3;border:2px dashed #b0a890;"></div>
+    <div class="swatch-info"><div class="swatch-name" style="color:#4a5a7a;">Teal</div><div class="swatch-hex">#13C3A3</div><div class="swatch-use">Ko-fi donate button only — not a core brand color</div></div>
+  </div>
+</div>
+</body></html>

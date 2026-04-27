@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>YoYo Map — UI Kit</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --red:#B80000; --red-dark:#7a0000;
+  --navy:#1a2744; --navy-deep:#0e1833;
+  --cream:#f5f0e8; --cream-mid:#f0ebe0;
+  --border:#d4cebc;
+  --text-body:#3a4a6a; --text-muted:#6a7a9a;
+  --cherry-pink:#F9D0D4;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'DM Sans',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);background:var(--cream);color:var(--navy-deep);line-height:1.6;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;}
+
+/* ── Topbar ── */
+.topbar{background:var(--red);padding:6px 24px;display:flex;justify-content:flex-end;align-items:center;gap:20px;}
+.topbar a{font-size:0.68rem;color:rgba(255,255,255,0.85);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s;}
+.topbar a:hover{color:#fff;}
+.topbar-divider{width:1px;height:14px;background:rgba(255,255,255,0.3);}
+
+/* ── Nav ── */
+.site-nav{background:var(--cream);border-bottom:1px solid var(--border);padding:0 24px;}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;}
+.brand-lockup{font-family:var(--font-display);font-weight:900;font-size:1.5rem;color:var(--navy-deep);letter-spacing:-0.01em;text-decoration:none;}
+.nav-links{display:flex;align-items:center;gap:24px;}
+.nav-link{font-size:0.7rem;letter-spacing:0.14em;font-weight:600;text-transform:uppercase;color:var(--navy-deep);padding:4px 0;border-bottom:2px solid transparent;transition:all 0.2s;cursor:pointer;}
+.nav-link:hover,.nav-link.active{color:var(--red);border-bottom-color:var(--red);}
+.donate-btn{background:var(--red);color:#fff;padding:6px 14px;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;transition:background 0.2s;border-radius:4px;}
+.donate-btn:hover{background:var(--red-dark);}
+
+/* ── Buttons ── */
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:#fff;padding:12px 24px;font-weight:700;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;border:none;cursor:pointer;transition:background 0.2s;border-radius:0;}
+.btn-primary:hover{background:var(--red-dark);}
+.btn-secondary{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);color:#fff;padding:12px 24px;font-weight:700;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;border:none;cursor:pointer;transition:background 0.2s;border-radius:0;}
+.btn-secondary:hover{background:var(--red);}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:var(--navy);border:2px solid var(--navy);padding:10px 22px;font-weight:700;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0;}
+.btn-ghost:hover{background:var(--navy);color:#fff;}
+.btn-outline-white{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:#fff;border:2px solid #fff;padding:12px 24px;font-weight:700;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:all 0.2s;border-radius:0;}
+.btn-outline-white:hover{background:#fff;color:var(--navy);}
+
+/* ── Cards ── */
+.card{background:#fff;border:1px solid var(--border);padding:24px;border-radius:0;}
+.card:hover{border-color:var(--red);}
+
+/* ── Form inputs ── */
+.input{width:100%;border:2px solid var(--border);background:#fff;padding:10px 14px;font-family:var(--font-body);font-size:0.9rem;color:var(--navy-deep);border-radius:0;outline:none;transition:border-color 0.2s;}
+.input:focus{border-color:var(--red);}
+.label{display:block;font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--navy);margin-bottom:6px;}
+select.input{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231a2744' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px;}
+
+/* ── Eyebrow ── */
+.eyebrow{font-size:0.65rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--red);}
+
+/* ── Rule red ── */
+.rule-red{width:60px;height:3px;background:var(--red);border:none;margin:14px 0 20px;}
+
+/* ── Dot pattern ── */
+.dot-pattern{background-image:radial-gradient(rgba(255,255,255,0.06) 1px,transparent 1px);background-size:22px 22px;}
+
+/* ── Map placeholder ── */
+.map-placeholder{background:#c8d8c0;position:relative;overflow:hidden;}
+.map-grid{
+  width:100%;height:100%;
+  background-image:linear-gradient(rgba(0,0,0,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,0.06) 1px,transparent 1px);
+  background-size:40px 40px;
+  position:absolute;inset:0;
+}
+.map-pin{position:absolute;transform:translate(-50%,-100%);}
+.map-pin-dot{width:18px;height:18px;background:var(--red);border:3px solid #fff;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.3);}
+.map-pin-tail{width:2px;height:8px;background:var(--red);margin:0 auto;}
+
+/* ── Info panel (map overlay) ── */
+.map-info-panel{position:absolute;top:12px;left:12px;z-index:10;background:var(--cream);border:2px solid var(--navy);box-shadow:0 4px 16px rgba(0,0,0,0.15);max-width:200px;}
+.map-info-header{padding:8px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;}
+.map-info-title{font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--navy-deep);}
+.map-info-body{padding:0 12px 12px;border-top:1px solid rgba(26,39,68,0.1);}
+.map-info-sub{font-size:0.62rem;color:rgba(26,39,68,0.6);margin:8px 0;}
+
+/* ── Player card ── */
+.player-card{background:#fff;border:1px solid var(--border);padding:16px 20px;transition:border-color 0.2s;}
+.player-card:hover{border-color:var(--red);}
+.player-name{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--navy-deep);margin-bottom:4px;}
+.player-location{font-size:0.75rem;color:var(--text-muted);margin-bottom:8px;}
+.player-bio{font-size:0.82rem;color:var(--text-body);line-height:1.5;}
+
+/* ── Page ── */
+.page{display:none;}
+.page.active{display:block;}
+.section{padding:64px 24px;max-width:1100px;margin:0 auto;}
+
+/* ── Trust row ── */
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.trust-cell{padding:36px 24px;text-align:center;border-right:1px solid var(--border);}
+.trust-cell:last-child{border-right:none;}
+.trust-num{font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--red);line-height:1;}
+.trust-label{font-size:0.62rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--navy);margin-top:8px;}
+.trust-desc{font-size:0.8rem;color:var(--text-body);margin-top:8px;line-height:1.5;}
+
+/* ── How it works ── */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+
+/* ── Submit type selector ── */
+.type-card{background:#fff;border:2px solid var(--border);padding:24px;cursor:pointer;transition:border-color 0.2s;text-align:left;}
+.type-card:hover,.type-card.selected{border-color:var(--red);}
+.type-icon{font-size:2rem;margin-bottom:12px;}
+.type-title{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--navy-deep);margin-bottom:6px;}
+.type-desc{font-size:0.8rem;color:var(--text-body);line-height:1.5;}
+
+/* ── Footer ── */
+footer{background:var(--navy-deep);padding:32px 24px 20px;border-top:1px solid rgba(255,255,255,0.06);}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.footer-brand{font-family:var(--font-display);font-weight:900;font-size:1.1rem;color:#fff;}
+.footer-links{display:flex;gap:20px;}
+.footer-link{font-size:0.72rem;color:rgba(255,255,255,0.55);letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;}
+.footer-link:hover{color:#fff;}
+.footer-copy{font-size:0.68rem;color:rgba(255,255,255,0.35);margin-top:16px;text-align:center;}
+
+@media(max-width:768px){
+  .trust-grid,.how-grid{grid-template-columns:1fr;}
+  .trust-cell{border-right:none;border-bottom:1px solid var(--border);}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <a href="#">DMV Throwers ↗</a>
+  <div class="topbar-divider"></div>
+  <a href="#">VSYC-26 ↗</a>
+  <div class="topbar-divider"></div>
+  <a href="#">EN ▾</a>
+</div>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand-lockup" href="#" onclick="showPage('home')">YoYo Map</a>
+    <div class="nav-links">
+      <a class="nav-link" id="nav-home" onclick="showPage('home')">HOME</a>
+      <a class="nav-link" id="nav-map" onclick="showPage('map')">MAP</a>
+      <a class="nav-link" id="nav-players" onclick="showPage('players')">PLAYERS</a>
+      <a class="nav-link" id="nav-submit" onclick="showPage('submit')">ADD YOURSELF</a>
+      <a class="nav-link" id="nav-profile" onclick="showPage('profile')">PROFILE</a>
+      <a class="donate-btn" href="#">☕ DONATE</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════ HOME ══════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section style="background:var(--navy-deep);color:#fff;position:relative;overflow:hidden;" class="dot-pattern">
+    <div style="max-width:1100px;margin:0 auto;padding:80px 24px 100px;text-align:center;">
+      <p class="eyebrow" style="color:var(--red);margin-bottom:20px;">Yo-Yos · Kendama · Skill Toys</p>
+      <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(2.75rem,8vw,5.25rem);line-height:0.95;color:#fff;margin-bottom:20px;">
+        Find Yo-Yo Players<br/>
+        <span style="color:var(--red);">Near You</span>
+      </h1>
+      <p style="max-width:520px;margin:0 auto 32px;color:rgba(245,240,232,0.85);font-size:1.05rem;line-height:1.7;">
+        A community map for yo-yoers. Add yourself, see who's nearby, connect. Opt-in, privacy-first, and always under your control.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn-primary" onclick="showPage('map')">EXPLORE THE MAP</button>
+        <button class="btn-outline-white" onclick="showPage('submit')">ADD YOURSELF →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust row -->
+  <div class="trust-grid">
+    <div class="trust-cell">
+      <div class="trust-num">10mi</div>
+      <div class="trust-label">Location Blur</div>
+      <div class="trust-desc">We never store your exact location.</div>
+    </div>
+    <div class="trust-cell">
+      <div class="trust-num">Opt-In</div>
+      <div class="trust-label">Always</div>
+      <div class="trust-desc">You choose to be on the map. Leave anytime.</div>
+    </div>
+    <div class="trust-cell">
+      <div class="trust-num">13+</div>
+      <div class="trust-label">With Parent Consent</div>
+      <div class="trust-desc">Under 18 requires a parent or guardian to verify.</div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div style="max-width:1100px;margin:0 auto;padding:64px 24px;">
+    <div style="text-align:center;margin-bottom:36px;">
+      <p class="eyebrow">Three Steps</p>
+      <h2 style="font-family:var(--font-display);font-weight:900;font-size:clamp(2rem,4vw,3rem);color:var(--navy-deep);margin-top:10px;">How It Works</h2>
+      <hr class="rule-red" style="margin:14px auto 0;"/>
+    </div>
+    <div class="how-grid">
+      <div class="card">
+        <div style="font-family:var(--font-display);font-size:4rem;font-weight:900;color:var(--red);line-height:1;">1</div>
+        <hr class="rule-red"/>
+        <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--navy-deep);margin-bottom:8px;">Add Yourself</h3>
+        <p style="font-size:0.85rem;color:var(--text-body);line-height:1.6;">Fill out a short form — city only, no exact address.</p>
+      </div>
+      <div class="card">
+        <div style="font-family:var(--font-display);font-size:4rem;font-weight:900;color:var(--red);line-height:1;">2</div>
+        <hr class="rule-red"/>
+        <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--navy-deep);margin-bottom:8px;">Verify Your Email</h3>
+        <p style="font-size:0.85rem;color:var(--text-body);line-height:1.6;">Click the link we send. That confirms you're a real person.</p>
+      </div>
+      <div class="card">
+        <div style="font-family:var(--font-display);font-size:4rem;font-weight:900;color:var(--red);line-height:1;">3</div>
+        <hr class="rule-red"/>
+        <h3 style="font-family:var(--font-display);font-size:1.2rem;color:var(--navy-deep);margin-bottom:8px;">You're on the Map</h3>
+        <p style="font-size:0.85rem;color:var(--text-body);line-height:1.6;">Find nearby throwers and connect at a meetup.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Privacy block -->
+  <section style="background:var(--navy);color:#fff;position:relative;" class="dot-pattern">
+    <div style="max-width:800px;margin:0 auto;padding:64px 24px;text-align:center;">
+      <p class="eyebrow" style="color:var(--red);">Privacy First</p>
+      <h2 style="font-family:var(--font-display);font-weight:900;font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;margin-top:10px;">What We Don't Do</h2>
+      <hr class="rule-red" style="margin:14px auto 24px;"/>
+      <ul style="display:grid;grid-template-columns:1fr 1fr;gap:12px 32px;text-align:left;list-style:none;">
+        <li style="display:flex;gap:10px;font-size:0.88rem;color:rgba(245,240,232,0.85);line-height:1.5;"><span style="color:var(--red);font-weight:900;flex-shrink:0;">✕</span>We don't use GPS or ask for your exact location.</li>
+        <li style="display:flex;gap:10px;font-size:0.88rem;color:rgba(245,240,232,0.85);line-height:1.5;"><span style="color:var(--red);font-weight:900;flex-shrink:0;">✕</span>We don't sell, share, or rent your data.</li>
+        <li style="display:flex;gap:10px;font-size:0.88rem;color:rgba(245,240,232,0.85);line-height:1.5;"><span style="color:var(--red);font-weight:900;flex-shrink:0;">✕</span>We don't use advertising trackers or cookies.</li>
+        <li style="display:flex;gap:10px;font-size:0.88rem;color:rgba(245,240,232,0.85);line-height:1.5;"><span style="color:var(--red);font-weight:900;flex-shrink:0;">✕</span>We don't expose your email publicly.</li>
+        <li style="display:flex;gap:10px;font-size:0.88rem;color:rgba(245,240,232,0.85);line-height:1.5;"><span style="color:var(--red);font-weight:900;flex-shrink:0;">✕</span>We don't allow direct messaging through the site.</li>
+        <li style="display:flex;gap:10px;font-size:0.88rem;color:rgba(245,240,232,0.85);line-height:1.5;"><span style="color:var(--red);font-weight:900;flex-shrink:0;">✕</span>We don't keep your data if you ask us to delete it.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--cream-mid);padding:64px 24px;text-align:center;">
+    <p class="eyebrow">Ready?</p>
+    <h2 style="font-family:var(--font-display);font-weight:900;font-size:clamp(2rem,4vw,3rem);color:var(--navy-deep);margin-top:10px;">Find your local crew.</h2>
+    <hr class="rule-red" style="margin:14px auto 16px;"/>
+    <p style="color:var(--text-body);margin-bottom:24px;font-size:0.9rem;">Free, all skill levels, family-friendly.</p>
+    <button class="btn-primary" onclick="showPage('submit')">ADD YOURSELF TO THE MAP</button>
+  </section>
+
+</div>
+
+<!-- ══════════════════════ MAP ══════════════════════ -->
+<div id="page-map" class="page">
+  <div style="height:calc(100vh - 100px);position:relative;">
+    <!-- Map placeholder -->
+    <div class="map-placeholder" style="width:100%;height:100%;">
+      <div class="map-grid"></div>
+      <!-- Pins -->
+      <div class="map-pin" style="left:38%;top:44%;">
+        <div class="map-pin-dot"></div>
+        <div class="map-pin-tail"></div>
+      </div>
+      <div class="map-pin" style="left:52%;top:38%;">
+        <div class="map-pin-dot" style="background:#1a2744;"></div>
+        <div class="map-pin-tail" style="background:#1a2744;"></div>
+      </div>
+      <div class="map-pin" style="left:61%;top:52%;">
+        <div class="map-pin-dot"></div>
+        <div class="map-pin-tail"></div>
+      </div>
+      <div class="map-pin" style="left:45%;top:58%;">
+        <div class="map-pin-dot" style="background:#1a2744;"></div>
+        <div class="map-pin-tail" style="background:#1a2744;"></div>
+      </div>
+      <div class="map-pin" style="left:30%;top:60%;">
+        <div class="map-pin-dot"></div>
+        <div class="map-pin-tail"></div>
+      </div>
+      <!-- Info panel -->
+      <div class="map-info-panel">
+        <div class="map-info-header">
+          <span class="map-info-title">YoYo Map</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a2744" stroke-width="2.5" opacity="0.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="map-info-body">
+          <p class="map-info-sub">127 throwers, 8 shops, 14 clubs · Pins blurred ~10mi</p>
+          <button class="btn-primary" style="font-size:0.65rem;padding:8px 14px;width:100%;justify-content:center;" onclick="showPage('submit')">ADD TO THE MAP</button>
+        </div>
+      </div>
+      <!-- Legend -->
+      <div style="position:absolute;bottom:16px;right:16px;background:#fff;border:1px solid var(--border);padding:12px 16px;font-size:0.7rem;color:var(--navy);display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;align-items:center;gap:8px;"><div style="width:12px;height:12px;background:var(--red);border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);flex-shrink:0;"></div>Player (city-level)</div>
+        <div style="display:flex;align-items:center;gap:8px;"><div style="width:12px;height:12px;background:var(--navy);border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);flex-shrink:0;"></div>Shop / Club</div>
+      </div>
+      <!-- Map label -->
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--font-display);font-size:2rem;font-weight:900;color:rgba(26,39,68,0.12);pointer-events:none;white-space:nowrap;">Interactive Map</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ PLAYERS ══════════════════════ -->
+<div id="page-players" class="page">
+  <div style="max-width:900px;margin:0 auto;padding:48px 24px;">
+    <p class="eyebrow" style="color:var(--red);">Browse Locations</p>
+    <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(2rem,4vw,3rem);color:var(--navy-deep);margin-top:8px;">Yo-Yo Players Worldwide</h1>
+    <hr class="rule-red"/>
+    <p style="color:var(--text-body);margin-bottom:28px;max-width:60ch;line-height:1.7;">Find yo-yo players, shops, and clubs near you. Locations on YoYo Map are opt-in and city-level only — exact addresses are never published.</p>
+
+    <ul style="display:grid;grid-template-columns:1fr 1fr;gap:14px;list-style:none;">
+      <li><a class="card" style="display:block;text-decoration:none;cursor:pointer;" href="#">
+        <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--navy-deep);">United States</p>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">312 locations</p>
+      </a></li>
+      <li><a class="card" style="display:block;text-decoration:none;cursor:pointer;" href="#">
+        <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--navy-deep);">Japan</p>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">84 locations</p>
+      </a></li>
+      <li><a class="card" style="display:block;text-decoration:none;cursor:pointer;" href="#">
+        <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--navy-deep);">Canada</p>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">41 locations</p>
+      </a></li>
+      <li><a class="card" style="display:block;text-decoration:none;cursor:pointer;" href="#">
+        <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--navy-deep);">Germany</p>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">28 locations</p>
+      </a></li>
+      <li><a class="card" style="display:block;text-decoration:none;cursor:pointer;" href="#">
+        <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--navy-deep);">Australia</p>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">19 locations</p>
+      </a></li>
+      <li><a class="card" style="display:block;text-decoration:none;cursor:pointer;" href="#">
+        <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--navy-deep);">United Kingdom</p>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">17 locations</p>
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════════════ SUBMIT ══════════════════════ -->
+<div id="page-submit" class="page">
+  <div style="max-width:760px;margin:0 auto;padding:48px 24px;">
+    <p class="eyebrow" style="color:var(--red);">Add to the Map</p>
+    <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(2rem,4vw,3rem);color:var(--navy-deep);margin-top:8px;">What are you adding?</h1>
+    <p style="color:var(--text-body);margin-top:8px;margin-bottom:28px;">Choose the type of entry you want to create.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px;">
+      <div class="type-card" onclick="selectType(this,'person')">
+        <div class="type-icon">🧑</div>
+        <div class="type-title">Person</div>
+        <div class="type-desc">Add yourself as a yo-yo player.</div>
+      </div>
+      <div class="type-card" onclick="selectType(this,'shop')">
+        <div class="type-icon">🏪</div>
+        <div class="type-title">Shop</div>
+        <div class="type-desc">Add a yo-yo shop or retailer.</div>
+      </div>
+      <div class="type-card" onclick="selectType(this,'club')">
+        <div class="type-icon">🎲</div>
+        <div class="type-title">Club</div>
+        <div class="type-desc">Add a yo-yo club or meetup group.</div>
+      </div>
+    </div>
+
+    <!-- Form (shown after type selection) -->
+    <div id="submit-form" style="display:none;">
+      <div class="card" style="margin-bottom:16px;">
+        <h2 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--navy-deep);margin-bottom:20px;">About you</h2>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div>
+            <label class="label">Display name *</label>
+            <input class="input" type="text" placeholder="e.g. CaptnRogers"/>
+            <p style="font-size:0.68rem;color:var(--text-muted);margin-top:5px;">Use a handle, not your real name if you prefer.</p>
+          </div>
+          <div>
+            <label class="label">Your email *</label>
+            <input class="input" type="email" placeholder="your@email.com"/>
+            <p style="font-size:0.68rem;color:var(--text-muted);margin-top:5px;">Never shown publicly. Used for verification only.</p>
+          </div>
+          <div>
+            <label class="label">Short bio (optional)</label>
+            <textarea class="input" rows="3" placeholder="What do you throw? Any tricks you're working on?"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px;">
+        <h2 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--navy-deep);margin-bottom:20px;">Location</h2>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div>
+            <label class="label">Country *</label>
+            <select class="input"><option>United States</option><option>Japan</option><option>Canada</option><option>Germany</option></select>
+          </div>
+          <div>
+            <label class="label">State / Region</label>
+            <select class="input"><option>Virginia</option><option>Maryland</option><option>District of Columbia</option></select>
+          </div>
+          <div>
+            <label class="label">City or town *</label>
+            <input class="input" type="text" placeholder="Start typing your city…"/>
+          </div>
+          <div style="background:var(--cream);border-left:4px solid var(--red);padding:12px 14px;font-size:0.75rem;color:var(--text-body);line-height:1.6;">
+            We'll place your pin at the center of your city, then blur it by about 10 miles in a random direction. Your real location is never stored.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:20px;">
+        <h2 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--navy-deep);margin-bottom:20px;">Socials (optional)</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+          <div><label class="label">Instagram</label><input class="input" placeholder="handle"/></div>
+          <div><label class="label">YouTube</label><input class="input" placeholder="channel"/></div>
+          <div><label class="label">Discord</label><input class="input" placeholder="username"/></div>
+          <div><label class="label">Website</label><input class="input" placeholder="https://…"/></div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <button class="btn-primary">SUBMIT LISTING →</button>
+        <button class="btn-ghost" onclick="document.getElementById('submit-form').style.display='none';document.querySelectorAll('.type-card').forEach(c=>c.classList.remove('selected'))">CANCEL</button>
+      </div>
+    </div>
+
+    <p style="font-size:0.78rem;color:var(--text-muted);margin-top:20px;text-align:center;">
+      Already listed? <a href="#" style="color:var(--red);text-decoration:underline;" onclick="showPage('profile')">Manage your entry</a>
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════ PROFILE ══════════════════════ -->
+<div id="page-profile" class="page">
+  <div style="max-width:640px;margin:0 auto;padding:48px 24px;">
+    <p class="eyebrow" style="color:var(--red);">My Listing</p>
+    <h1 style="font-family:var(--font-display);font-weight:900;font-size:clamp(2rem,4vw,2.8rem);color:var(--navy-deep);margin-top:8px;">Manage Your Entry</h1>
+    <hr class="rule-red"/>
+
+    <div style="background:var(--cream-mid);border:1px solid var(--border);padding:20px 24px;border-left:4px solid var(--red);margin-bottom:24px;">
+      <div style="font-size:0.65rem;letter-spacing:0.14em;font-weight:700;text-transform:uppercase;color:var(--red);margin-bottom:6px;">TO UPDATE YOUR ENTRY</div>
+      <p style="font-size:0.88rem;color:var(--text-body);line-height:1.6;">Enter the email address you used when submitting. We'll send you a magic link to manage your listing.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:16px;">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div>
+          <label class="label">Your email address *</label>
+          <input class="input" type="email" placeholder="The email you used when submitting"/>
+        </div>
+        <button class="btn-primary" style="align-self:flex-start;">SEND MAGIC LINK →</button>
+      </div>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--border);padding:20px 24px;">
+      <div style="font-size:0.65rem;letter-spacing:0.14em;font-weight:700;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;">WHAT YOU CAN DO</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+        <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-body);"><span style="color:var(--red);font-weight:700;">→</span> Update your display name, bio, or socials</li>
+        <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-body);"><span style="color:var(--red);font-weight:700;">→</span> Change your city or region</li>
+        <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-body);"><span style="color:var(--red);font-weight:700;">→</span> Temporarily hide your listing from the map</li>
+        <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-body);"><span style="color:var(--red);font-weight:700;">→</span> Permanently delete your entry and all data</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">YoYo Map</div>
+      <div style="font-size:0.62rem;color:rgba(255,255,255,0.35);margin-top:3px;letter-spacing:0.12em;text-transform:uppercase;">by DMV Throwers</div>
+    </div>
+    <div class="footer-links">
+      <a class="footer-link" href="#">Map</a>
+      <a class="footer-link" href="#">Players</a>
+      <a class="footer-link" href="#">Submit</a>
+      <a class="footer-link" href="#">Privacy</a>
+      <a class="footer-link" href="#">Terms</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2024–2026 DMV Throwers · map.dmvthrowers.club · contact@dmvthrowers.club</p>
+</footer>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  document.querySelectorAll('.nav-link[id^="nav-"]').forEach(l => l.classList.remove('active'));
+  const link = document.getElementById('nav-' + id);
+  if (link) link.classList.add('active');
+  window.scrollTo(0, 0);
+}
+function selectType(el, type) {
+  document.querySelectorAll('.type-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('submit-form').style.display = 'block';
+}
+document.getElementById('nav-home').classList.add('active');
+</script>
+</body>
+</html>

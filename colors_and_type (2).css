@@ -1,0 +1,313 @@
+/*
+ * DMV Throwers — Design System: Colors & Typography
+ * ===================================================
+ * Sources: dmvthrowers.github.io (main.css + vsyc26.css) and yoyomap globals.css / tailwind.config.js
+ *
+ * USAGE
+ *   @import url('colors_and_type.css');
+ *   Also add Google Fonts link:
+ *   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+ */
+
+/* ═══════════════════════════════════════════════
+   1. FONT IMPORTS (Google Fonts fallbacks)
+   ═══════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;600;700&family=Barlow+Condensed:wght@700;800&display=swap');
+/*
+ * CANONICAL FONT SYSTEM (three-font stack):
+ *
+ *  1. Playfair Display 700/900  — var(--font-display)
+ *     Hero titles, section headings, stat numbers, brand wordmark, card titles.
+ *     The authoritative, editorial voice of the brand.
+ *
+ *  2. DM Sans 400/600/700       — var(--font-body)
+ *     All body copy, navigation, buttons, labels, captions, form UI.
+ *     Used across ALL products (main site, YoYo Map, VSYC-26).
+ *
+ *  3. Barlow Condensed 700/800  — var(--font-condensed)
+ *     Uppercase eyebrow tags, event metadata, section labels, competition contexts.
+ *     Replaces Montserrat on VSYC-26 for a unified, more distinctive brand voice.
+ *     Always used all-caps with generous letter-spacing (0.14em+).
+ *
+ * NOTE: Montserrat was previously used on VSYC-26 pages only — treat as legacy;
+ * Barlow Condensed is the canonical condensed font going forward.
+ */
+
+/* ═══════════════════════════════════════════════
+   2. BASE COLOR TOKENS
+   ═══════════════════════════════════════════════ */
+:root {
+  /* ── Core Brand Colors ── */
+  --color-red:        #B80000;   /* Canonical brand red — use everywhere */
+  --color-red-map:    #B80000;   /* YoyoMap — aligned to canonical (was #D42B2B) */
+  --color-red-dark:   #7a0000;   /* Hover / pressed state */
+  --color-gold:       #C9A84C;   /* VSYC-26 accent gold */
+  --color-gold-light: #e8c97a;   /* Gold hover state */
+  --color-teal:       #13C3A3;   /* Donate button / special CTA */
+  --color-teal-dark:  #0f9d84;
+
+  /* ── Neutral / Surface ── */
+  --color-navy:       #102040;   /* Primary dark (main site) */
+  --color-navy-alt:   #1a2744;   /* Slightly lighter navy (VSYC-26, yoyomap) */
+  --color-navy-deep:  #08122a;   /* Darkest surface (VSYC-26 background) */
+  --color-cream:      #fffdfa;   /* Lightest cream (main site background) */
+  --color-cream-mid:  #f7f3ec;   /* Mid-tone cream (alt sections) */
+  --color-cream-warm: #f5f0e8;   /* Warm cream (yoyomap / VSYC background) */
+  --color-white:      #ffffff;
+
+  /* ── Text ── */
+  --color-text-body:  #1a2744;   /* Primary body text */
+  --color-text-muted: #4a5a7a;   /* Secondary / caption text */
+  --color-text-muted-map: #6a7a9a; /* Muted on yoyomap */
+
+  /* ── Borders / Dividers ── */
+  --color-border:     #b0a890;   /* Hairline border (main site) */
+  --color-border-map: #d4cebc;   /* Hairline border (yoyomap) */
+  --color-border-dark:#2a3a5a;   /* Border on dark backgrounds */
+
+  /* ── Footer / Special ── */
+  --color-footer-link: #8fa8d8;  /* Footer link on navy */
+  --color-cherry-pink: #F9D0D4;  /* VSYC cherry blossom accent */
+
+  /* ── Letter-spacing tokens (caps labels) ── */
+  --caps-track:       0.12em;
+  --caps-track-wide:  0.18em;
+  --caps-track-tight: 0.10em;
+}
+
+/* ═══════════════════════════════════════════════
+   3. SEMANTIC COLOR TOKENS
+   ═══════════════════════════════════════════════ */
+:root {
+  /* Surfaces */
+  --bg-canvas:     var(--color-cream);
+  --bg-section-alt:var(--color-cream-mid);
+  --bg-dark:       var(--color-navy);
+  --bg-darkest:    var(--color-navy-deep);
+
+  /* Foregrounds */
+  --fg-primary:    var(--color-navy);
+  --fg-secondary:  var(--color-text-muted);
+  --fg-on-dark:    var(--color-white);
+  --fg-on-dark-dim:rgba(200, 208, 224, 0.85); /* cream/85 */
+
+  /* Accents */
+  --accent-primary:var(--color-red);
+  --accent-gold:   var(--color-gold);
+  --accent-teal:   var(--color-teal);
+
+  /* Borders */
+  --border-default:var(--color-border);
+  --border-dark:   var(--color-border-dark);
+
+  /* Interactive */
+  --interactive-primary:   var(--color-red);
+  --interactive-primary-hover: var(--color-red-dark);
+  --interactive-secondary: var(--color-navy);
+}
+
+/* ═══════════════════════════════════════════════
+   4. TYPOGRAPHY TOKENS
+   ═══════════════════════════════════════════════ */
+:root {
+  /* Font families — canonical three-font system */
+  --font-display:   'Playfair Display', Georgia, serif;
+  --font-body:      'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-condensed: 'Barlow Condensed', system-ui, sans-serif; /* replaces Montserrat */
+
+  /* Scale — fluid via clamp() */
+  --text-hero:    clamp(3rem, 8vw, 5.5rem);   /* h1 on hero */
+  --text-display: clamp(2.2rem, 5vw, 3.5rem); /* page-hero h1 */
+  --text-h2:      clamp(2rem, 5vw, 3.2rem);   /* section title */
+  --text-h3:      1.5rem;
+  --text-h4:      1.2rem;
+  --text-body:    1rem;
+  --text-sm:      0.9rem;
+  --text-xs:      0.82rem;
+  --text-label:   0.72rem;   /* nav links, tags */
+  --text-eyebrow: 0.65rem;   /* red section tags */
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold:    700;
+  --weight-black:   900;
+
+  /* Leading */
+  --leading-tight:  0.95;
+  --leading-snug:   1.05;
+  --leading-body:   1.6;
+  --leading-relaxed:1.75;
+  --leading-loose:  1.8;
+}
+
+/* ═══════════════════════════════════════════════
+   5. SEMANTIC TYPE STYLES
+   ═══════════════════════════════════════════════ */
+
+/* Headings */
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-hero);
+  line-height: var(--leading-tight);
+  color: var(--fg-primary);
+}
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-h2);
+  line-height: var(--leading-snug);
+  color: var(--fg-primary);
+}
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-h3);
+  line-height: var(--leading-snug);
+  color: var(--fg-primary);
+}
+h4, .h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-h4);
+  color: var(--fg-primary);
+}
+p, .body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-body);
+}
+.caption, .text-muted {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-body);
+}
+.label-caps {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--caps-track);
+  text-transform: uppercase;
+}
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-eyebrow);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--caps-track-wide);
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+.eyebrow-gold {
+  font-family: var(--font-body);
+  font-size: var(--text-eyebrow);
+  font-weight: 800;
+  letter-spacing: var(--caps-track-wide);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+/* ═══════════════════════════════════════════════
+   6. COMPONENT PRIMITIVES
+   ═══════════════════════════════════════════════ */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 14px 32px;
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-label);
+  letter-spacing: var(--caps-track-tight);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0; /* Always square corners */
+  transition: background 0.2s, transform 0.1s;
+}
+.btn-red    { background: var(--color-red);   color: #fff; }
+.btn-red:hover { background: var(--color-red-dark); transform: translateY(-1px); }
+.btn-navy   { background: var(--color-navy);  color: #fff; }
+.btn-navy:hover { background: var(--color-red); }
+.btn-outline-red { background: transparent; border: 2px solid var(--color-red); color: var(--color-red); }
+.btn-outline-red:hover { background: var(--color-red); color: #fff; }
+.btn-outline-white { background: transparent; border: 2px solid #fff; color: #fff; }
+.btn-outline-white:hover { background: #fff; color: var(--color-navy); }
+.btn-gold   { background: var(--color-gold);  color: var(--color-navy-deep); }
+.btn-gold:hover { background: var(--color-gold-light); transform: translateY(-1px); }
+.btn-teal   { background: var(--color-teal);  color: #fff; }
+.btn-teal:hover { background: var(--color-teal-dark); }
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid var(--border-default);
+  border-radius: 0; /* Square corners always */
+  padding: 24px;
+}
+.card-accent-red  { border-top: 3px solid var(--color-red); }
+.card-accent-navy { border-left: 4px solid var(--color-navy); }
+.card-accent-gold { border-top: 3px solid var(--color-gold); }
+
+/* Section tag pill */
+.red-tag {
+  display: inline-block;
+  background: var(--color-red);
+  color: #fff;
+  font-size: var(--text-eyebrow);
+  letter-spacing: var(--caps-track-wide);
+  padding: 4px 12px;
+  font-weight: var(--weight-bold);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+}
+.gold-tag {
+  display: inline-block;
+  background: var(--color-gold);
+  color: var(--color-navy-deep);
+  font-size: var(--text-eyebrow);
+  letter-spacing: var(--caps-track-wide);
+  padding: 4px 12px;
+  font-weight: 800;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+}
+
+/* Red divider rule */
+.divider, .rule-red {
+  width: 48px;
+  height: 3px;
+  background: var(--color-red);
+  border: none;
+  margin: 16px 0 28px;
+}
+.divider-gold {
+  width: 48px;
+  height: 3px;
+  background: var(--color-gold);
+  border: none;
+  margin: 16px 0 28px;
+}
+
+/* Dot pattern (dark hero sections) */
+.dot-pattern {
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Pill badge (skill toy tags) */
+.pill {
+  display: inline-block;
+  background: var(--color-navy);
+  color: #fff;
+  font-size: var(--text-label);
+  letter-spacing: var(--caps-track-tight);
+  padding: 5px 14px;
+  font-weight: var(--weight-semibold);
+  border-radius: 0;
+}

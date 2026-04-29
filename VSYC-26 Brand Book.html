@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VSYC-26 — Brand Guidelines</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #e8c97a;
+    --gold-dim: rgba(201,168,76,0.65);
+    --red: #C8102E;
+    --navy: #1a2744;
+    --navy-deep: #0d1428;
+    --cream: #fffdfa;
+    --cream-mid: #f7f3ec;
+    --cream-warm: #f5f0e8;
+    --cherry: #F9D0D4;
+    --border: #b0a890;
+    --border-dark: rgba(201,168,76,0.18);
+    --text-muted: #4a5a7a;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-condensed: 'Barlow Condensed', system-ui, sans-serif;
+  }
+  section {
+    width: 816px;
+    height: 1056px;
+    background: var(--navy-deep);
+    font-family: var(--font-body);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+  }
+  section.light {
+    background: var(--cream);
+    color: var(--navy);
+  }
+  section.mid {
+    background: var(--cream-warm);
+    color: var(--navy);
+  }
+  .dot-bg {
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .eyebrow {
+    font-family: var(--font-condensed);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .eyebrow-red { color: var(--red); }
+  .rule { width: 48px; height: 3px; background: var(--gold); border: none; margin: 12px 0 20px; }
+  .rule-red { background: var(--red); }
+  .slide-num {
+    position: absolute;
+    bottom: 20px; right: 40px;
+    font-family: var(--font-condensed);
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+  }
+  .slide-num-dark { color: var(--text-muted); }
+  .gold-bar-top { position: absolute; top: 0; left: 0; right: 0; height: 5px; background: var(--gold); }
+  .gold-bar-bot { position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background: var(--gold); }
+  .red-bar-bot { position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background: var(--red); }
+  .tag-gold {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-family: var(--font-condensed);
+    font-size: 9px; font-weight: 800;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 3px 10px;
+  }
+  .tag-red {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-family: var(--font-condensed);
+    font-size: 9px; font-weight: 800;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 3px 10px;
+  }
+  .card-dark {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border-dark);
+    padding: 16px 18px;
+  }
+  .card-gold-top { border-top: 3px solid var(--gold); }
+  @media print { section { page-break-after: always; } }
+</style>
+</head>
+<body>
+<deck-stage width="816" height="1056">
+
+
+  <!-- 01 COVER -->
+  <section data-screen-label="01 Cover" class="dot-bg" style="display:flex; flex-direction:column; justify-content:space-between; padding:64px 72px;">
+    <div class="gold-bar-top"></div>
+
+    <div style="display:flex; align-items:center; gap:16px;">
+      <img src="assets/logos/vsyc26-va-logo-512.png" style="height:40px; object-fit:contain;" alt="VSYC-26 logo">
+      <div style="width:1px; height:32px; background:rgba(255,255,255,0.15);"></div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.45);">Virginia State Yo-Yo Contest</div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold-dim);">Brand Guidelines 2026</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="eyebrow" style="margin-bottom:24px; letter-spacing:0.28em;">Official Brand Guidelines</div>
+      <h1 style="font-family:var(--font-display); font-weight:900; font-size:84px; line-height:0.88; color:#fff; margin:0 0 8px;">VSYC</h1>
+      <h1 style="font-family:var(--font-display); font-weight:900; font-size:84px; line-height:0.88; color:var(--gold); margin:0 0 32px; font-style:italic;">-26</h1>
+      <div style="width:64px; height:3px; background:var(--gold); margin-bottom:28px;"></div>
+      <p style="font-family:var(--font-body); font-size:14px; line-height:1.75; color:rgba(200,210,230,0.8); max-width:340px; margin:0;">Virginia State Yo-Yo Contest 2026<br>Presented by DMV Throwers · Arlington, VA</p>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:20px; opacity:0.6;">
+      <img src="assets/logos/dmvt-logo.png" style="height:20px; filter:brightness(0) invert(1);" alt="">
+      <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Presented by DMV Throwers</div>
+    </div>
+
+    <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:5px; left:0; right:0; width:100%; opacity:0.08;" alt="">
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">01 / 20</div>
+  </section>
+
+
+  <!-- 02 CONTENTS -->
+  <section data-screen-label="02 Contents" class="light" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">VSYC-26 Brand Guidelines</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Table of Contents</h2>
+    <div class="rule"></div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; flex:1; align-content:start; margin-top:8px;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); padding:0 0 10px; border-bottom:1px solid var(--border); margin-bottom:4px;">Brand Identity</div>
+        <div style="display:flex; flex-direction:column;">
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">03</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">About VSYC-26</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">04</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Brand Relationship</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">05</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Logo System</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">06</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Logo Usage</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">07</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Color Palette</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">08</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Color Usage</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">09</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Typography</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">10</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Voice &amp; Tone</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0;"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">11</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Design Elements</span></div>
+        </div>
+      </div>
+      <div style="padding-left:40px;">
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); padding:0 0 10px; border-bottom:1px solid var(--border); margin-bottom:4px;">Applications</div>
+        <div style="display:flex; flex-direction:column;">
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">12</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Buttons &amp; Badges</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">13</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Division System</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">14</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Social Media Posts</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">15</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Instagram Stories</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">16</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Event Flyer</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">17</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Contestant Card</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">18</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Merchandise</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid var(--border);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">19</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Sponsor Tiers</span></div>
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0;"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold); letter-spacing:0.1em; min-width:24px;">20</span><span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Quick Reference</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="red-bar-bot"></div>
+    <div class="slide-num slide-num-dark">02 / 20</div>
+  </section>
+
+
+  <!-- 03 ABOUT -->
+  <section data-screen-label="03 About VSYC-26" style="display:flex;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <!-- left dark col -->
+    <div style="width:320px; background:rgba(0,0,0,0.3); padding:72px 40px; display:flex; flex-direction:column; justify-content:space-between; flex-shrink:0; position:relative;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:16px;">Est. 2026</div>
+        <h2 style="font-family:var(--font-display); font-weight:900; font-size:44px; line-height:0.9; color:#fff; margin:0 0 20px;">Virginia<br><span style="color:var(--gold); font-style:italic;">State</span><br>Contest</h2>
+        <div style="width:48px; height:3px; background:var(--gold); margin-bottom:20px;"></div>
+        <p style="font-size:12px; line-height:1.75; color:rgba(200,212,230,0.8);">The official Virginia State Yo-Yo Contest, presented by DMV Throwers. A sanctioned competition for all skill levels and divisions.</p>
+      </div>
+      <img src="assets/logos/vsyc26-va-logo-512.png" style="height:60px; object-fit:contain; object-position:left; opacity:0.7;" alt="">
+      <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:5px; left:0; right:0; width:100%; opacity:0.1;" alt="">
+    </div>
+    <!-- right content -->
+    <div style="flex:1; padding:72px 48px 72px 40px; display:flex; flex-direction:column; gap:20px;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:6px;">What It Is</div>
+        <p style="font-size:13px; line-height:1.8; color:rgba(200,212,230,0.85); margin:0;">VSYC-26 is the Virginia State Yo-Yo Contest — a sanctioned, competitive event open to players of all levels across 5 divisions. Judged by certified judges, hosted by DMV Throwers.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div class="card-dark card-gold-top">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--gold); margin-bottom:4px;">5</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.7); line-height:1.5;">Competition Divisions</div>
+        </div>
+        <div class="card-dark card-gold-top">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--gold); margin-bottom:4px;">2026</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.7); line-height:1.5;">Inaugural Year</div>
+        </div>
+        <div class="card-dark card-gold-top">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--gold); margin-bottom:4px;">Arlington</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.7); line-height:1.5;">Virginia · DMV Region</div>
+        </div>
+        <div class="card-dark card-gold-top">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--gold); margin-bottom:4px;">Open</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.7); line-height:1.5;">All Ages &amp; Skill Levels</div>
+        </div>
+      </div>
+      <div style="background:rgba(201,168,76,0.08); border-left:4px solid var(--gold); padding:14px 18px;">
+        <div style="font-size:11px; font-weight:700; color:var(--gold); margin-bottom:4px;">Official URL</div>
+        <div style="font-size:13px; color:#fff; font-family:var(--font-body);">dmvthrowers.club/vsyc26</div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">03 / 20</div>
+  </section>
+
+
+  <!-- 04 BRAND RELATIONSHIP -->
+  <section data-screen-label="04 Brand Relationship" class="light" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Brand Relationship</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 28px; line-height:1.7; max-width:520px;">VSYC-26 is a sub-brand of DMV Throwers. It inherits the core design system but uses a distinct palette and elevated tone for competition context.</p>
+
+    <div style="display:flex; gap:24px; flex:1; align-items:flex-start;">
+      <!-- DMV Throwers side -->
+      <div style="flex:1; background:var(--navy); padding:28px; display:flex; flex-direction:column; gap:16px;" class="dot-bg">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <img src="assets/logos/dmvt-logo.png" style="height:28px; filter:brightness(0) invert(1);" alt="">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:14px; color:#fff;">DMV Throwers</div>
+        </div>
+        <div style="width:32px; height:2px; background:#B80000;"></div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.06); border-left:2px solid #B80000;"><div style="font-size:10px; font-weight:700; color:#fff;">Primary Accent</div><div style="font-size:10px; color:rgba(200,212,230,0.6); font-family:monospace;">#B80000 Red</div></div>
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.06); border-left:2px solid #B80000;"><div style="font-size:10px; font-weight:700; color:#fff;">Background</div><div style="font-size:10px; color:rgba(200,212,230,0.6); font-family:monospace;">#102040 Navy</div></div>
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.06); border-left:2px solid #B80000;"><div style="font-size:10px; font-weight:700; color:#fff;">Tone</div><div style="font-size:10px; color:rgba(200,212,230,0.6);">Welcoming, casual, community</div></div>
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.06); border-left:2px solid #B80000;"><div style="font-size:10px; font-weight:700; color:#fff;">Purpose</div><div style="font-size:10px; color:rgba(200,212,230,0.6);">Monthly meetups, club identity</div></div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding-top:60px; gap:8px;">
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); text-align:center;">Sub-brand<br>of</div>
+        <div style="font-size:24px; color:var(--text-muted);">↓</div>
+      </div>
+
+      <!-- VSYC-26 side -->
+      <div style="flex:1; background:var(--navy-deep); padding:28px; display:flex; flex-direction:column; gap:16px;" class="dot-bg">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <img src="assets/logos/vsyc26-va-logo-512.png" style="height:28px; object-fit:contain;" alt="">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:14px; color:#fff;">VSYC-26</div>
+        </div>
+        <div style="width:32px; height:2px; background:var(--gold);"></div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.04); border-left:2px solid var(--gold);"><div style="font-size:10px; font-weight:700; color:#fff;">Primary Accent</div><div style="font-size:10px; color:rgba(200,212,230,0.6); font-family:monospace;">#C9A84C Gold</div></div>
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.04); border-left:2px solid var(--gold);"><div style="font-size:10px; font-weight:700; color:#fff;">Background</div><div style="font-size:10px; color:rgba(200,212,230,0.6); font-family:monospace;">#0d1428 Deep Navy</div></div>
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.04); border-left:2px solid var(--gold);"><div style="font-size:10px; font-weight:700; color:#fff;">Tone</div><div style="font-size:10px; color:rgba(200,212,230,0.6);">Official, elevated, competitive</div></div>
+          <div style="padding:8px 12px; background:rgba(255,255,255,0.04); border-left:2px solid var(--gold);"><div style="font-size:10px; font-weight:700; color:#fff;">Purpose</div><div style="font-size:10px; color:rgba(200,212,230,0.6);">Competition, registration, results</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px; padding:14px 20px; background:var(--cream-mid); border-left:4px solid var(--gold);">
+      <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:4px;">Shared Rules</div>
+      <div style="font-size:11px; color:var(--text-muted); line-height:1.7;">All DMV Throwers core rules apply: <strong style="color:var(--navy);">border-radius: 0</strong> always · Playfair Display for headings · DM Sans for body · Barlow Condensed for labels · No emoji · No gradients</div>
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; height:5px; background:var(--gold);"></div>
+    <div class="slide-num slide-num-dark">04 / 20</div>
+  </section>
+
+
+  <!-- 05 LOGO SYSTEM -->
+  <section data-screen-label="05 Logo System" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Logo System</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:rgba(200,212,230,0.75); margin:0 0 28px; line-height:1.7; max-width:480px;">Use the VSYC-26 specific logo for all contest materials. Never substitute the main DMV Throwers glyph for contest-specific contexts.</p>
+
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <!-- Primary on dark -->
+      <div style="background:rgba(0,0,0,0.3); border:1px solid var(--border-dark); padding:40px; display:flex; align-items:center; justify-content:center; gap:64px;">
+        <div style="text-align:center;">
+          <img src="assets/logos/vsyc26-va-logo-512.png" style="height:80px; object-fit:contain;" alt="VSYC-26 primary logo">
+          <div style="font-size:10px; color:rgba(255,255,255,0.5); margin-top:12px; font-weight:600;">Primary — Dark BG</div>
+        </div>
+        <div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:10px;">
+          <div style="display:flex; align-items:center; gap:16px;">
+            <img src="assets/logos/vsyc26-va-logo-512.png" style="height:48px; object-fit:contain;" alt="">
+            <div style="text-align:left;">
+              <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold);">VSYC-26</div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:20px; color:#fff; line-height:1;">Virginia State<br>Yo-Yo Contest</div>
+            </div>
+          </div>
+          <div style="font-size:10px; color:rgba(255,255,255,0.5); font-weight:600;">With Wordmark — Dark BG</div>
+        </div>
+      </div>
+      <!-- On light -->
+      <div style="background:var(--cream-warm); border:1px solid var(--border-dark); padding:32px; display:flex; align-items:center; justify-content:center; gap:64px;">
+        <div style="text-align:center;">
+          <img src="assets/logos/vsyc26-va-logo-512.png" style="height:64px; object-fit:contain;" alt="">
+          <div style="font-size:10px; color:var(--text-muted); margin-top:12px; font-weight:600;">Primary — Light BG</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="assets/logos/va-state-logo.svg" style="height:64px; object-fit:contain;" alt="VA State logo">
+          <div style="font-size:10px; color:var(--text-muted); margin-top:12px; font-weight:600;">VA State Logo Variant</div>
+        </div>
+      </div>
+      <!-- Note -->
+      <div style="background:rgba(201,168,76,0.08); border-left:4px solid var(--gold); padding:14px 18px; display:flex; gap:24px;">
+        <div style="flex:1;"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:3px;">Clear Space</div><div style="font-size:10px; color:rgba(200,212,230,0.65); line-height:1.5;">0.5× logo height on all sides minimum.</div></div>
+        <div style="flex:1;"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:3px;">Min Size</div><div style="font-size:10px; color:rgba(200,212,230,0.65); line-height:1.5;">32px height for digital; 0.5" for print.</div></div>
+        <div style="flex:1;"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:3px;">File Formats</div><div style="font-size:10px; color:rgba(200,212,230,0.65); line-height:1.5;">PNG-512 for digital; SVG for print/scale.</div></div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">05 / 20</div>
+  </section>
+
+
+  <!-- 06 LOGO USAGE -->
+  <section data-screen-label="06 Logo Usage" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Logo Do's &amp; Don'ts</h2>
+    <div class="rule"></div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; flex:1; align-content:start;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:12px;">✓ Do</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="padding:12px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:2px;">Use VSYC-26 logo for contest materials</div><div style="font-size:11px; color:rgba(200,212,230,0.65); line-height:1.5;">Never use the main DMV Throwers glyph for contest-specific contexts.</div></div>
+          <div style="padding:12px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:2px;">Use DMV Throwers logo for presenter credit</div><div style="font-size:11px; color:rgba(200,212,230,0.65); line-height:1.5;">"Presented by DMV Throwers" always in footer/credits.</div></div>
+          <div style="padding:12px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:2px;">Maintain gold or white color only</div><div style="font-size:11px; color:rgba(200,212,230,0.65); line-height:1.5;">On dark backgrounds. On light: full color logo only.</div></div>
+          <div style="padding:12px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:2px;">Apply sponsor logos per tier rules</div><div style="font-size:11px; color:rgba(200,212,230,0.65); line-height:1.5;">Refer to sponsor tier sheet for sizing and placement.</div></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:12px;">✕ Don't</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="padding:12px 14px; background:rgba(255,255,255,0.03); border-left:3px solid rgba(255,255,255,0.15);"><div style="font-size:12px; font-weight:700; color:rgba(255,255,255,0.5); text-decoration:line-through; text-decoration-color:rgba(255,255,255,0.2); margin-bottom:2px;">Mix logos on the same layout</div><div style="font-size:11px; color:rgba(200,212,230,0.5); line-height:1.5;">VSYC and DMV logos must be clearly separated or in footer only.</div></div>
+          <div style="padding:12px 14px; background:rgba(255,255,255,0.03); border-left:3px solid rgba(255,255,255,0.15);"><div style="font-size:12px; font-weight:700; color:rgba(255,255,255,0.5); text-decoration:line-through; text-decoration-color:rgba(255,255,255,0.2); margin-bottom:2px;">Recolor with non-brand colors</div><div style="font-size:11px; color:rgba(200,212,230,0.5); line-height:1.5;">No custom colors; gold, white, or navy only.</div></div>
+          <div style="padding:12px 14px; background:rgba(255,255,255,0.03); border-left:3px solid rgba(255,255,255,0.15);"><div style="font-size:12px; font-weight:700; color:rgba(255,255,255,0.5); text-decoration:line-through; text-decoration-color:rgba(255,255,255,0.2); margin-bottom:2px;">Add drop shadows or effects</div><div style="font-size:11px; color:rgba(200,212,230,0.5); line-height:1.5;">No glows, bevels, gradients, or outlines.</div></div>
+          <div style="padding:12px 14px; background:rgba(255,255,255,0.03); border-left:3px solid rgba(255,255,255,0.15);"><div style="font-size:12px; font-weight:700; color:rgba(255,255,255,0.5); text-decoration:line-through; text-decoration-color:rgba(255,255,255,0.2); margin-bottom:2px;">Place on cherry-pink or busy imagery</div><div style="font-size:11px; color:rgba(200,212,230,0.5); line-height:1.5;">Cherry pink is a background only; never behind the logo.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">06 / 20</div>
+  </section>
+
+
+  <!-- 07 COLOR PALETTE -->
+  <section data-screen-label="07 Color Palette" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Color Palette</h2>
+    <div class="rule"></div>
+
+    <!-- Primary trio -->
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0; height:240px; margin-bottom:16px;">
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark);">
+        <div style="background:#C9A84C; flex:1;"></div>
+        <div style="padding:12px 14px; background:rgba(255,255,255,0.04); border-top:1px solid var(--border-dark);">
+          <div style="font-family:var(--font-display); font-weight:700; font-size:15px; color:#fff;">Contest Gold</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--gold); margin:2px 0;">#C9A84C</div>
+          <div style="font-size:10px; color:var(--text-muted); font-family:monospace;">--gold</div>
+          <div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:5px; line-height:1.5;">Primary accent. All CTAs, dividers, tags, eyebrows.</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark); border-left:none;">
+        <div style="background:#0d1428; flex:1;" class="dot-bg"></div>
+        <div style="padding:12px 14px; background:rgba(255,255,255,0.04); border-top:1px solid var(--border-dark);">
+          <div style="font-family:var(--font-display); font-weight:700; font-size:15px; color:#fff;">Deep Navy</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--gold); margin:2px 0;">#0d1428</div>
+          <div style="font-size:10px; color:var(--text-muted); font-family:monospace;">--navy-deep</div>
+          <div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:5px; line-height:1.5;">Primary background. Deepest surface.</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark); border-left:none;">
+        <div style="background:#C8102E; flex:1;"></div>
+        <div style="padding:12px 14px; background:rgba(255,255,255,0.04); border-top:1px solid var(--border-dark);">
+          <div style="font-family:var(--font-display); font-weight:700; font-size:15px; color:#fff;">Contest Red</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--gold); margin:2px 0;">#C8102E</div>
+          <div style="font-size:10px; color:var(--text-muted); font-family:monospace;">--red</div>
+          <div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:5px; line-height:1.5;">Secondary accent. Virginia state red reference.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary row -->
+    <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:0; margin-bottom:16px;">
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark);"><div style="background:#e8c97a; height:48px;"></div><div style="padding:8px 10px; background:rgba(255,255,255,0.03);"><div style="font-size:10px; font-weight:700; color:#fff;">Gold Light</div><div style="font-family:monospace; font-size:9px; color:var(--gold);">#e8c97a</div><div style="font-size:9px; color:rgba(200,212,230,0.5);">Hover</div></div></div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark); border-left:none;"><div style="background:#1a2744; height:48px;"></div><div style="padding:8px 10px; background:rgba(255,255,255,0.03);"><div style="font-size:10px; font-weight:700; color:#fff;">Navy Mid</div><div style="font-family:monospace; font-size:9px; color:var(--gold);">#1a2744</div><div style="font-size:9px; color:rgba(200,212,230,0.5);">Surface</div></div></div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark); border-left:none;"><div style="background:#F9D0D4; height:48px;"></div><div style="padding:8px 10px; background:rgba(255,255,255,0.03);"><div style="font-size:10px; font-weight:700; color:#fff;">Cherry Pink</div><div style="font-family:monospace; font-size:9px; color:var(--gold);">#F9D0D4</div><div style="font-size:9px; color:rgba(200,212,230,0.5);">Spring bg</div></div></div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark); border-left:none;"><div style="background:#f5f0e8; height:48px;"></div><div style="padding:8px 10px; background:rgba(255,255,255,0.03);"><div style="font-size:10px; font-weight:700; color:#fff;">Cream Warm</div><div style="font-family:monospace; font-size:9px; color:var(--gold);">#f5f0e8</div><div style="font-size:9px; color:rgba(200,212,230,0.5);">Light bg</div></div></div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border-dark); border-left:none;"><div style="background:#4a5a7a; height:48px;"></div><div style="padding:8px 10px; background:rgba(255,255,255,0.03);"><div style="font-size:10px; font-weight:700; color:#fff;">Muted</div><div style="font-family:monospace; font-size:9px; color:var(--gold);">#4a5a7a</div><div style="font-size:9px; color:rgba(200,212,230,0.5);">Secondary text</div></div></div>
+    </div>
+
+    <div style="background:rgba(201,168,76,0.07); border-left:4px solid var(--gold); padding:14px 18px;">
+      <div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:4px;">Cherry Pink Usage Note</div>
+      <div style="font-size:11px; color:rgba(200,212,230,0.7); line-height:1.6;">#F9D0D4 is a spring/seasonal accent — use as full-section background only, never for text. Pairs with navy or white headings. Never use behind the logo.</div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">07 / 20</div>
+  </section>
+
+
+  <!-- 08 COLOR USAGE -->
+  <section data-screen-label="08 Color Usage" class="light" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Color Usage</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 28px; line-height:1.7;">Approved pairings for VSYC-26. Gold is the dominant accent in all competition contexts.</p>
+    <div style="display:flex; flex-direction:column; gap:12px; flex:1;">
+      <div style="display:grid; grid-template-columns:100px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);"><div style="background:#0d1428; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#C9A84C; font-family:var(--font-body);">Aa</span></div><div style="font-size:11px; font-weight:700; color:var(--navy);">Gold on Deep Navy</div><div style="font-size:11px; color:var(--text-muted);">Eyebrows, labels, CTA buttons, key accents. Hero contexts.</div><div style="background:#f7f3ec; border:1px solid var(--border); padding:3px 8px; font-size:9px; font-weight:700; color:var(--text-muted); font-family:var(--font-condensed); letter-spacing:0.1em;">AA Large</div></div>
+      <div style="display:grid; grid-template-columns:100px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);"><div style="background:#0d1428; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#ffffff; font-family:var(--font-body);">Aa</span></div><div style="font-size:11px; font-weight:700; color:var(--navy);">White on Deep Navy</div><div style="font-size:11px; color:var(--text-muted);">Body copy and headings on dark backgrounds. Primary text.</div><div style="background:#e8f5e9; border:1px solid #a5d6a7; padding:3px 8px; font-size:9px; font-weight:700; color:#2e7d32; font-family:var(--font-condensed); letter-spacing:0.1em;">AA ✓</div></div>
+      <div style="display:grid; grid-template-columns:100px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);"><div style="background:#C9A84C; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#0d1428; font-family:var(--font-body);">Aa</span></div><div style="font-size:11px; font-weight:700; color:var(--navy);">Navy on Gold</div><div style="font-size:11px; color:var(--text-muted);">Button text on gold CTA buttons. Labels on gold backgrounds.</div><div style="background:#e8f5e9; border:1px solid #a5d6a7; padding:3px 8px; font-size:9px; font-weight:700; color:#2e7d32; font-family:var(--font-condensed); letter-spacing:0.1em;">AA ✓</div></div>
+      <div style="display:grid; grid-template-columns:100px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);"><div style="background:#C8102E; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#ffffff; font-family:var(--font-body);">Aa</span></div><div style="font-size:11px; font-weight:700; color:var(--navy);">White on Red</div><div style="font-size:11px; color:var(--text-muted);">Secondary CTA, deadline callouts, danger/alert contexts.</div><div style="background:#f7f3ec; border:1px solid var(--border); padding:3px 8px; font-size:9px; font-weight:700; color:var(--text-muted); font-family:var(--font-condensed); letter-spacing:0.1em;">AA Large</div></div>
+      <div style="display:grid; grid-template-columns:100px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);"><div style="background:#F9D0D4; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#1a2744; font-family:var(--font-body);">Aa</span></div><div style="font-size:11px; font-weight:700; color:var(--navy);">Navy on Cherry Pink</div><div style="font-size:11px; color:var(--text-muted);">Seasonal spring accent sections. Large headings only.</div><div style="background:#f7f3ec; border:1px solid var(--border); padding:3px 8px; font-size:9px; font-weight:700; color:var(--text-muted); font-family:var(--font-condensed); letter-spacing:0.1em;">AA Large</div></div>
+      <div style="display:grid; grid-template-columns:100px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);"><div style="background:#f5f0e8; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#1a2744; font-family:var(--font-body);">Aa</span></div><div style="font-size:11px; font-weight:700; color:var(--navy);">Navy on Cream Warm</div><div style="font-size:11px; color:var(--text-muted);">Light-mode sections, rulebook pages, informational content.</div><div style="background:#e8f5e9; border:1px solid #a5d6a7; padding:3px 8px; font-size:9px; font-weight:700; color:#2e7d32; font-family:var(--font-condensed); letter-spacing:0.1em;">AA ✓</div></div>
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; height:5px; background:var(--gold);"></div>
+    <div class="slide-num slide-num-dark">08 / 20</div>
+  </section>
+
+
+  <!-- 09 TYPOGRAPHY -->
+  <section data-screen-label="09 Typography" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Typography</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:rgba(200,212,230,0.7); margin:0 0 28px; line-height:1.7;">Same three-font system as DMV Throwers. Barlow Condensed carries more weight in competition contexts.</p>
+
+    <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+      <div style="background:rgba(0,0,0,0.3); padding:28px 32px; display:flex; gap:32px; align-items:center; border:1px solid var(--border-dark);">
+        <div style="flex:1;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:6px;">01 — Display</div>
+          <div style="font-family:var(--font-display); font-size:48px; font-weight:900; line-height:0.92; color:#fff;">Virginia</div>
+          <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:0.92; color:var(--gold); font-style:italic;">State</div>
+        </div>
+        <div style="flex:1; border-left:1px solid rgba(255,255,255,0.1); padding-left:28px;">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:17px; color:#fff; margin-bottom:4px;">Playfair Display</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.6); margin-bottom:10px;">700 · 900 · Italic</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.6); line-height:1.7;">Contest titles · Division headings · Score displays · Hero copy</div>
+        </div>
+      </div>
+      <div style="background:var(--cream-warm); border:1px solid var(--border); padding:24px 32px; display:flex; gap:32px; align-items:center;">
+        <div style="flex:1;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:6px;">02 — Body</div>
+          <div style="font-family:var(--font-body); font-size:32px; font-weight:700; line-height:1; color:var(--navy);">Register now,</div>
+          <div style="font-family:var(--font-body); font-size:32px; font-weight:400; line-height:1; color:var(--navy);">compete free.</div>
+        </div>
+        <div style="flex:1; border-left:1px solid var(--border); padding-left:28px;">
+          <div style="font-family:var(--font-body); font-weight:700; font-size:17px; color:var(--navy); margin-bottom:4px;">DM Sans</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-bottom:10px;">400 · 600 · 700</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.7;">Body copy · Rules · Registration · Announcements · UI</div>
+        </div>
+      </div>
+      <div style="background:var(--gold); padding:20px 32px; display:flex; gap:32px; align-items:center;">
+        <div style="flex:1;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:rgba(13,20,40,0.6); margin-bottom:6px;">03 — Condensed</div>
+          <div style="font-family:var(--font-condensed); font-size:40px; font-weight:800; line-height:1; color:var(--navy-deep); letter-spacing:0.08em; text-transform:uppercase;">1A · STRING</div>
+        </div>
+        <div style="flex:1; border-left:1px solid rgba(0,0,0,0.15); padding-left:28px;">
+          <div style="font-family:var(--font-condensed); font-weight:800; font-size:17px; color:var(--navy-deep); margin-bottom:4px;">Barlow Condensed</div>
+          <div style="font-size:11px; color:rgba(13,20,40,0.65); margin-bottom:10px;">700 · 800 — always ALL CAPS</div>
+          <div style="font-size:11px; color:rgba(13,20,40,0.65); line-height:1.7;">Division labels · Schedule · Results · Sponsor tiers · Eyebrows</div>
+        </div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">09 / 20</div>
+  </section>
+
+
+  <!-- 10 VOICE & TONE -->
+  <section data-screen-label="10 Voice & Tone" class="light" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Voice &amp; Tone</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 24px; line-height:1.7; max-width:500px;">VSYC-26 shares DMV Throwers' direct, welcoming voice — but the tone shifts to official and elevated for competition contexts.</p>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px;">
+      <div style="background:var(--navy-deep); padding:24px;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:18px; color:#fff; margin-bottom:8px;">Official</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">Competition language is precise. Rulebook = rules. Division = division. Results are announced, not posted. Use formal register.</div>
+      </div>
+      <div style="background:var(--navy-deep); padding:24px;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:18px; color:#fff; margin-bottom:8px;">Inclusive</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">Still welcoming. Competitors of all levels are celebrated. Never intimidating. "Everyone is welcome on the floor."</div>
+      </div>
+      <div style="background:var(--navy-deep); padding:24px;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:18px; color:#fff; margin-bottom:8px;">Proud</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">Virginia state pride is prominent. "The Commonwealth's finest throwers." Regional identity matters here too.</div>
+      </div>
+      <div style="background:var(--navy-deep); padding:24px;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:18px; color:#fff; margin-bottom:8px;">Concise</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">Rules are clear, schedules are direct. No filler copy. Registration copy is action-oriented: "Register. Compete. Win."</div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:10px;">✓ Write like this</div>
+        <div style="font-size:12px; color:var(--navy); padding:9px 14px; border-left:3px solid var(--gold); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic;">"Registration is open. Compete in 5 divisions. Arlington VA, 2026."</div>
+        <div style="font-size:12px; color:var(--navy); padding:9px 14px; border-left:3px solid var(--gold); background:var(--cream-mid); line-height:1.6; font-style:italic;">"The Commonwealth's finest throwers. See you on the floor."</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">✕ Avoid this</div>
+        <div style="font-size:12px; color:var(--text-muted); padding:9px 14px; border-left:3px solid var(--border); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic; text-decoration:line-through; text-decoration-color:var(--border);">"Come hang and throw with us at our super fun contest!"</div>
+        <div style="font-size:12px; color:var(--text-muted); padding:9px 14px; border-left:3px solid var(--border); background:var(--cream-mid); line-height:1.6; font-style:italic; text-decoration:line-through; text-decoration-color:var(--border);">"VSYC-26 is a premier world-class competition experience."</div>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; height:5px; background:var(--gold);"></div>
+    <div class="slide-num slide-num-dark">10 / 20</div>
+  </section>
+
+
+  <!-- 11 DESIGN ELEMENTS -->
+  <section data-screen-label="11 Design Elements" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">System</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Design Elements</h2>
+    <div class="rule"></div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; flex:1; align-content:start;">
+      <!-- Dot pattern -->
+      <div style="border:1px solid var(--border-dark); overflow:hidden;">
+        <div style="height:80px; background:var(--navy-deep);" class="dot-bg"></div>
+        <div style="padding:14px; background:rgba(255,255,255,0.03);">
+          <div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:4px;">Dot Pattern</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.6); line-height:1.6;">Same as main brand. White dots, 28px grid, 5% opacity on navy-deep backgrounds.</div>
+        </div>
+      </div>
+      <!-- Gold divider -->
+      <div style="border:1px solid var(--border-dark); padding:20px; background:rgba(255,255,255,0.03);">
+        <div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:12px;">Gold Rule / Divider</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div><div style="width:48px; height:3px; background:var(--gold);"></div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:5px;">48px × 3px — after headings</div></div>
+          <div><div style="width:100%; height:5px; background:var(--gold);"></div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:5px;">5px bar — page top/bottom</div></div>
+          <div><div style="width:100%; height:1px; background:var(--border-dark);"></div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:5px;">1px hairline — between sections</div></div>
+        </div>
+      </div>
+      <!-- Sharp corners -->
+      <div style="border:1px solid var(--border-dark); padding:20px; background:rgba(255,255,255,0.03);">
+        <div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:12px;">Sharp Corners — Always</div>
+        <div style="display:flex; gap:10px; margin-bottom:10px;">
+          <div style="width:48px; height:48px; background:var(--gold); border-radius:0;"></div>
+          <div style="width:48px; height:48px; background:var(--navy); border-radius:0; border:1px solid var(--border-dark);"></div>
+          <div style="width:48px; height:48px; background:var(--red); border-radius:0;"></div>
+          <div style="width:48px; height:48px; background:var(--gold); border-radius:0; display:flex; align-items:center; justify-content:center;"><span style="font-family:var(--font-body); font-size:8px; font-weight:700; color:var(--navy-deep); letter-spacing:0.1em; text-transform:uppercase;">REG</span></div>
+        </div>
+        <div style="font-size:11px; color:rgba(200,212,230,0.6); line-height:1.6;"><strong style="color:#fff;">border-radius: 0 always.</strong> No exceptions in competition materials.</div>
+      </div>
+      <!-- Cherry pink section -->
+      <div style="border:1px solid var(--border-dark); overflow:hidden;">
+        <div style="height:80px; background:#F9D0D4; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--navy-deep);">VSYC-26</div>
+            <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--navy);">Spring Contest</div>
+          </div>
+        </div>
+        <div style="padding:14px; background:rgba(255,255,255,0.03);">
+          <div style="font-size:12px; font-weight:700; color:#fff; margin-bottom:4px;">Cherry Pink Sections</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.6); line-height:1.6;">Spring accent. Full section backgrounds only. Navy text on cherry pink. Never behind the logo.</div>
+        </div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">11 / 20</div>
+  </section>
+
+
+  <!-- 12 BUTTONS & BADGES -->
+  <section data-screen-label="12 Buttons & Badges" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">System</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Buttons &amp; Badges</h2>
+    <div class="rule"></div>
+
+    <div style="flex:1; display:flex; flex-direction:column; gap:24px;">
+      <!-- Buttons -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:12px;">Button System</div>
+        <div style="background:rgba(0,0,0,0.3); border:1px solid var(--border-dark); padding:24px; display:flex; gap:14px; flex-wrap:wrap; align-items:center;">
+          <button style="background:var(--gold); color:var(--navy-deep); border:none; padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">Register Now</button>
+          <button style="background:var(--red); color:#fff; border:none; padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">View Rulebook</button>
+          <button style="background:transparent; color:var(--gold); border:2px solid var(--gold); padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">Learn More</button>
+          <button style="background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.3); padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">Schedule</button>
+        </div>
+        <div style="font-size:10px; color:rgba(200,212,230,0.55); padding:8px 4px; line-height:1.6;">Gold = primary CTA · Red = secondary/urgency · Outline gold = tertiary · All square corners · 44px min height</div>
+      </div>
+      <!-- Tags -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:12px;">Tag System</div>
+        <div style="background:rgba(0,0,0,0.3); border:1px solid var(--border-dark); padding:20px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">Registration Open</span>
+          <span style="background:var(--red); color:#fff; font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">Deadline</span>
+          <span style="background:rgba(201,168,76,0.15); color:var(--gold); border:1px solid var(--gold); font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">Sanctioned</span>
+          <span style="background:rgba(255,255,255,0.06); color:rgba(255,255,255,0.7); font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">Free Entry</span>
+          <span style="background:var(--navy); color:var(--gold); font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">2026</span>
+        </div>
+      </div>
+      <!-- Sponsor tier badges -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:12px;">Sponsor Tier Badges</div>
+        <div style="display:flex; gap:12px;">
+          <div style="background:var(--gold); padding:10px 20px; text-align:center; border-radius:0;"><div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--navy-deep);">Gold Sponsor</div></div>
+          <div style="background:rgba(192,192,192,0.2); border:1px solid #c0c0c0; padding:10px 20px; text-align:center;"><div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#c0c0c0;">Silver Sponsor</div></div>
+          <div style="background:rgba(205,127,50,0.15); border:1px solid #cd7f32; padding:10px 20px; text-align:center;"><div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#cd7f32;">Bronze Sponsor</div></div>
+          <div style="background:rgba(255,255,255,0.04); border:1px solid var(--border-dark); padding:10px 20px; text-align:center;"><div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Community</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">12 / 20</div>
+  </section>
+
+
+  <!-- 13 DIVISION SYSTEM -->
+  <section data-screen-label="13 Division System" class="light" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">System</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Division System</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 28px; line-height:1.7;">Five competition divisions, each with a gold badge, full name, and brief description. Always use Barlow Condensed 800 for division labels.</p>
+
+    <div style="display:flex; flex-direction:column; gap:0; border:1px solid var(--border); flex:1; align-content:start;">
+      <div style="display:grid; grid-template-columns:80px 80px 1fr auto; gap:0; align-items:stretch; border-bottom:1px solid var(--border);">
+        <div style="background:var(--gold); display:flex; align-items:center; justify-content:center; padding:20px;"><span style="font-family:var(--font-condensed); font-size:28px; font-weight:800; color:var(--navy-deep);">1A</span></div>
+        <div style="background:var(--navy-deep); display:flex; align-items:center; justify-content:center; padding:16px;"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">String</span></div>
+        <div style="padding:16px 20px;"><div style="font-size:13px; font-weight:700; color:var(--navy); margin-bottom:4px;">String Trick</div><div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Single yo-yo on a string. Freestyle. The most common and classic division.</div></div>
+        <div style="display:flex; align-items:center; padding:16px 20px;"><span style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted);">Open</span></div>
+      </div>
+      <div style="display:grid; grid-template-columns:80px 80px 1fr auto; gap:0; align-items:stretch; border-bottom:1px solid var(--border); background:var(--cream-mid);">
+        <div style="background:var(--gold); display:flex; align-items:center; justify-content:center; padding:20px;"><span style="font-family:var(--font-condensed); font-size:28px; font-weight:800; color:var(--navy-deep);">2A</span></div>
+        <div style="background:var(--navy-deep); display:flex; align-items:center; justify-content:center; padding:16px;"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">Loop</span></div>
+        <div style="padding:16px 20px;"><div style="font-size:13px; font-weight:700; color:var(--navy); margin-bottom:4px;">Looping</div><div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Two yo-yos, continuous looping tricks. High-speed, rhythmic performance.</div></div>
+        <div style="display:flex; align-items:center; padding:16px 20px;"><span style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted);">Open</span></div>
+      </div>
+      <div style="display:grid; grid-template-columns:80px 80px 1fr auto; gap:0; align-items:stretch; border-bottom:1px solid var(--border);">
+        <div style="background:var(--gold); display:flex; align-items:center; justify-content:center; padding:20px;"><span style="font-family:var(--font-condensed); font-size:28px; font-weight:800; color:var(--navy-deep);">3A</span></div>
+        <div style="background:var(--navy-deep); display:flex; align-items:center; justify-content:center; padding:16px;"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">Double</span></div>
+        <div style="padding:16px 20px;"><div style="font-size:13px; font-weight:700; color:var(--navy); margin-bottom:4px;">Double String</div><div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Two yo-yos, each on their own string. Complex, simultaneous manipulation.</div></div>
+        <div style="display:flex; align-items:center; padding:16px 20px;"><span style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted);">Open</span></div>
+      </div>
+      <div style="display:grid; grid-template-columns:80px 80px 1fr auto; gap:0; align-items:stretch; border-bottom:1px solid var(--border); background:var(--cream-mid);">
+        <div style="background:var(--gold); display:flex; align-items:center; justify-content:center; padding:20px;"><span style="font-family:var(--font-condensed); font-size:28px; font-weight:800; color:var(--navy-deep);">4A</span></div>
+        <div style="background:var(--navy-deep); display:flex; align-items:center; justify-content:center; padding:16px;"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">Off</span></div>
+        <div style="padding:16px 20px;"><div style="font-size:13px; font-weight:700; color:var(--navy); margin-bottom:4px;">Offstring</div><div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Yo-yo not attached to the string. Aerial catches, wraps, and releases.</div></div>
+        <div style="display:flex; align-items:center; padding:16px 20px;"><span style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted);">Open</span></div>
+      </div>
+      <div style="display:grid; grid-template-columns:80px 80px 1fr auto; gap:0; align-items:stretch;">
+        <div style="background:var(--gold); display:flex; align-items:center; justify-content:center; padding:20px;"><span style="font-family:var(--font-condensed); font-size:28px; font-weight:800; color:var(--navy-deep);">5A</span></div>
+        <div style="background:var(--navy-deep); display:flex; align-items:center; justify-content:center; padding:16px;"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">CW</span></div>
+        <div style="padding:16px 20px;"><div style="font-size:13px; font-weight:700; color:var(--navy); margin-bottom:4px;">Counterweight</div><div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Yo-yo on a string with a counterweight instead of a finger loop. Freehand style.</div></div>
+        <div style="display:flex; align-items:center; padding:16px 20px;"><span style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted);">Open</span></div>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; height:5px; background:var(--gold);"></div>
+    <div class="slide-num slide-num-dark">13 / 20</div>
+  </section>
+
+
+  <!-- 14 SOCIAL MEDIA POSTS -->
+  <section data-screen-label="14 Social Media Posts" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Social Media — Posts</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:rgba(200,212,230,0.7); margin:0 0 24px; line-height:1.7;">Instagram 1:1 and 1.91:1 templates. All posts include #VSYC26 and @dmv_throwers.</p>
+
+    <div style="display:flex; gap:20px; flex:1; align-items:flex-start;">
+      <!-- Announcement post -->
+      <div style="flex-shrink:0;">
+        <div style="width:200px; height:200px; background:var(--navy-deep); position:relative; overflow:hidden;" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+          <div style="position:absolute; inset:0; padding:18px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <img src="assets/logos/vsyc26-va-logo-512.png" style="height:24px; object-fit:contain;" alt="">
+              <span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; padding:3px 7px;">2026</span>
+            </div>
+            <div>
+              <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:5px;">Now Open</div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:28px; line-height:0.9; color:#fff;">Registra<span style="color:var(--gold);">tions</span></div>
+              <div style="width:20px; height:2px; background:var(--gold); margin:8px 0;"></div>
+              <div style="font-size:8px; color:rgba(200,212,230,0.7); line-height:1.6;">Virginia State Yo-Yo Contest<br>Arlington VA · 2026</div>
+            </div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.35);">@dmv_throwers · #VSYC26</div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">Registration Open · 1:1</div>
+      </div>
+
+      <!-- Division spotlight -->
+      <div style="flex-shrink:0;">
+        <div style="width:200px; height:200px; background:var(--navy); position:relative; overflow:hidden; border:1px solid var(--border-dark);">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+          <div style="position:absolute; inset:0; padding:18px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold);">Division Spotlight</div>
+            <div style="text-align:center;">
+              <div style="background:var(--gold); width:56px; height:56px; display:flex; align-items:center; justify-content:center; margin:0 auto 10px;"><span style="font-family:var(--font-condensed); font-size:28px; font-weight:800; color:var(--navy-deep);">1A</span></div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:18px; color:#fff;">String Trick</div>
+              <div style="font-size:9px; color:rgba(200,212,230,0.6); margin-top:4px; line-height:1.5;">Freestyle · Open Entry</div>
+            </div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.3);">@dmv_throwers · #VSYC26</div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">Division Spotlight · 1:1</div>
+      </div>
+
+      <!-- Countdown post -->
+      <div style="flex-shrink:0;">
+        <div style="width:200px; height:200px; background:var(--gold); position:relative; overflow:hidden;">
+          <div style="position:absolute; inset:0; padding:18px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <img src="assets/logos/vsyc26-va-logo-512.png" style="height:20px; object-fit:contain;" alt="">
+              <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(13,20,40,0.6);">VSYC-26</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(13,20,40,0.6); margin-bottom:5px;">Register. Compete. Win.</div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:30px; line-height:0.9; color:var(--navy-deep);">See You<br><span style="font-style:italic;">On Stage</span></div>
+            </div>
+            <div style="background:var(--navy-deep); padding:7px 12px; display:inline-block;"><span style="font-family:var(--font-body); font-size:8px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold);">dmvthrowers.club/vsyc26</span></div>
+          </div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">CTA / Promo · 1:1</div>
+      </div>
+
+      <!-- Spacing fill -->
+      <div style="flex:1;"></div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">14 / 20</div>
+  </section>
+
+
+  <!-- 15 INSTAGRAM STORIES -->
+  <section data-screen-label="15 Instagram Stories" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Social Media — Stories</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:rgba(200,212,230,0.7); margin:0 0 24px; line-height:1.7;">9:16 · 1080×1920px. Three template types for contest promotion.</p>
+
+    <div style="display:flex; gap:24px; flex:1; align-items:flex-start; justify-content:center;">
+      <!-- Registration story -->
+      <div>
+        <div style="width:148px; height:263px; background:var(--navy-deep); position:relative; overflow:hidden;" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+          <div style="position:absolute; inset:0; padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:6px;"><img src="assets/logos/vsyc26-va-logo-512.png" style="height:16px; object-fit:contain;" alt=""><div style="font-family:var(--font-condensed); font-size:6px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4);">@dmv_throwers</div></div>
+            <div>
+              <span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:6px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; padding:2px 6px;">Now Open</span>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:30px; line-height:0.9; color:#fff; margin:8px 0; font-style:italic;">Reg<br>ist<br>er</div>
+              <div style="width:16px; height:2px; background:var(--gold); margin-bottom:8px;"></div>
+              <div style="font-size:7px; color:rgba(200,212,230,0.7); line-height:1.6;">Virginia State<br>Yo-Yo Contest<br>Arlington VA</div>
+            </div>
+            <div style="background:var(--gold); padding:6px 10px; text-align:center;"><div style="font-family:var(--font-body); font-size:7px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--navy-deep);">Register Now →</div></div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">Registration</div>
+      </div>
+
+      <!-- Division story -->
+      <div>
+        <div style="width:148px; height:263px; background:var(--navy); position:relative; overflow:hidden; border:1px solid var(--border-dark);">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+          <div style="position:absolute; inset:0; padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold);">5 Divisions</div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <div style="display:flex; align-items:center; gap:8px;"><span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:11px; font-weight:800; padding:3px 6px; min-width:28px; text-align:center;">1A</span><span style="font-size:9px; color:rgba(255,255,255,0.8);">String Trick</span></div>
+              <div style="display:flex; align-items:center; gap:8px;"><span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:11px; font-weight:800; padding:3px 6px; min-width:28px; text-align:center;">2A</span><span style="font-size:9px; color:rgba(255,255,255,0.8);">Looping</span></div>
+              <div style="display:flex; align-items:center; gap:8px;"><span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:11px; font-weight:800; padding:3px 6px; min-width:28px; text-align:center;">3A</span><span style="font-size:9px; color:rgba(255,255,255,0.8);">Double String</span></div>
+              <div style="display:flex; align-items:center; gap:8px;"><span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:11px; font-weight:800; padding:3px 6px; min-width:28px; text-align:center;">4A</span><span style="font-size:9px; color:rgba(255,255,255,0.8);">Offstring</span></div>
+              <div style="display:flex; align-items:center; gap:8px;"><span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:11px; font-weight:800; padding:3px 6px; min-width:28px; text-align:center;">5A</span><span style="font-size:9px; color:rgba(255,255,255,0.8);">Counterweight</span></div>
+            </div>
+            <div style="font-family:var(--font-condensed); font-size:6px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.3);">@dmv_throwers #VSYC26</div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">Divisions</div>
+      </div>
+
+      <!-- Cherry pink story -->
+      <div>
+        <div style="width:148px; height:263px; background:var(--cherry); position:relative; overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+          <div style="position:absolute; inset:0; padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:6px;"><img src="assets/logos/vsyc26-va-logo-512.png" style="height:16px; object-fit:contain;" alt=""><div style="font-family:var(--font-condensed); font-size:6px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(13,20,40,0.5);">VSYC-26</div></div>
+            <div>
+              <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--navy); margin-bottom:6px;">Virginia 2026</div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:26px; line-height:0.92; color:var(--navy-deep); margin-bottom:8px;">Spring<br><span style="font-style:italic;">Contest</span></div>
+              <div style="width:16px; height:2px; background:var(--gold); margin-bottom:8px;"></div>
+              <div style="font-size:7px; color:rgba(13,20,40,0.65); line-height:1.6;">Arlington VA<br>dmvthrowers.club/vsyc26</div>
+            </div>
+            <div style="background:var(--navy-deep); padding:6px 10px; text-align:center;"><div style="font-family:var(--font-body); font-size:7px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold);">Compete →</div></div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">Cherry Pink · Spring</div>
+      </div>
+
+      <!-- Guidelines -->
+      <div style="flex:1; display:flex; flex-direction:column; gap:10px; padding-top:4px;">
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:4px;">Story Guidelines</div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Safe Zone</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">100px from top/bottom on 1080×1920 canvas.</div></div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Hashtag</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">Always include #VSYC26 and @dmv_throwers.</div></div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Gold bars</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">Always 3px gold top bar + 2px gold bottom bar.</div></div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Backgrounds</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">Navy-deep, navy, cherry pink, or cream warm only.</div></div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">15 / 20</div>
+  </section>
+
+
+  <!-- 16 EVENT FLYER -->
+  <section data-screen-label="16 Event Flyer" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Event Flyer</h2>
+    <div class="rule"></div>
+
+    <div style="display:flex; gap:28px; flex:1; align-items:flex-start; margin-top:8px;">
+      <!-- Dark flyer -->
+      <div style="flex-shrink:0;">
+        <div style="width:240px; height:310px; background:var(--navy-deep); position:relative; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.4);" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:var(--gold);"></div>
+          <div style="padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center;">
+            <img src="assets/logos/vsyc26-va-logo-512.png" style="height:24px; object-fit:contain;" alt="">
+            <span style="background:var(--gold); color:var(--navy-deep); font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; padding:2px 7px;">2026</span>
+          </div>
+          <div style="padding:16px 20px;">
+            <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:5px;">Virginia State</div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:0.88; color:#fff; margin-bottom:6px;">Yo-Yo<br><span style="font-style:italic; color:var(--gold);">Contest</span></div>
+            <div style="width:24px; height:2px; background:var(--gold); margin-bottom:12px;"></div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:2px;">Date</div>
+            <div style="font-size:9px; color:rgba(200,212,230,0.85); margin-bottom:8px;">2026 · Arlington VA</div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:2px;">Location</div>
+            <div style="font-size:9px; color:rgba(200,212,230,0.85); margin-bottom:8px;">Arlington Central Library</div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:2px;">Divisions</div>
+            <div style="font-size:9px; color:rgba(200,212,230,0.85); margin-bottom:12px;">1A · 2A · 3A · 4A · 5A</div>
+            <div style="background:var(--gold); padding:7px 12px; display:inline-block;">
+              <span style="font-family:var(--font-body); font-size:8px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--navy-deep);">Register at dmvthrowers.club</span>
+            </div>
+          </div>
+          <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:0; left:0; right:0; width:100%; opacity:0.1;" alt="">
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">Dark Variant · Letter 8.5×11"</div>
+      </div>
+
+      <!-- Cherry pink flyer -->
+      <div style="flex-shrink:0;">
+        <div style="width:240px; height:310px; background:var(--cherry); position:relative; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.2);">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:var(--gold);"></div>
+          <div style="padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center;">
+            <img src="assets/logos/vsyc26-va-logo-512.png" style="height:24px; object-fit:contain;" alt="">
+            <span style="background:var(--navy-deep); color:var(--gold); font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; padding:2px 7px;">2026</span>
+          </div>
+          <div style="padding:16px 20px;">
+            <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--navy); margin-bottom:5px;">Virginia State</div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:0.88; color:var(--navy-deep); margin-bottom:6px;">Yo-Yo<br><span style="font-style:italic;">Contest</span></div>
+            <div style="width:24px; height:2px; background:var(--gold); margin-bottom:12px;"></div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--navy); margin-bottom:2px;">Date</div>
+            <div style="font-size:9px; color:var(--navy); margin-bottom:8px;">2026 · Arlington VA</div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--navy); margin-bottom:2px;">Divisions</div>
+            <div style="font-size:9px; color:var(--navy); margin-bottom:12px;">1A · 2A · 3A · 4A · 5A</div>
+            <div style="background:var(--navy-deep); padding:7px 12px; display:inline-block;">
+              <span style="font-family:var(--font-body); font-size:8px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold);">Register Now</span>
+            </div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.55); margin-top:8px; text-align:center; font-weight:600;">Cherry Pink Variant</div>
+      </div>
+
+      <!-- Specs -->
+      <div style="flex:1; display:flex; flex-direction:column; gap:10px; padding-top:4px;">
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:4px;">Flyer Specs</div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Print Size</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">8.5×11" (Letter) or A4</div></div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Bleed</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">0.125" on all sides for print</div></div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Variants</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">Navy-deep (dark) + Cherry pink (light)</div></div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">QR Code</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">dmvthrowers.club/vsyc26 in lower right</div></div>
+        <div style="padding:10px 14px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:2px;">Sponsor Logos</div><div style="font-size:10px; color:rgba(200,212,230,0.6); line-height:1.5;">Footer row only, per tier hierarchy</div></div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">16 / 20</div>
+  </section>
+
+
+  <!-- 17 CONTESTANT CARD -->
+  <section data-screen-label="17 Contestant Card" class="light" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Contestant Card</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 28px; line-height:1.7;">Printed badge/lanyard card for registered contestants. 3.5×2" standard, two sides.</p>
+
+    <div style="display:flex; gap:28px; flex:1; align-items:flex-start; justify-content:center;">
+      <!-- Front -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; text-align:center;">Front</div>
+        <div style="width:280px; height:160px; background:var(--navy-deep); position:relative; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.2);" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+          <div style="padding:18px 22px; display:flex; flex-direction:column; justify-content:space-between; height:100%; box-sizing:border-box;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <img src="assets/logos/vsyc26-va-logo-512.png" style="height:22px; object-fit:contain;" alt="">
+              <div style="background:var(--gold); padding:3px 8px;"><span style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--navy-deep);">1A</span></div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:16px; color:#fff; margin-bottom:2px;">Competitor Name</div>
+              <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold);">String Trick · #001</div>
+            </div>
+            <div style="font-family:var(--font-body); font-size:8px; color:rgba(200,212,230,0.55); line-height:1.6;">VSYC-26 · Virginia State Yo-Yo Contest · 2026</div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+        </div>
+      </div>
+
+      <!-- Back -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; text-align:center;">Back</div>
+        <div style="width:280px; height:160px; background:var(--gold); position:relative; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.15);">
+          <div style="padding:18px 22px; display:flex; flex-direction:column; justify-content:center; height:100%; box-sizing:border-box; gap:6px;">
+            <div style="font-family:var(--font-display); font-weight:900; font-size:36px; line-height:0.9; color:var(--navy-deep);">VSYC<br><span style="font-style:italic;">2026</span></div>
+            <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:rgba(13,20,40,0.6); margin-top:6px;">Virginia State · dmvthrowers.club/vsyc26</div>
+          </div>
+          <img src="assets/logos/vsyc26-va-logo-512.png" style="position:absolute; right:-12px; bottom:-8px; height:72px; opacity:0.15; object-fit:contain;" alt="">
+        </div>
+      </div>
+
+      <!-- Lanyard spec -->
+      <div style="display:flex; flex-direction:column; gap:14px; padding-top:30px;">
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:4px;">Card Specs</div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Size</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">3.5" × 2" with lanyard hole top-center</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Variable data</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Name, division badge, competitor number</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Lanyard color</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Gold or navy — no other colors</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Paper</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">350gsm coated, laminated</div></div>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; height:5px; background:var(--gold);"></div>
+    <div class="slide-num slide-num-dark">17 / 20</div>
+  </section>
+
+
+  <!-- 18 MERCHANDISE -->
+  <section data-screen-label="18 Merchandise" style="padding:72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Merchandise</h2>
+    <div class="rule"></div>
+
+    <div style="display:flex; gap:20px; flex:1; align-items:flex-start; margin-top:8px; justify-content:center;">
+      <!-- Navy tee -->
+      <div style="text-align:center;">
+        <div style="width:140px; height:155px; position:relative;">
+          <svg viewBox="0 0 200 220" width="140" height="155" style="position:absolute;top:0;left:0;"><path d="M60,10 L20,50 L45,60 L45,200 L155,200 L155,60 L180,50 L140,10 L115,25 Q100,35 85,25 Z" fill="#0d1428"/></svg>
+          <div style="position:absolute; top:62px; left:50%; transform:translateX(-50%); text-align:center; width:80px;">
+            <img src="assets/logos/vsyc26-va-logo-512.png" style="height:28px; object-fit:contain;" alt="">
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-top:4px;">VSYC-26</div>
+          </div>
+        </div>
+        <div style="font-size:10px; color:rgba(200,212,230,0.6); font-weight:600; margin-top:4px;">Deep Navy Tee</div>
+      </div>
+
+      <!-- Gold tee -->
+      <div style="text-align:center;">
+        <div style="width:140px; height:155px; position:relative;">
+          <svg viewBox="0 0 200 220" width="140" height="155" style="position:absolute;top:0;left:0;"><path d="M60,10 L20,50 L45,60 L45,200 L155,200 L155,60 L180,50 L140,10 L115,25 Q100,35 85,25 Z" fill="#C9A84C"/></svg>
+          <div style="position:absolute; top:62px; left:50%; transform:translateX(-50%); text-align:center; width:80px;">
+            <img src="assets/logos/vsyc26-va-logo-512.png" style="height:28px; object-fit:contain;" alt="">
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--navy-deep); margin-top:4px;">VSYC-26</div>
+          </div>
+        </div>
+        <div style="font-size:10px; color:rgba(200,212,230,0.6); font-weight:600; margin-top:4px;">Gold Tee</div>
+      </div>
+
+      <!-- Cap -->
+      <div style="text-align:center;">
+        <div style="width:140px; height:110px; position:relative;">
+          <svg viewBox="0 0 200 150" width="140" height="110" style="position:absolute;top:0;left:0;">
+            <ellipse cx="100" cy="80" rx="90" ry="55" fill="#0d1428"/>
+            <path d="M20,95 Q100,115 180,95 Q100,145 20,95Z" fill="#080f1e"/>
+            <path d="M10,100 Q100,120 190,100 L180,108 Q100,130 20,108 Z" fill="#060c18"/>
+            <circle cx="100" cy="30" r="5" fill="#C9A84C"/>
+            <line x1="100" y1="30" x2="100" y2="108" stroke="rgba(201,168,76,0.1)" stroke-width="1"/>
+          </svg>
+          <div style="position:absolute; top:40px; left:50%; transform:translateX(-50%);">
+            <img src="assets/logos/vsyc26-va-logo-512.png" style="height:22px; object-fit:contain;" alt="">
+          </div>
+        </div>
+        <div style="font-size:10px; color:rgba(200,212,230,0.6); font-weight:600; margin-top:4px;">Snapback Cap</div>
+      </div>
+
+      <!-- Stickers -->
+      <div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:12px;">
+        <div style="width:110px; height:110px; background:var(--gold); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:6px;">
+          <img src="assets/logos/vsyc26-va-logo-512.png" style="height:40px; object-fit:contain;" alt="">
+          <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--navy-deep);">VSYC · 2026</div>
+        </div>
+        <div style="font-size:10px; color:rgba(200,212,230,0.6); font-weight:600;">Gold Sticker</div>
+        <div style="width:110px; height:110px; background:var(--navy-deep); border:1px solid var(--border-dark); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:6px;" class="dot-bg">
+          <img src="assets/logos/vsyc26-va-logo-512.png" style="height:40px; object-fit:contain;" alt="">
+        </div>
+        <div style="font-size:10px; color:rgba(200,212,230,0.6); font-weight:600;">Navy Sticker</div>
+      </div>
+
+      <!-- Award medal mockup -->
+      <div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px;">
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:4px;">Award Medals</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <div style="width:36px; height:36px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center;"><span style="font-family:var(--font-condensed); font-size:12px; font-weight:800; color:var(--navy-deep);">1</span></div>
+            <span style="font-size:10px; color:rgba(255,255,255,0.7);">Gold — 1st Place</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <div style="width:36px; height:36px; border-radius:50%; background:#c0c0c0; display:flex; align-items:center; justify-content:center;"><span style="font-family:var(--font-condensed); font-size:12px; font-weight:800; color:#333;">2</span></div>
+            <span style="font-size:10px; color:rgba(255,255,255,0.7);">Silver — 2nd</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <div style="width:36px; height:36px; border-radius:50%; background:#cd7f32; display:flex; align-items:center; justify-content:center;"><span style="font-family:var(--font-condensed); font-size:12px; font-weight:800; color:#fff;">3</span></div>
+            <span style="font-size:10px; color:rgba(255,255,255,0.7);">Bronze — 3rd</span>
+          </div>
+        </div>
+        <div style="font-size:9px; color:rgba(200,212,230,0.4); line-height:1.5; text-align:center; margin-top:8px; max-width:120px;">VSYC-26 branded ribbon — navy/gold</div>
+      </div>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">18 / 20</div>
+  </section>
+
+
+  <!-- 19 SPONSOR TIERS -->
+  <section data-screen-label="19 Sponsor Tiers" class="light" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Sponsor Tiers</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 24px; line-height:1.7; max-width:500px;">Four sponsor tiers with defined logo placement, sizing, and recognition benefits. All logos in footer of flyers and on website.</p>
+
+    <div style="display:flex; flex-direction:column; gap:0; border:1px solid var(--border); flex:1; align-content:start;">
+      <!-- Gold -->
+      <div style="display:grid; grid-template-columns:140px 1fr 1fr; gap:0; align-items:stretch; border-bottom:1px solid var(--border);">
+        <div style="background:var(--gold); padding:20px; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-condensed); font-size:16px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--navy-deep);">Gold</div>
+            <div style="font-family:var(--font-condensed); font-size:10px; font-weight:700; color:rgba(13,20,40,0.6); text-transform:uppercase; margin-top:2px;">Presenting</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px; border-right:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Placement</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Top of all print flyers<br>• Website hero section<br>• On-site banner primary position<br>• Contestant card back</div>
+        </div>
+        <div style="padding:16px 20px;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Logo Size</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Print: min 1.5" wide<br>• Digital: min 180px wide<br>• Full color on all backgrounds<br>• Announcement tag in posts</div>
+        </div>
+      </div>
+      <!-- Silver -->
+      <div style="display:grid; grid-template-columns:140px 1fr 1fr; gap:0; align-items:stretch; border-bottom:1px solid var(--border); background:var(--cream-mid);">
+        <div style="background:#c0c0c0; padding:20px; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-condensed); font-size:16px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:#333;">Silver</div>
+            <div style="font-family:var(--font-condensed); font-size:10px; font-weight:700; color:rgba(0,0,0,0.4); text-transform:uppercase; margin-top:2px;">Supporting</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px; border-right:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Placement</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Flyer footer row (left)<br>• Website sponsors section<br>• On-site secondary banner</div>
+        </div>
+        <div style="padding:16px 20px;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Logo Size</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Print: min 1" wide<br>• Digital: min 120px wide<br>• Full color on light BG</div>
+        </div>
+      </div>
+      <!-- Bronze -->
+      <div style="display:grid; grid-template-columns:140px 1fr 1fr; gap:0; align-items:stretch; border-bottom:1px solid var(--border);">
+        <div style="background:#cd7f32; padding:20px; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-condensed); font-size:16px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:#fff;">Bronze</div>
+            <div style="font-family:var(--font-condensed); font-size:10px; font-weight:700; color:rgba(255,255,255,0.6); text-transform:uppercase; margin-top:2px;">Community</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px; border-right:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Placement</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Flyer footer row<br>• Website sponsors page<br>• Social media shoutout post</div>
+        </div>
+        <div style="padding:16px 20px;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Logo Size</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Print: min 0.75" wide<br>• Digital: min 80px wide</div>
+        </div>
+      </div>
+      <!-- Friend -->
+      <div style="display:grid; grid-template-columns:140px 1fr 1fr; gap:0; align-items:stretch; background:var(--cream-mid);">
+        <div style="background:var(--navy-deep); padding:20px; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-condensed); font-size:16px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.7);">Friend</div>
+            <div style="font-family:var(--font-condensed); font-size:10px; font-weight:700; color:rgba(255,255,255,0.3); text-transform:uppercase; margin-top:2px;">of VSYC</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px; border-right:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Placement</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Website sponsors page only<br>• Social media tag</div>
+        </div>
+        <div style="padding:16px 20px;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">Logo Size</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.7;">• Digital only: min 60px wide<br>• Name credit in lieu of logo accepted</div>
+        </div>
+      </div>
+    </div>
+    <div style="position:absolute; bottom:0; left:0; right:0; height:5px; background:var(--gold);"></div>
+    <div class="slide-num slide-num-dark">19 / 20</div>
+  </section>
+
+
+  <!-- 20 QUICK REFERENCE -->
+  <section data-screen-label="20 Quick Reference" style="padding:64px 72px; display:flex; flex-direction:column;" class="dot-bg">
+    <div class="gold-bar-top"></div>
+    <div class="eyebrow" style="margin-bottom:6px;">Reference</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; color:#fff; margin:0 0 6px;">Quick Reference</h2>
+    <div class="rule"></div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; flex:1; align-content:start;">
+      <!-- Colors -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid var(--gold);">Colors</div>
+        <div style="display:flex; flex-direction:column;">
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:10px; font-weight:600; color:#fff;">Contest Gold</span><span style="font-size:10px; color:var(--gold); font-family:monospace;">#C9A84C</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:10px; font-weight:600; color:#fff;">Gold Light</span><span style="font-size:10px; color:var(--gold); font-family:monospace;">#e8c97a</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:10px; font-weight:600; color:#fff;">Deep Navy</span><span style="font-size:10px; color:var(--gold); font-family:monospace;">#0d1428</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:10px; font-weight:600; color:#fff;">Navy Mid</span><span style="font-size:10px; color:var(--gold); font-family:monospace;">#1a2744</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:10px; font-weight:600; color:#fff;">Contest Red</span><span style="font-size:10px; color:var(--gold); font-family:monospace;">#C8102E</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:10px; font-weight:600; color:#fff;">Cherry Pink</span><span style="font-size:10px; color:var(--gold); font-family:monospace;">#F9D0D4</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:10px; font-weight:600; color:#fff;">Cream Warm</span><span style="font-size:10px; color:var(--gold); font-family:monospace;">#f5f0e8</span></div>
+        </div>
+        <div style="margin-top:14px;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; padding-bottom:6px; border-bottom:2px solid var(--gold);">Contact</div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:9px; font-weight:700; color:#fff;">Website</span><span style="font-size:9px; color:rgba(200,212,230,0.6);">dmvthrowers.club/vsyc26</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border-dark);"><span style="font-size:9px; font-weight:700; color:#fff;">Instagram</span><span style="font-size:9px; color:rgba(200,212,230,0.6);">@dmv_throwers</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0;"><span style="font-size:9px; font-weight:700; color:#fff;">Hashtag</span><span style="font-size:9px; color:rgba(200,212,230,0.6);">#VSYC26</span></div>
+        </div>
+      </div>
+
+      <!-- Fonts -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid var(--gold);">Typography</div>
+        <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:16px;">
+          <div style="padding:10px 12px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff;">Playfair Display</div><div style="font-size:9px; color:var(--gold); font-family:monospace; margin:1px 0;">700, 900</div><div style="font-size:9px; color:rgba(200,212,230,0.6);">Titles, headings, brand</div></div>
+          <div style="padding:10px 12px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff;">DM Sans</div><div style="font-size:9px; color:var(--gold); font-family:monospace; margin:1px 0;">400, 600, 700</div><div style="font-size:9px; color:rgba(200,212,230,0.6);">Body, rules, UI</div></div>
+          <div style="padding:10px 12px; background:rgba(201,168,76,0.07); border-left:3px solid var(--gold);"><div style="font-size:11px; font-weight:700; color:#fff;">Barlow Condensed</div><div style="font-size:9px; color:var(--gold); font-family:monospace; margin:1px 0;">700, 800 ALL CAPS</div><div style="font-size:9px; color:rgba(200,212,230,0.6);">Division labels, schedule</div></div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; padding-bottom:6px; border-bottom:2px solid var(--gold);">Divisions</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+            <div style="padding:6px 8px; background:rgba(201,168,76,0.1); border-left:2px solid var(--gold);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold);">1A</span><span style="font-size:9px; color:rgba(255,255,255,0.6); margin-left:6px;">String</span></div>
+            <div style="padding:6px 8px; background:rgba(201,168,76,0.1); border-left:2px solid var(--gold);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold);">2A</span><span style="font-size:9px; color:rgba(255,255,255,0.6); margin-left:6px;">Loop</span></div>
+            <div style="padding:6px 8px; background:rgba(201,168,76,0.1); border-left:2px solid var(--gold);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold);">3A</span><span style="font-size:9px; color:rgba(255,255,255,0.6); margin-left:6px;">Double</span></div>
+            <div style="padding:6px 8px; background:rgba(201,168,76,0.1); border-left:2px solid var(--gold);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold);">4A</span><span style="font-size:9px; color:rgba(255,255,255,0.6); margin-left:6px;">Offstring</span></div>
+            <div style="padding:6px 8px; background:rgba(201,168,76,0.1); border-left:2px solid var(--gold);"><span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--gold);">5A</span><span style="font-size:9px; color:rgba(255,255,255,0.6); margin-left:6px;">CW</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rules -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid var(--gold);">Key Rules</div>
+        <div style="display:flex; flex-direction:column; gap:0;">
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ Gold replaces red as primary accent</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ Deep navy #0d1428 as base background</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ border-radius: 0 always</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ VSYC-26 logo for contest contexts</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ DMV Throwers logo for presenter credit</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ Gold bars top + bottom on all assets</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ Cherry pink = section BG only</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ Sponsor logos in footer only</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ #VSYC26 on all social posts</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ Elevated tone — official voice</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border-dark);">✓ Barlow Condensed for division labels</div>
+          <div style="font-size:10px; color:#fff; line-height:1.5; padding:4px 0;">✓ Dot pattern on navy-deep surfaces</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px; background:rgba(0,0,0,0.3); padding:14px 20px; display:flex; align-items:center; justify-content:space-between; border:1px solid var(--border-dark);">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <img src="assets/logos/vsyc26-va-logo-512.png" style="height:20px; object-fit:contain;" alt="">
+        <div style="width:1px; height:16px; background:rgba(255,255,255,0.15);"></div>
+        <img src="assets/logos/dmvt-logo.png" style="height:16px; filter:brightness(0) invert(1); opacity:0.5;" alt="">
+        <span style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4);">VSYC-26 Brand Guidelines 2026 · Presented by DMV Throwers</span>
+      </div>
+      <span style="font-size:10px; color:rgba(255,255,255,0.3);">dmvthrowers.club/vsyc26</span>
+    </div>
+    <div class="gold-bar-bot"></div>
+    <div class="slide-num">20 / 20</div>
+  </section>
+
+
+</deck-stage>
+
+<script type="application/json" id="speaker-notes">
+[
+  "Welcome to the VSYC-26 Brand Guidelines — the official visual identity for the Virginia State Yo-Yo Contest, presented by DMV Throwers.",
+  "Twenty slides covering identity, color, typography, voice, and all key applications.",
+  "VSYC-26 is the inaugural Virginia State Yo-Yo Contest. Sanctioned, competitive, open to all levels across 5 divisions.",
+  "VSYC-26 is a sub-brand of DMV Throwers. Gold replaces red as the primary accent. Tone is elevated but still inclusive.",
+  "The VSYC-26 logo is the primary mark for all contest materials. Use the DMV Throwers glyph only for presenter credit.",
+  "Logo do's and don'ts. Most important: never mix logos on the same layout; never place the logo on cherry pink.",
+  "Color palette: contest gold #C9A84C is the primary accent. Deep navy #0d1428 is the background. Red is secondary.",
+  "Six approved color pairings. Gold on deep navy is the signature VSYC combination.",
+  "Same three-font system as DMV Throwers. Barlow Condensed carries more weight here for competition labels.",
+  "Voice is official and precise, but still welcoming. Never corporate, never intimidating.",
+  "Design elements: dot pattern, gold rules, sharp corners, and cherry pink seasonal sections.",
+  "Button and badge system. Gold is primary CTA. Red for urgency. Sponsor tier badges use gold/silver/bronze.",
+  "Five divisions: 1A through 5A. Each has a gold badge, Barlow Condensed label, and full description.",
+  "Social post templates: registration open, division spotlight, CTA, and cherry pink variant.",
+  "Story templates: registration, divisions overview, and cherry pink spring variant.",
+  "Event flyer in two variants: deep navy and cherry pink. Letter format with gold accents.",
+  "Contestant card: front shows logo, division badge, and name. Back is bold gold with VSYC-26 branding.",
+  "Merchandise: navy and gold tees, snapback cap, stickers, and award medals.",
+  "Sponsor tiers: Gold presenting, Silver supporting, Bronze community, and Friend of VSYC.",
+  "Quick reference card. All colors, fonts, divisions, contacts, and key rules in one place."
+]
+</script>
+</body>
+</html>

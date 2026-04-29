@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DMV Throwers — Brand Guidelines</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+  /* ── BRAND TOKENS ── */
+  :root {
+    --red: #B80000;
+    --red-dark: #7a0000;
+    --navy: #102040;
+    --navy-alt: #1a2744;
+    --navy-deep: #08122a;
+    --cream: #fffdfa;
+    --cream-mid: #f7f3ec;
+    --cream-warm: #f5f0e8;
+    --gold: #C9A84C;
+    --gold-light: #e8c97a;
+    --teal: #13C3A3;
+    --border: #b0a890;
+    --text-muted: #4a5a7a;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-condensed: 'Barlow Condensed', system-ui, sans-serif;
+  }
+
+  /* ── SLIDE BASE ── */
+  section {
+    width: 816px;
+    height: 1056px;
+    background: var(--cream);
+    font-family: var(--font-body);
+    color: var(--navy);
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  /* ── SHARED UTILITIES ── */
+  .eyebrow {
+    font-family: var(--font-condensed);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+  .eyebrow-gold { color: var(--gold); }
+  .rule { width: 48px; height: 3px; background: var(--red); border: none; margin: 12px 0 20px; }
+  .rule-gold { background: var(--gold); }
+  .rule-white { background: #fff; }
+  .tag {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+  }
+  .dot-bg {
+    background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .slide-num {
+    position: absolute;
+    bottom: 28px; right: 40px;
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .slide-num-light { color: rgba(255,255,255,0.35); }
+  .footer-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 5px;
+    background: var(--red);
+  }
+  .footer-bar-gold { background: var(--gold); }
+
+  /* ── SWATCHES ── */
+  .swatch-block { display: flex; flex-direction: column; }
+  .swatch-color { flex: 1; min-height: 56px; }
+  .swatch-label { padding: 8px 10px; border: 1px solid var(--border); background: #fff; }
+  .swatch-name { font-size: 10px; font-weight: 700; color: var(--navy); }
+  .swatch-hex  { font-size: 9px; color: var(--text-muted); font-family: monospace; }
+
+  /* ── PRINT ── */
+  @media print {
+    section { page-break-after: always; }
+  }
+
+  /* ── MOCKUP HELPERS ── */
+  .phone-frame {
+    width: 180px; height: 360px;
+    border: 8px solid var(--navy);
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  }
+  .phone-notch {
+    width: 60px; height: 12px;
+    background: var(--navy);
+    border-radius: 0 0 8px 8px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%);
+  }
+  .tshirt-body {
+    position: relative;
+    width: 220px; height: 240px;
+  }
+</style>
+</head>
+<body>
+<deck-stage width="816" height="1056">
+
+  <!-- ══════════════════════════════════════
+       01 COVER
+  ══════════════════════════════════════ -->
+  <section data-screen-label="01 Cover" style="background: var(--navy); display:flex; flex-direction:column; justify-content:space-between; padding: 64px 72px;">
+    <div class="dot-bg" style="position:absolute;inset:0;pointer-events:none;"></div>
+
+    <!-- top bar -->
+    <div style="display:flex; align-items:center; gap:16px; position:relative;">
+      <img src="assets/logos/dmvt-logo.png" style="height:44px; filter:brightness(0) invert(1);" alt="DMV Throwers logo">
+      <div style="width:1px; height:36px; background:rgba(255,255,255,0.25);"></div>
+      <div>
+        <div style="font-family:var(--font-body); font-size:9px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.5);">DMV Throwers</div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.35);">Yo-Yo &amp; Skill Toy Club</div>
+      </div>
+    </div>
+
+    <!-- center content -->
+    <div style="position:relative; text-align:left;">
+      <div style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.24em; text-transform:uppercase; color:var(--red); margin-bottom:24px;">Brand Guidelines</div>
+      <h1 style="font-family:var(--font-display); font-weight:900; font-size:76px; line-height:0.92; color:#fff; margin:0 0 32px;">DMV<br>Throw<span style="font-style:italic;">ers</span></h1>
+      <div style="width:64px; height:3px; background:var(--red); margin-bottom:28px;"></div>
+      <p style="font-family:var(--font-body); font-size:14px; line-height:1.7; color:rgba(200,210,230,0.8); max-width:320px; margin:0;">Washington DC · Maryland · Virginia<br>The Mid-Atlantic's home for yo-yo &amp; skill toys.</p>
+    </div>
+
+    <!-- skyline -->
+    <div style="position:relative;">
+      <img src="assets/images/dc-skyline.svg" style="width:100%; opacity:0.14; display:block;" alt="">
+    </div>
+
+    <!-- footer -->
+    <div style="position:absolute; bottom:0; left:0; right:0; height:5px; background:var(--red);"></div>
+    <div class="slide-num slide-num-light">01 / 22</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       02 CONTENTS
+  ══════════════════════════════════════ -->
+  <section data-screen-label="02 Contents" style="padding: 72px; display:flex; flex-direction:column; gap:0;">
+    <div class="eyebrow" style="margin-bottom:8px;">Brand Guidelines 2026</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:42px; line-height:1; margin:0 0 6px; color:var(--navy);">Table of Contents</h2>
+    <div class="rule"></div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; flex:1; align-content:start; margin-top:8px;">
+      <!-- col 1 -->
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); padding: 0 0 10px; border-bottom:1px solid var(--border); margin-bottom:4px;">Brand Identity</div>
+        <div style="display:flex; flex-direction:column;">
+          <div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">03</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Our Story</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">04</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Brand Voice</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">05</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Logo System</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">06</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Logo Variations</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">07</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Logo Usage</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">08</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Logo Don'ts</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">09</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Color Palette</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">10</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Color Usage</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">11</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Typography</span>
+          </div>
+        </div>
+      </div>
+      <!-- col 2 -->
+      <div style="padding-left:40px;">
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); padding: 0 0 10px; border-bottom:1px solid var(--border); margin-bottom:4px;">Applications</div>
+        <div style="display:flex; flex-direction:column;">
+          <div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">12</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Type Scale</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">13</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Design Elements</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">14</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Buttons & Tags</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">15</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Social Media</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">16</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Instagram Stories</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">17</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Event Flyer</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">18</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Business Card</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">19</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Merchandise</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">20</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Banners</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">21</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">VSYC-26 Brand</span>
+          </div><div style="display:flex; align-items:center; gap:16px; padding:13px 0; border-bottom:1px solid var(--border);">
+            <span style="font-family:var(--font-condensed); font-size:11px; font-weight:800; color:var(--red); letter-spacing:0.1em; min-width:24px;">22</span>
+            <span style="font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--navy);">Quick Reference</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">02 / 22</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       03 BRAND STORY
+  ══════════════════════════════════════ -->
+  <section data-screen-label="03 Our Story" style="display:flex;">
+    <!-- left navy col -->
+    <div style="width:340px; background:var(--navy); padding:64px 48px; display:flex; flex-direction:column; justify-content:space-between; position:relative; flex-shrink:0;" class="dot-bg">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); margin-bottom:20px;">Founded 2021</div>
+        <h2 style="font-family:var(--font-display); font-weight:900; font-size:48px; line-height:0.95; color:#fff; margin:0 0 24px; font-style:italic;">More Than a Yo-Yo Club</h2>
+        <div style="width:48px; height:3px; background:var(--red); margin-bottom:24px;"></div>
+        <p style="font-size:13px; line-height:1.75; color:rgba(200,212,230,0.85);">DMV Throwers is the Washington DC/Maryland/Virginia region's community hub for yo-yo and skill toy players. Est. 2021.</p>
+      </div>
+      <img src="assets/images/dc-skyline.svg" style="width:100%; opacity:0.15;" alt="">
+    </div>
+    <!-- right content -->
+    <div style="flex:1; padding:64px 52px; display:flex; flex-direction:column; gap:32px;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:6px;">Who We Are</div>
+        <p style="font-size:14px; line-height:1.8; color:var(--navy); margin:0;">We meet every 3rd Sunday at Arlington Central Library. All ages, all skill levels, always free. Whether you've never touched a yo-yo or you're grinding competition routines — this is your crew.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+        <div style="border:1px solid var(--border); border-top:3px solid var(--red); padding:18px 16px;">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--navy); margin-bottom:4px;">3rd Sunday</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Every month without exception</div>
+        </div><div style="border:1px solid var(--border); border-top:3px solid var(--red); padding:18px 16px;">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--navy); margin-bottom:4px;">Est. 2021</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Building community since day one</div>
+        </div><div style="border:1px solid var(--border); border-top:3px solid var(--red); padding:18px 16px;">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--navy); margin-bottom:4px;">All Ages</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">Zero barriers to entry</div>
+        </div><div style="border:1px solid var(--border); border-top:3px solid var(--red); padding:18px 16px;">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:22px; color:var(--navy); margin-bottom:4px;">Always Free</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.5;">No exceptions, ever</div>
+        </div>
+      </div>
+      <div style="background:var(--cream-mid); border-left:4px solid var(--navy); padding:16px 20px;">
+        <div style="font-size:12px; font-weight:700; color:var(--navy); margin-bottom:4px;">Meeting Location</div>
+        <div style="font-size:12px; color:var(--text-muted); line-height:1.6;">Arlington Central Library<br>1015 N Quincy St, Arlington VA 22201</div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">03 / 22</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       04 BRAND VOICE
+  ══════════════════════════════════════ -->
+  <section data-screen-label="04 Brand Voice" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px; color:var(--navy);">Voice &amp; Tone</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 32px; max-width:480px; line-height:1.7;">Our voice is consistent across all channels — direct, warm, never corporate. Adjust tone, not voice.</p>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; flex:1; align-content:start;">
+      <!-- Pillars -->
+      <div style="background:var(--navy); padding:28px 24px; position:relative; overflow:hidden;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:20px; color:#fff; margin-bottom:10px;">Direct</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">We say what we mean. Short sentences, no fluff. "All ages, all levels, always free."</div>
+      </div><div style="background:var(--navy); padding:28px 24px; position:relative; overflow:hidden;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:20px; color:#fff; margin-bottom:10px;">Welcoming</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">Community-first. Second person always. "This is your crew."</div>
+      </div><div style="background:var(--navy); padding:28px 24px; position:relative; overflow:hidden;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:20px; color:#fff; margin-bottom:10px;">Regional Pride</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">DC/MD/VA identity front and center. Celebrate the DMV.</div>
+      </div><div style="background:var(--navy); padding:28px 24px; position:relative; overflow:hidden;" class="dot-bg">
+        <div style="font-family:var(--font-display); font-weight:700; font-size:20px; color:#fff; margin-bottom:10px;">Authentic</div>
+        <div style="font-size:12px; line-height:1.7; color:rgba(200,212,230,0.8);">Real people, real candids. No stock. No performative language.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); margin-bottom:10px;">✓ Write like this</div>
+        <div style="font-size:12px; color:var(--navy); padding:9px 14px; border-left:3px solid var(--red); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic;">"Whether you've never touched a yo-yo or you're grinding competition routines."</div><div style="font-size:12px; color:var(--navy); padding:9px 14px; border-left:3px solid var(--red); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic;">"3rd Sunday every month. Arlington Central Library. Free — always."</div><div style="font-size:12px; color:var(--navy); padding:9px 14px; border-left:3px solid var(--red); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic;">"Find your local crew."</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">✕ Avoid this</div>
+        <div style="font-size:12px; color:var(--text-muted); padding:9px 14px; border-left:3px solid var(--border); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic; text-decoration:line-through; text-decoration-color:var(--border);">"We are a premier skill toy organization committed to excellence."</div><div style="font-size:12px; color:var(--text-muted); padding:9px 14px; border-left:3px solid var(--border); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic; text-decoration:line-through; text-decoration-color:var(--border);">"Join our community today and unlock your potential!"</div><div style="font-size:12px; color:var(--text-muted); padding:9px 14px; border-left:3px solid var(--border); background:var(--cream-mid); margin-bottom:8px; line-height:1.6; font-style:italic; text-decoration:line-through; text-decoration-color:var(--border);">"DMV Throwers Club welcomes all participants."</div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">04 / 22</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       05 LOGO SYSTEM
+  ══════════════════════════════════════ -->
+  <section data-screen-label="05 Logo System" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Logo System</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 36px; line-height:1.7;">The DMV Throwers glyph combines a yo-yo, DC monuments, and three stars — a nod to the DC flag. Use the full lockup when space allows; glyph-only when compact.</p>
+
+    <!-- primary on light -->
+    <div style="flex:1; display:flex; flex-direction:column; gap:20px;">
+      <div style="background:var(--cream-mid); border:1px solid var(--border); padding:40px; display:flex; align-items:center; justify-content:center; gap:56px;">
+        <div style="text-align:center;">
+          <img src="assets/logos/dmvt-logo.png" style="height:80px;" alt="DMV Throwers primary logo">
+          <div style="font-size:10px; color:var(--text-muted); margin-top:12px; font-weight:600;">Glyph — Light BG</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="assets/logos/dmvt-logo-with-text.jpeg" style="height:80px; object-fit:contain;" alt="DMV Throwers with text">
+          <div style="font-size:10px; color:var(--text-muted); margin-top:12px; font-weight:600;">Full Lockup — Light BG</div>
+        </div>
+      </div>
+      <!-- primary on dark -->
+      <div style="background:var(--navy); border:none; padding:40px; display:flex; align-items:center; justify-content:center; gap:56px;" class="dot-bg">
+        <div style="text-align:center;">
+          <img src="assets/logos/dmvt-logo-glyph-bw.png" style="height:80px; filter:brightness(0) invert(1);" alt="DMV Throwers logo white">
+          <div style="font-size:10px; color:rgba(255,255,255,0.5); margin-top:12px; font-weight:600;">Glyph — Dark BG</div>
+        </div>
+        <div style="text-align:center; display:flex; flex-direction:column; align-items:center;">
+          <div style="display:flex; align-items:center; gap:14px;">
+            <img src="assets/logos/dmvt-logo.png" style="height:48px; filter:brightness(0) invert(1);" alt="">
+            <div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:18px; color:#fff; letter-spacing:0.02em;">DMV THROWERS</div>
+              <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; color:var(--red); text-transform:uppercase;">Yo-Yo &amp; Skill Toy Club</div>
+            </div>
+          </div>
+          <div style="font-size:10px; color:rgba(255,255,255,0.5); margin-top:16px; font-weight:600;">Wordmark — Dark BG</div>
+        </div>
+      </div>
+      <!-- glyph anatomy note -->
+      <div style="background:var(--cream-mid); border-left:4px solid var(--navy); padding:14px 20px; display:flex; gap:24px;">
+        <div style="flex:1;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Yo-Yo</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Central circular glyph element</div>
+        </div><div style="flex:1;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">DC Monuments</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Lincoln, Washington, Capitol</div>
+        </div><div style="flex:1;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Yo-Yo String</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Circle connecting elements</div>
+        </div><div style="flex:1;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">3 Stars</div>
+          <div style="font-size:10px; color:var(--text-muted); line-height:1.5;">DC flag reference</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">05 / 22</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       06 LOGO VARIATIONS
+  ══════════════════════════════════════ -->
+  <section data-screen-label="06 Logo Variations" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Logo Variations</h2>
+    <div class="rule"></div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; flex:1; align-content:start; margin-top:12px;">
+
+      <div style="background:var(--cream-mid); border:1px solid var(--border); padding:28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px;">
+        <img src="assets/logos/dmvt-logo.png" style="height:52px;" alt="">
+        <div style="text-align:center;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Primary Red</div>
+          <div style="font-size:10px; line-height:1.5; color:var(--text-muted); margin-top:4px;">Use on cream/white backgrounds. Default for print and web.</div>
+        </div>
+      </div>
+
+      <div style="background:var(--navy); padding:28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px;" class="dot-bg">
+        <img src="assets/logos/dmvt-logo-glyph-bw.png" style="height:52px; filter:brightness(0) invert(1);" alt="">
+        <div style="text-align:center;">
+          <div style="font-size:11px; font-weight:700; color:#fff;">Reversed White</div>
+          <div style="font-size:10px; line-height:1.5; color:rgba(200,210,230,0.7); margin-top:4px;">Use on navy, dark, or high-contrast backgrounds.</div>
+        </div>
+      </div>
+
+      <div style="background:#B80000; padding:28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px;">
+        <img src="assets/logos/dmvt-logo-glyph-bw.png" style="height:52px; filter:brightness(0) invert(1);" alt="">
+        <div style="text-align:center;">
+          <div style="font-size:11px; font-weight:700; color:#fff;">Red Background</div>
+          <div style="font-size:10px; line-height:1.5; color:rgba(200,210,230,0.7); margin-top:4px;">Specialty use: red CTAs, stickers, merchandise accents.</div>
+        </div>
+      </div>
+
+      <div style="background:#fff; border:1px solid var(--border); padding:28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px;">
+        <img src="assets/logos/dmvt-logo-glyph-bw.png" style="height:52px; filter:grayscale(1) brightness(0.2);" alt="">
+        <div style="text-align:center;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Black &amp; White</div>
+          <div style="font-size:10px; line-height:1.5; color:var(--text-muted); margin-top:4px;">For single-color printing, embroidery, and reproduction.</div>
+        </div>
+      </div>
+
+      <div style="background:var(--cream-mid); border:1px solid var(--border); padding:28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px;">
+        <img src="assets/logos/dmvt-logo.png" style="height:36px;" alt="">
+        <div style="text-align:center;">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Glyph Only — Small</div>
+          <div style="font-size:10px; line-height:1.5; color:var(--text-muted); margin-top:4px;">For favicons, social avatars, small lockups. Min 24px.</div>
+        </div>
+      </div>
+
+      <div style="background:var(--navy-deep); padding:28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px;" class="dot-bg">
+        <img src="assets/logos/dmvt-logo-glyph-bw.png" style="height:52px; filter:brightness(0) invert(1);" alt="">
+        <div style="text-align:center;">
+          <div style="font-size:11px; font-weight:700; color:#fff;">Deepest Dark</div>
+          <div style="font-size:10px; line-height:1.5; color:rgba(200,210,230,0.7); margin-top:4px;">For VSYC-26 or very dark contexts.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:20px; background:var(--cream-mid); border-left:4px solid var(--navy); padding:14px 20px;">
+      <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:4px;">Clear Space Rule</div>
+      <div style="font-size:11px; color:var(--text-muted); line-height:1.6;">Always maintain minimum clear space equal to the logo glyph height × 0.5 on all sides. Never crowd the logo with text or competing graphics.</div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">06 / 22</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       07 LOGO USAGE RULES
+  ══════════════════════════════════════ -->
+  <section data-screen-label="07 Logo Usage" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Logo Do's &amp; Don'ts</h2>
+    <div class="rule"></div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px; flex:1; align-content:start;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--red); margin-bottom:12px;">✓ Do</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--red);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--navy);">Use on approved backgrounds only</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">Cream, white, navy, or brand red.</div>
+            </div>
+          </div><div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--red);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--navy);">Maintain clear space</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">× 0.5 glyph height on all sides, minimum.</div>
+            </div>
+          </div><div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--red);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--navy);">Scale proportionally</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">Never distort or stretch the logo.</div>
+            </div>
+          </div><div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--red);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--navy);">Use white version on dark</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">Apply brightness(0) invert(1) filter.</div>
+            </div>
+          </div><div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--red);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--navy);">Minimum size: 24px</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">For the glyph; 80px for full lockup.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:12px;">✕ Don't</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--border);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--text-muted); text-decoration:line-through; text-decoration-color:var(--border);">Alter colors</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">Don't recolor the glyph to any non-brand color.</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--border);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--text-muted); text-decoration:line-through; text-decoration-color:var(--border);">Add effects</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">No drop shadows, glows, gradients, or outlines.</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--border);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--text-muted); text-decoration:line-through; text-decoration-color:var(--border);">Skew or rotate</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">The logo must always appear upright and proportional.</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--border);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--text-muted); text-decoration:line-through; text-decoration-color:var(--border);">Place on busy photography</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">Insufficient contrast destroys legibility.</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px; background:var(--cream-mid); border-left:3px solid var(--border);">
+            <div>
+              <div style="font-size:12px; font-weight:700; color:var(--text-muted); text-decoration:line-through; text-decoration-color:var(--border);">Use old versions</div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:2px; line-height:1.5;">Always source from the approved assets folder.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">07 / 22</div>
+  </section>
+
+
+  <!-- 08 COLOR PALETTE -->
+  <section data-screen-label="08 Color Palette" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Color Palette</h2>
+    <div class="rule"></div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0; height:280px; margin-bottom:20px;">
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border);">
+        <div style="background:#B80000; flex:1;"></div>
+        <div style="padding:14px 16px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-family:var(--font-display); font-weight:700; font-size:16px; color:var(--navy);">Brand Red</div>
+          <div style="font-family:monospace; font-size:11px; color:var(--red); margin:2px 0;">#B80000</div>
+          <div style="font-size:10px; color:var(--text-muted); font-family:monospace;">--color-red</div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:6px; line-height:1.5;">Primary accent, CTAs, dividers, tags.</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border); border-left:none;">
+        <div style="background:#102040; flex:1;"></div>
+        <div style="padding:14px 16px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-family:var(--font-display); font-weight:700; font-size:16px; color:var(--navy);">Navy</div>
+          <div style="font-family:monospace; font-size:11px; color:var(--red); margin:2px 0;">#102040</div>
+          <div style="font-size:10px; color:var(--text-muted); font-family:monospace;">--color-navy</div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:6px; line-height:1.5;">Primary surface, headings, dark sections.</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border); border-left:none;">
+        <div style="background:#fffdfa; flex:1; border-bottom:1px solid var(--border);"></div>
+        <div style="padding:14px 16px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-family:var(--font-display); font-weight:700; font-size:16px; color:var(--navy);">Cream</div>
+          <div style="font-family:monospace; font-size:11px; color:var(--red); margin:2px 0;">#fffdfa</div>
+          <div style="font-size:10px; color:var(--text-muted); font-family:monospace;">--color-cream</div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:6px; line-height:1.5;">Page background, lightest surface.</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:0; margin-bottom:20px;">
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border);">
+        <div style="background:#7a0000; height:56px;"></div>
+        <div style="padding:10px 12px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Red Dark</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--red); margin:2px 0;">#7a0000</div>
+          <div style="font-size:10px; color:var(--text-muted);">Hover state</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border); border-left:none;">
+        <div style="background:#f7f3ec; height:56px; border-bottom:1px solid var(--border);"></div>
+        <div style="padding:10px 12px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Cream Mid</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--red); margin:2px 0;">#f7f3ec</div>
+          <div style="font-size:10px; color:var(--text-muted);">Alt sections</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border); border-left:none;">
+        <div style="background:#13C3A3; height:56px;"></div>
+        <div style="padding:10px 12px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Teal</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--red); margin:2px 0;">#13C3A3</div>
+          <div style="font-size:10px; color:var(--text-muted);">Donate CTA only</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border); border-left:none;">
+        <div style="background:#4a5a7a; height:56px;"></div>
+        <div style="padding:10px 12px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Text Muted</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--red); margin:2px 0;">#4a5a7a</div>
+          <div style="font-size:10px; color:var(--text-muted);">Secondary text</div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; border:1px solid var(--border); border-left:none;">
+        <div style="background:#b0a890; height:56px;"></div>
+        <div style="padding:10px 12px; background:#fff; border-top:1px solid var(--border);">
+          <div style="font-size:11px; font-weight:700; color:var(--navy);">Border</div>
+          <div style="font-family:monospace; font-size:10px; color:var(--red); margin:2px 0;">#b0a890</div>
+          <div style="font-size:10px; color:var(--text-muted);">Hairlines</div>
+        </div>
+      </div>
+    </div>
+    <div style="background:var(--navy); padding:16px 20px;" class="dot-bg">
+      <div style="font-size:11px; font-weight:700; color:#fff; margin-bottom:4px;">Accessibility Note</div>
+      <div style="font-size:11px; color:rgba(200,212,230,0.8); line-height:1.6;">Brand Red <strong style="color:#fff;">#B80000</strong> on white passes WCAG AA for large text. Always pair red/navy with sufficient contrast. Never put red text on navy at small sizes.</div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">08 / 22</div>
+  </section>
+
+
+  <!-- 09 COLOR USAGE -->
+  <section data-screen-label="09 Color Usage" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Color Usage</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 28px; line-height:1.7;">Approved color pairings only. Always check contrast before use.</p>
+    <div style="display:flex; flex-direction:column; gap:14px; flex:1;">
+      <div style="display:grid; grid-template-columns:120px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);">
+        <div style="background:#fffdfa; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#102040; font-family:var(--font-body);">Aa</span></div>
+        <div style="font-size:11px; font-weight:700; color:var(--navy);">Navy on Cream</div>
+        <div style="font-size:11px; color:var(--text-muted);">Primary. All body copy, headings on light backgrounds.</div>
+        <div style="background:#e8f5e9; border:1px solid #a5d6a7; padding:3px 8px; font-size:9px; font-weight:700; color:#2e7d32; font-family:var(--font-condensed); letter-spacing:0.1em;">AA ✓</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);">
+        <div style="background:#102040; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#ffffff; font-family:var(--font-body);">Aa</span></div>
+        <div style="font-size:11px; font-weight:700; color:var(--navy);">White on Navy</div>
+        <div style="font-size:11px; color:var(--text-muted);">Hero sections, footer, dark callouts.</div>
+        <div style="background:#e8f5e9; border:1px solid #a5d6a7; padding:3px 8px; font-size:9px; font-weight:700; color:#2e7d32; font-family:var(--font-condensed); letter-spacing:0.1em;">AA ✓</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);">
+        <div style="background:#B80000; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#ffffff; font-family:var(--font-body);">Aa</span></div>
+        <div style="font-size:11px; font-weight:700; color:var(--navy);">White on Red</div>
+        <div style="font-size:11px; color:var(--text-muted);">CTA buttons, tags, red accent sections. Large text only.</div>
+        <div style="background:#f7f3ec; border:1px solid var(--border); padding:3px 8px; font-size:9px; font-weight:700; color:var(--text-muted); font-family:var(--font-condensed); letter-spacing:0.1em;">AA Large</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);">
+        <div style="background:#f7f3ec; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#102040; font-family:var(--font-body);">Aa</span></div>
+        <div style="font-size:11px; font-weight:700; color:var(--navy);">Navy on Cream Mid</div>
+        <div style="font-size:11px; color:var(--text-muted);">Alternate section backgrounds. Cards.</div>
+        <div style="background:#e8f5e9; border:1px solid #a5d6a7; padding:3px 8px; font-size:9px; font-weight:700; color:#2e7d32; font-family:var(--font-condensed); letter-spacing:0.1em;">AA ✓</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);">
+        <div style="background:#fffdfa; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#B80000; font-family:var(--font-body);">Aa</span></div>
+        <div style="font-size:11px; font-weight:700; color:var(--navy);">Red on Cream</div>
+        <div style="font-size:11px; color:var(--text-muted);">Eyebrow labels, dividers, accent links. Large text only.</div>
+        <div style="background:#f7f3ec; border:1px solid var(--border); padding:3px 8px; font-size:9px; font-weight:700; color:var(--text-muted); font-family:var(--font-condensed); letter-spacing:0.1em;">AA Large</div>
+      </div>
+      <div style="display:grid; grid-template-columns:120px 80px 1fr auto; gap:16px; align-items:center; padding:12px 16px; background:var(--cream-mid); border:1px solid var(--border);">
+        <div style="background:#fffdfa; padding:8px 12px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center;"><span style="font-weight:700; font-size:13px; color:#4a5a7a; font-family:var(--font-body);">Aa</span></div>
+        <div style="font-size:11px; font-weight:700; color:var(--navy);">Muted on Cream</div>
+        <div style="font-size:11px; color:var(--text-muted);">Secondary copy, captions, footnotes.</div>
+        <div style="background:#e8f5e9; border:1px solid #a5d6a7; padding:3px 8px; font-size:9px; font-weight:700; color:#2e7d32; font-family:var(--font-condensed); letter-spacing:0.1em;">AA ✓</div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">09 / 22</div>
+  </section>
+
+
+  <!-- 10 TYPOGRAPHY -->
+  <section data-screen-label="10 Typography" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Typography</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 28px; line-height:1.7;">Three-font system: editorial authority, functional clarity, structured emphasis.</p>
+    <div style="flex:1; display:flex; flex-direction:column; gap:20px;">
+      <div style="background:var(--navy); padding:28px 32px; display:flex; gap:32px; align-items:center;" class="dot-bg">
+        <div style="flex:1;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:var(--red); margin-bottom:6px;">01 — Display</div>
+          <div style="font-family:var(--font-display); font-size:52px; font-weight:900; line-height:0.92; color:#fff;">DMV</div>
+          <div style="font-family:var(--font-display); font-size:52px; font-weight:700; line-height:0.92; color:#fff; font-style:italic;">Throw</div>
+        </div>
+        <div style="flex:1; border-left:1px solid rgba(255,255,255,0.12); padding-left:28px;">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:18px; color:#fff; margin-bottom:4px;">Playfair Display</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.7); margin-bottom:12px;">700 · 900 · 900 Italic</div>
+          <div style="font-size:11px; color:rgba(200,212,230,0.7); line-height:1.7;">Hero titles · Section headings · Brand wordmark · Stat numbers · Card titles</div>
+        </div>
+      </div>
+      <div style="background:var(--cream-mid); border:1px solid var(--border); padding:28px 32px; display:flex; gap:32px; align-items:center;">
+        <div style="flex:1;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:var(--red); margin-bottom:6px;">02 — Body</div>
+          <div style="font-family:var(--font-body); font-size:36px; font-weight:700; line-height:1; color:var(--navy);">Your crew,</div>
+          <div style="font-family:var(--font-body); font-size:36px; font-weight:400; line-height:1; color:var(--navy);">your community.</div>
+        </div>
+        <div style="flex:1; border-left:1px solid var(--border); padding-left:28px;">
+          <div style="font-family:var(--font-body); font-weight:700; font-size:18px; color:var(--navy); margin-bottom:4px;">DM Sans</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-bottom:12px;">400 · 600 · 700</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.7;">Body copy · Navigation · Buttons · Labels · Form UI · Captions</div>
+        </div>
+      </div>
+      <div style="background:var(--red); padding:20px 32px; display:flex; gap:32px; align-items:center;">
+        <div style="flex:1;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:rgba(255,255,255,0.6); margin-bottom:6px;">03 — Condensed</div>
+          <div style="font-family:var(--font-condensed); font-size:40px; font-weight:800; line-height:1; color:#fff; letter-spacing:0.08em; text-transform:uppercase;">MONTHLY MEETUP</div>
+        </div>
+        <div style="flex:1; border-left:1px solid rgba(255,255,255,0.25); padding-left:28px;">
+          <div style="font-family:var(--font-condensed); font-weight:800; font-size:18px; color:#fff; margin-bottom:4px;">Barlow Condensed</div>
+          <div style="font-size:11px; color:rgba(255,255,255,0.7); margin-bottom:12px;">700 · 800 — always ALL CAPS</div>
+          <div style="font-size:11px; color:rgba(255,255,255,0.7); line-height:1.7;">Eyebrow labels · Event metadata · Section tags · Competition contexts</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">10 / 22</div>
+  </section>
+
+
+  <!-- 11 TYPE SCALE -->
+  <section data-screen-label="11 Type Scale" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Identity</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Type Scale</h2>
+    <div class="rule"></div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:0; border:1px solid var(--border); margin-top:12px;">
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:#fff;">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Hero H1</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">Playfair Display</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">88px / 900</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">0.95</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:18px; color:var(--navy);">More Than a Yo-Yo Club</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:var(--cream-mid);">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Display H1</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">Playfair Display</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">56px / 900</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">0.95</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:16px; color:var(--navy);">DMV Throwers</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:#fff;">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Section H2</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">Playfair Display</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">40px / 900</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">1.05</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:15px; color:var(--navy);">Find Your Crew</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:var(--cream-mid);">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Card H3</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">Playfair Display</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">24px / 700</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">1.1</div>
+        <div style="font-family:var(--font-display); font-weight:700; font-size:14px; color:var(--navy);">Monthly Meetup</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:#fff;">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Body</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">DM Sans</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">16px / 400</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">1.75</div>
+        <div style="font-family:var(--font-body); font-weight:400; font-size:12px; color:var(--navy);">All ages, all levels, always free.</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:var(--cream-mid);">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Body Bold</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">DM Sans</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">16px / 700</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">1.75</div>
+        <div style="font-family:var(--font-body); font-weight:700; font-size:12px; color:var(--navy);">3rd Sunday every month.</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:#fff;">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Small / Caption</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">DM Sans</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">13px / 400</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">1.6</div>
+        <div style="font-family:var(--font-body); font-weight:400; font-size:11px; color:var(--text-muted);">1015 N Quincy St, Arlington VA 22201</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; border-bottom:1px solid var(--border); background:var(--cream-mid);">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Label Caps</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">DM Sans</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">11.5px / 700 UC</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">—</div>
+        <div style="font-family:var(--font-body); font-weight:700; font-size:11px; color:var(--navy); text-transform:uppercase; letter-spacing:0.12em;">EVENTS · ABOUT · RESOURCES</div>
+      </div>
+      <div style="display:grid; grid-template-columns:140px 130px 120px 40px 1fr; gap:0; align-items:center; padding:10px 16px; background:#fff;">
+        <div style="font-size:10px; font-weight:700; color:var(--navy);">Eyebrow</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">Barlow Condensed</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">10.4px / 800 UC</div>
+        <div style="font-size:9px; color:var(--text-muted); font-family:monospace;">—</div>
+        <div style="font-family:var(--font-condensed); font-weight:800; font-size:11px; color:var(--red); text-transform:uppercase; letter-spacing:0.2em;">YO-YO &amp; SKILL TOY CLUB</div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">11 / 22</div>
+  </section>
+
+
+  <!-- 12 DESIGN ELEMENTS -->
+  <section data-screen-label="12 Design Elements" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">System</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Design Elements</h2>
+    <div class="rule"></div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; flex:1; align-content:start;">
+      <div style="border:1px solid var(--border); overflow:hidden;">
+        <div style="height:100px; background:var(--navy);" class="dot-bg"></div>
+        <div style="padding:16px;">
+          <div style="font-size:12px; font-weight:700; color:var(--navy); margin-bottom:4px;">Dot Pattern</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.6;">Used on dark navy surfaces. Radial gradient white dots, 28px grid, 6% opacity. Hero backgrounds, footers, dark callout cards.</div>
+          <div style="font-family:monospace; font-size:9px; color:var(--red); margin-top:8px; background:var(--cream-mid); padding:6px 8px; line-height:1.8;">radial-gradient(rgba(255,255,255,0.06) 1px,<br>transparent 1px) / 28px 28px</div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--border); overflow:hidden;">
+        <div style="height:100px; background:var(--navy); display:flex; align-items:flex-end;">
+          <img src="assets/images/dc-skyline.svg" style="width:100%; opacity:0.18;" alt="">
+        </div>
+        <div style="padding:16px;">
+          <div style="font-size:12px; font-weight:700; color:var(--navy); margin-bottom:4px;">DC Skyline Ornament</div>
+          <div style="font-size:11px; color:var(--text-muted); line-height:1.6;">SVG silhouette. Bottom-anchored in hero sections. Opacity 14–18%, white. Reinforces regional identity. Never above 20% opacity.</div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--border); padding:24px;">
+        <div style="font-size:12px; font-weight:700; color:var(--navy); margin-bottom:12px;">Red Rule / Divider</div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div><div style="width:48px; height:3px; background:var(--red);"></div><div style="font-size:10px; color:var(--text-muted); margin-top:6px;">48px × 3px — after headings</div></div>
+          <div><div style="width:100%; height:1px; background:var(--border);"></div><div style="font-size:10px; color:var(--text-muted); margin-top:6px;">Hairline — between sections</div></div>
+          <div><div style="width:100%; height:5px; background:var(--red);"></div><div style="font-size:10px; color:var(--text-muted); margin-top:6px;">5px footer bar — page bottoms</div></div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--border); padding:24px;">
+        <div style="font-size:12px; font-weight:700; color:var(--navy); margin-bottom:12px;">Sharp Corners — Always</div>
+        <div style="display:flex; gap:12px; margin-bottom:12px;">
+          <div style="width:56px; height:56px; background:var(--red); border-radius:0;"></div>
+          <div style="width:56px; height:56px; background:var(--navy); border-radius:0;"></div>
+          <div style="width:56px; height:56px; background:var(--cream-mid); border:1px solid var(--border); border-radius:0;"></div>
+          <div style="width:56px; height:56px; background:var(--red); border-radius:0; display:flex; align-items:center; justify-content:center;"><span style="font-family:var(--font-body); font-size:9px; font-weight:700; color:#fff; letter-spacing:0.1em; text-transform:uppercase;">JOIN</span></div>
+        </div>
+        <div style="font-size:11px; color:var(--text-muted); line-height:1.6;"><strong style="color:var(--navy);">border-radius: 0 always.</strong> Cards, buttons, tags, inputs — all sharp. Core brand motif. Never round corners.</div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">12 / 22</div>
+  </section>
+
+
+  <!-- 13 BUTTONS & TAGS -->
+  <section data-screen-label="13 Buttons & Tags" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">System</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Buttons &amp; Tags</h2>
+    <div class="rule"></div>
+    <div style="margin-bottom:28px;">
+      <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">Button System</div>
+      <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:center; padding:28px; background:var(--cream-mid); border:1px solid var(--border);">
+        <button style="background:var(--red); color:#fff; border:none; padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">Join the Club</button>
+        <button style="background:var(--navy); color:#fff; border:none; padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">Learn More</button>
+        <button style="background:transparent; color:var(--red); border:2px solid var(--red); padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">View Events</button>
+      </div>
+      <div style="padding:16px 20px; background:var(--navy); display:flex; gap:14px; align-items:center;" class="dot-bg">
+        <button style="background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.5); padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">View Events</button>
+        <button style="background:var(--red); color:#fff; border:none; padding:14px 28px; font-family:var(--font-body); font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; min-height:44px; border-radius:0;">Join the Club</button>
+      </div>
+      <div style="font-size:10px; color:var(--text-muted); padding:10px 4px; line-height:1.6;">All buttons: square corners · uppercase · min-height 44px · 0.10em letter-spacing · DM Sans 700. Hover: fill darkens + translateY(-1px).</div>
+    </div>
+    <div>
+      <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px;">Tag &amp; Badge System</div>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; padding:24px; background:var(--cream-mid); border:1px solid var(--border);">
+        <span style="background:var(--red); color:#fff; font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">Events</span>
+        <span style="background:var(--navy); color:#fff; font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">1A</span>
+        <span style="background:var(--navy); color:#fff; font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">2A</span>
+        <span style="background:var(--navy); color:#fff; font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">4A</span>
+        <span style="background:var(--cream-mid); color:var(--navy); border:1px solid var(--border); font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">Free</span>
+        <span style="background:var(--teal); color:#fff; font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; padding:4px 10px;">Donate ☕</span>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">13 / 22</div>
+  </section>
+
+
+  <!-- 14 SOCIAL MEDIA POSTS -->
+  <section data-screen-label="14 Social Media" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Social Media — Posts</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 28px; line-height:1.7;">Instagram square (1:1) and landscape templates. Handle: <strong style="color:var(--navy);">@dmv_throwers</strong></p>
+    <div style="display:flex; gap:16px; flex:1; align-items:flex-start;">
+      <!-- Event post -->
+      <div style="flex-shrink:0;">
+        <div style="width:192px; height:192px; background:var(--navy); position:relative; overflow:hidden;" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--red);"></div>
+          <div style="position:absolute; inset:0; padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <img src="assets/logos/dmvt-logo.png" style="height:22px; filter:brightness(0) invert(1);" alt="">
+              <span style="background:var(--red); color:#fff; font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; padding:3px 7px;">Monthly Meet</span>
+            </div>
+            <div>
+              <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:4px;">3rd Sunday</div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:32px; line-height:0.92; color:#fff;">June<br><span style="font-style:italic;">15th</span></div>
+              <div style="width:28px; height:2px; background:var(--red); margin:8px 0;"></div>
+              <div style="font-size:9px; color:rgba(200,212,230,0.75); line-height:1.6;">Arlington Central Library<br>1–5pm · Free</div>
+            </div>
+            <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4);">@dmv_throwers</div>
+          </div>
+          <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:0; left:0; right:0; width:100%; opacity:0.12;" alt="">
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Event Announcement · 1:1</div>
+      </div>
+      <!-- Quote post -->
+      <div>
+        <div style="width:240px; height:240px; background:var(--cream); position:relative; overflow:hidden; border:1px solid var(--border);">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--red);"></div>
+          <div style="position:absolute; inset:0; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+            <img src="assets/logos/dmvt-logo.png" style="height:20px;" alt="">
+            <div>
+              <div style="font-family:var(--font-display); font-size:20px; font-weight:900; font-style:italic; line-height:1.15; color:var(--navy); margin-bottom:10px;">"All ages, all levels, always free."</div>
+              <div style="width:28px; height:2px; background:var(--red); margin-bottom:8px;"></div>
+              <div style="font-size:9px; color:var(--text-muted);">DMV Throwers · Est. 2021</div>
+            </div>
+            <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted);">@dmv_throwers</div>
+          </div>
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Quote Card · 1:1</div>
+      </div>
+      <!-- Landscape + story cover -->
+      <div style="display:flex; flex-direction:column; gap:12px; flex-shrink:0;">
+        <div>
+          <div style="width:192px; height:101px; background:var(--red); position:relative; overflow:hidden;">
+            <div style="position:absolute; inset:0; padding:16px 20px; display:flex; align-items:center; justify-content:space-between;">
+              <div>
+                <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:4px;">New Drop</div>
+                <div style="font-family:var(--font-display); font-weight:900; font-size:22px; line-height:0.95; color:#fff;">See You<br>Sunday</div>
+              </div>
+              <img src="assets/logos/dmvt-logo.png" style="height:40px; filter:brightness(0) invert(1); opacity:0.8;" alt="">
+            </div>
+          </div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Landscape · 1.91:1</div>
+        </div>
+        <div>
+          <div style="width:192px; height:101px; background:var(--cream-mid); border:1px solid var(--border); position:relative; overflow:hidden;">
+            <div style="position:absolute; inset:0; padding:16px 20px; display:flex; align-items:center; gap:14px;">
+              <div style="width:48px; height:48px; background:var(--navy); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <img src="assets/logos/dmvt-logo.png" style="height:28px; filter:brightness(0) invert(1);" alt="">
+              </div>
+              <div>
+                <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--red); margin-bottom:3px;">DMV Throwers</div>
+                <div style="font-family:var(--font-display); font-weight:900; font-size:15px; line-height:1; color:var(--navy);">Monthly<br>Meetup</div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:10px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Story Cover · 1.91:1</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">14 / 22</div>
+  </section>
+
+
+  <!-- 15 INSTAGRAM STORIES -->
+  <section data-screen-label="15 Instagram Stories" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Social Media — Stories</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 24px; line-height:1.7;">Instagram Story format (9:16 · 1080×1920px). Three template types.</p>
+    <div style="display:flex; gap:28px; justify-content:center; flex:1; align-items:flex-start;">
+      <div>
+        <div style="width:148px; height:263px; background:var(--navy); position:relative; overflow:hidden;" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--red);"></div>
+          <div style="position:absolute; inset:0; padding:16px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:8px;"><img src="assets/logos/dmvt-logo.png" style="height:18px; filter:brightness(0) invert(1);" alt=""><div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.5);">@dmv_throwers</div></div>
+            <div>
+              <span style="background:var(--red); color:#fff; font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; padding:2px 6px;">This Sunday</span>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:36px; line-height:0.9; color:#fff; margin:8px 0; font-style:italic;">June<br>15</div>
+              <div style="width:20px; height:2px; background:var(--red); margin-bottom:8px;"></div>
+              <div style="font-size:8px; color:rgba(200,212,230,0.8); line-height:1.6;">Monthly Meetup<br>Arlington Library · 1pm<br>Free · All welcome</div>
+            </div>
+            <div style="border:1px solid rgba(255,255,255,0.3); padding:6px 10px; text-align:center; font-family:var(--font-body); font-size:7px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#fff;">See You There →</div>
+          </div>
+          <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:0; width:100%; opacity:0.12;" alt="">
+        </div>
+        <div style="font-size:9px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Event Reminder</div>
+      </div>
+      <div>
+        <div style="width:148px; height:263px; background:var(--cream); position:relative; overflow:hidden; border:1px solid var(--border);">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--red);"></div>
+          <div style="position:absolute; inset:0; padding:16px; display:flex; flex-direction:column; justify-content:space-between;">
+            <img src="assets/logos/dmvt-logo.png" style="height:18px;" alt="">
+            <div>
+              <div style="font-family:var(--font-display); font-size:22px; font-weight:900; font-style:italic; line-height:1.1; color:var(--navy); margin-bottom:10px;">"This is your crew."</div>
+              <div style="width:20px; height:2px; background:var(--red); margin-bottom:8px;"></div>
+              <div style="font-size:8px; color:var(--text-muted); line-height:1.6;">DMV Throwers<br>Arlington VA · Est. 2021</div>
+            </div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted);">@dmv_throwers</div>
+          </div>
+        </div>
+        <div style="font-size:9px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Brand Quote</div>
+      </div>
+      <div>
+        <div style="width:148px; height:263px; background:var(--red); position:relative; overflow:hidden;">
+          <div style="position:absolute; inset:0; padding:16px; display:flex; flex-direction:column; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:8px;"><img src="assets/logos/dmvt-logo.png" style="height:18px; filter:brightness(0) invert(1);" alt=""><div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.6);">@dmv_throwers</div></div>
+            <div>
+              <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:6px;">Join Us</div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:30px; line-height:0.92; color:#fff; margin-bottom:10px;">Throw with<br>the DMV</div>
+              <div style="width:20px; height:2px; background:rgba(255,255,255,0.5); margin-bottom:10px;"></div>
+              <div style="font-size:8px; color:rgba(255,255,255,0.85); line-height:1.6;">dmvthrowers.club</div>
+            </div>
+            <div style="background:#fff; padding:8px 12px; text-align:center;"><div style="font-family:var(--font-body); font-size:8px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--red);">Join Free →</div></div>
+          </div>
+        </div>
+        <div style="font-size:9px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">CTA / Promo</div>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:12px; padding-top:4px;">
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:4px;">Story Guidelines</div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Safe Zone</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Keep all text 100px from top/bottom edges of 1080×1920 canvas.</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Handle</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Always show @dmv_throwers at top or bottom.</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Text Size</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Minimum 40px at 1080×1920 resolution.</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Backgrounds</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Navy dot-pattern, cream, or brand red only. No gradients.</div></div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">15 / 22</div>
+  </section>
+
+
+  <!-- 16 EVENT FLYER -->
+  <section data-screen-label="16 Event Flyer" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Event Flyer</h2>
+    <div class="rule"></div>
+    <div style="display:flex; gap:32px; flex:1; align-items:flex-start; margin-top:8px;">
+      <!-- Dark flyer -->
+      <div style="flex-shrink:0;">
+        <div style="width:240px; height:310px; background:var(--navy); position:relative; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.2);" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:var(--red);"></div>
+          <div style="padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center;">
+            <img src="assets/logos/dmvt-logo.png" style="height:22px; filter:brightness(0) invert(1);" alt="">
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Monthly Meetup</div>
+          </div>
+          <div style="padding:16px 20px;">
+            <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); margin-bottom:6px;">June 2026</div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:48px; line-height:0.88; color:#fff; margin-bottom:8px;">Sun<br><span style="font-style:italic;">June</span><br>15</div>
+            <div style="width:28px; height:2px; background:var(--red); margin-bottom:12px;"></div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--red); margin-bottom:2px;">Time</div>
+            <div style="font-size:9px; color:rgba(200,212,230,0.9); margin-bottom:8px;">1:00 – 5:00 PM</div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--red); margin-bottom:2px;">Location</div>
+            <div style="font-size:9px; color:rgba(200,212,230,0.9); margin-bottom:8px;">Arlington Central Library</div>
+            <div style="background:var(--red); padding:7px 12px; display:inline-block; margin-top:4px;">
+              <span style="font-family:var(--font-body); font-size:8px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#fff;">dmvthrowers.club</span>
+            </div>
+          </div>
+          <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:0; left:0; right:0; width:100%; opacity:0.14;" alt="">
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--red);"></div>
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Dark Variant</div>
+      </div>
+      <!-- Light flyer -->
+      <div style="flex-shrink:0;">
+        <div style="width:240px; height:310px; background:var(--cream); position:relative; overflow:hidden; border:1px solid var(--border); box-shadow:0 8px 32px rgba(0,0,0,0.08);">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:var(--red);"></div>
+          <div style="padding:20px 20px 0; display:flex; justify-content:space-between; align-items:center;">
+            <img src="assets/logos/dmvt-logo.png" style="height:22px;" alt="">
+            <span style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted);">Monthly Meetup</span>
+          </div>
+          <div style="padding:16px 20px;">
+            <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); margin-bottom:6px;">June 2026</div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:48px; line-height:0.88; color:var(--navy); margin-bottom:8px;">Sun<br><span style="font-style:italic;">June</span><br>15</div>
+            <div style="width:28px; height:2px; background:var(--red); margin-bottom:12px;"></div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--red); margin-bottom:2px;">Time</div>
+            <div style="font-size:9px; color:var(--navy); margin-bottom:8px;">1:00 – 5:00 PM</div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--red); margin-bottom:2px;">Location</div>
+            <div style="font-size:9px; color:var(--navy); margin-bottom:8px;">Arlington Central Library</div>
+            <div style="background:var(--navy); padding:7px 12px; display:inline-block; margin-top:4px;">
+              <span style="font-family:var(--font-body); font-size:8px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#fff;">dmvthrowers.club</span>
+            </div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--red);"></div>
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); margin-top:8px; text-align:center; font-weight:600;">Light Variant</div>
+      </div>
+      <!-- Specs -->
+      <div style="flex:1; display:flex; flex-direction:column; gap:12px; padding-top:4px;">
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:4px;">Flyer Specs</div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Print Size</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">8.5×11" (Letter) or A4</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Bleed</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">0.125" on all sides for professional print</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Colors</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Navy/cream for print; red accents. CMYK-safe.</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">QR Code</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Add dmvthrowers.club QR in lower right corner</div></div>
+        <div style="padding:10px 14px; background:var(--cream-mid); border-left:3px solid var(--red);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:2px;">Distribution</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Library bulletin boards, social media, Discord</div></div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">16 / 22</div>
+  </section>
+
+
+  <!-- 17 BUSINESS CARD -->
+  <section data-screen-label="17 Business Card" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Business Card</h2>
+    <div class="rule"></div>
+    <p style="font-size:13px; color:var(--text-muted); margin:0 0 24px; line-height:1.7;">Standard 3.5×2" card. Club card and organizer contact card variants.</p>
+    <div style="display:flex; gap:20px; justify-content:center; align-items:flex-start; flex:1;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; text-align:center;">Front</div>
+        <div style="width:200px; height:114px; background:var(--navy); position:relative; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.2);" class="dot-bg">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--red);"></div>
+          <div style="padding:22px 26px; display:flex; flex-direction:column; justify-content:space-between; height:100%; box-sizing:border-box;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <img src="assets/logos/dmvt-logo.png" style="height:28px; filter:brightness(0) invert(1);" alt="">
+              <div>
+                <div style="font-family:var(--font-display); font-weight:900; font-size:13px; color:#fff;">DMV THROWERS</div>
+                <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red);">Yo-Yo &amp; Skill Toy Club</div>
+              </div>
+            </div>
+            <div style="font-family:var(--font-body); font-size:9px; color:rgba(200,212,230,0.7); line-height:1.8;">Arlington Central Library · Every 3rd Sunday<br>dmvthrowers.club · @dmv_throwers<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80e3efeef4e1e3f4c0e4edf6f4e8f2eff7e5f2f3aee3ecf5e2">[email&#160;protected]</a></div>
+          </div>
+          <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:0; right:0; width:50%; opacity:0.1;" alt="">
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--red);"></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; text-align:center;">Back</div>
+        <div style="width:200px; height:114px; background:var(--red); position:relative; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,0.15);">
+          <div style="padding:22px 26px; display:flex; flex-direction:column; justify-content:center; height:100%; box-sizing:border-box; gap:4px;">
+            <div style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:0.9; color:#fff;">DMV<br><span style="font-style:italic;">Throw</span></div>
+            <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(255,255,255,0.6); margin-top:8px;">Est. 2021 · Washington DC/MD/VA</div>
+          </div>
+          <img src="assets/logos/dmvt-logo.png" style="position:absolute; right:-10px; bottom:-10px; height:80px; filter:brightness(0) invert(1); opacity:0.12;" alt="">
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; text-align:center;">Organizer Card</div>
+        <div style="width:200px; height:114px; background:var(--cream); position:relative; overflow:hidden; border:1px solid var(--border); box-shadow:0 6px 24px rgba(0,0,0,0.08);">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--red);"></div>
+          <div style="padding:22px 26px; display:flex; flex-direction:column; justify-content:space-between; height:100%; box-sizing:border-box;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <img src="assets/logos/dmvt-logo.png" style="height:22px;" alt="">
+              <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-muted);">DMV Throwers</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:17px; color:var(--navy); margin-bottom:2px;">Alex Founder</div>
+              <div style="font-family:var(--font-condensed); font-size:8px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--red); margin-bottom:10px;">Club Organizer</div>
+              <div style="font-size:9px; color:var(--text-muted); line-height:1.8;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f1929e9f85909285b1959c878599839e86948382df929d8493">[email&#160;protected]</a><br>dmvthrowers.club · @dmv_throwers</div>
+            </div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--red);"></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:20px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+      <div style="padding:12px 16px; background:var(--cream-mid); border-left:3px solid var(--navy);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:3px;">Size</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">3.5" × 2" (standard) · 0.125" bleed</div></div>
+      <div style="padding:12px 16px; background:var(--cream-mid); border-left:3px solid var(--navy);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:3px;">Paper</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">350gsm silk coated or uncoated matte</div></div>
+      <div style="padding:12px 16px; background:var(--cream-mid); border-left:3px solid var(--navy);"><div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:3px;">Print colors</div><div style="font-size:10px; color:var(--text-muted); line-height:1.5;">Navy #102040 · Red #B80000. CMYK safe.</div></div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">17 / 22</div>
+  </section>
+
+
+  <!-- 18 MERCHANDISE -->
+  <section data-screen-label="18 Merchandise" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Merchandise</h2>
+    <div class="rule"></div>
+    <div style="display:flex; gap:16px; flex:1; align-items:flex-start; margin-top:8px; justify-content:center;">
+      <div style="text-align:center;">
+        <div style="width:140px; height:155px; position:relative;">
+          <svg viewBox="0 0 200 220" width="140" height="155" style="position:absolute;top:0;left:0;"><path d="M60,10 L20,50 L45,60 L45,200 L155,200 L155,60 L180,50 L140,10 L115,25 Q100,35 85,25 Z" fill="#102040"/></svg>
+          <div style="position:absolute; top:62px; left:50%; transform:translateX(-50%); text-align:center; width:70px;">
+            <img src="assets/logos/dmvt-logo.png" style="height:32px; filter:brightness(0) invert(1);" alt="">
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-top:4px;">DMV THROWERS</div>
+          </div>
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); font-weight:600;">Navy Tee · Front</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:140px; height:155px; position:relative;">
+          <svg viewBox="0 0 200 220" width="140" height="155" style="position:absolute;top:0;left:0;"><path d="M60,10 L20,50 L45,60 L45,200 L155,200 L155,60 L180,50 L140,10 L115,25 Q100,35 85,25 Z" fill="#102040"/></svg>
+          <div style="position:absolute; top:52px; left:50%; transform:translateX(-50%); text-align:center; width:90px;">
+            <div style="font-family:var(--font-display); font-weight:900; font-size:16px; line-height:0.92; color:#fff; font-style:italic; margin-bottom:6px;">DMV<br>Throw</div>
+            <div style="width:20px; height:1px; background:var(--red); margin:4px auto 6px;"></div>
+            <div style="font-family:var(--font-condensed); font-size:6px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Est. 2021 · DC/MD/VA</div>
+          </div>
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); font-weight:600;">Navy Tee · Back</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:140px; height:155px; position:relative;">
+          <svg viewBox="0 0 200 220" width="140" height="155" style="position:absolute;top:0;left:0;"><path d="M60,10 L20,50 L45,60 L45,200 L155,200 L155,60 L180,50 L140,10 L115,25 Q100,35 85,25 Z" fill="#B80000"/></svg>
+          <div style="position:absolute; top:62px; left:50%; transform:translateX(-50%); text-align:center; width:70px;">
+            <img src="assets/logos/dmvt-logo.png" style="height:32px; filter:brightness(0) invert(1);" alt="">
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.8); margin-top:4px;">DMV THROWERS</div>
+          </div>
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); font-weight:600;">Red Tee · Front</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="width:140px; height:110px; position:relative;">
+          <svg viewBox="0 0 200 150" width="140" height="110" style="position:absolute;top:0;left:0;">
+            <ellipse cx="100" cy="80" rx="90" ry="55" fill="#102040"/>
+            <path d="M20,95 Q100,115 180,95 Q100,145 20,95Z" fill="#0c1830"/>
+            <path d="M10,100 Q100,120 190,100 L180,108 Q100,130 20,108 Z" fill="#0d1730"/>
+            <circle cx="100" cy="30" r="5" fill="#B80000"/>
+            <line x1="100" y1="30" x2="100" y2="108" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          </svg>
+          <div style="position:absolute; top:52px; left:50%; transform:translateX(-50%);">
+            <img src="assets/logos/dmvt-logo.png" style="height:24px; filter:brightness(0) invert(1);" alt="">
+          </div>
+        </div>
+        <div style="font-size:10px; color:var(--text-muted); font-weight:600; margin-top:8px;">Snapback Cap</div>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:16px; align-items:center;">
+          <div style="width:100px; height:100px; background:var(--red); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:6px;">
+            <img src="assets/logos/dmvt-logo.png" style="height:36px; filter:brightness(0) invert(1);" alt="">
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.8);">DMV THROWERS</div>
+          </div>
+          <div style="font-size:10px; color:var(--text-muted); font-weight:600;">Die-cut Sticker</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">18 / 22</div>
+  </section>
+
+
+  <!-- 19 BANNERS -->
+  <section data-screen-label="19 Banners" style="padding:72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Applications</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Banners &amp; Headers</h2>
+    <div class="rule"></div>
+    <div style="display:flex; flex-direction:column; gap:20px; flex:1;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px;">Website Hero (Full-width · 1440×600px)</div>
+        <div style="height:130px; background:var(--navy); position:relative; overflow:hidden;" class="dot-bg">
+          <div style="position:absolute; inset:0; padding:0 48px; display:flex; align-items:center; justify-content:space-between;">
+            <div>
+              <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); margin-bottom:6px;">Yo-Yo &amp; Skill Toy Club · DMV</div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:0.9; color:#fff;">More Than<br><span style="font-style:italic;">a Club</span></div>
+            </div>
+            <div style="display:flex; gap:12px; align-items:center;">
+              <button style="background:var(--red); color:#fff; border:none; padding:10px 20px; font-family:var(--font-body); font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; border-radius:0;">Next Meetup →</button>
+              <button style="background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.4); padding:10px 20px; font-family:var(--font-body); font-size:9px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; border-radius:0;">Learn More</button>
+            </div>
+          </div>
+          <img src="assets/images/dc-skyline.svg" style="position:absolute; bottom:0; left:0; right:0; width:100%; opacity:0.12;" alt="">
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--red);"></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px;">Email Header (600px wide)</div>
+        <div style="height:80px; background:var(--navy); max-width:420px; display:flex; align-items:center; padding:0 24px; gap:14px; position:relative; overflow:hidden;">
+          <img src="assets/logos/dmvt-logo.png" style="height:28px; filter:brightness(0) invert(1); flex-shrink:0;" alt="">
+          <div style="width:1px; height:28px; background:rgba(255,255,255,0.15);"></div>
+          <div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:14px; color:#fff;">DMV Throwers</div>
+            <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--red);">Yo-Yo &amp; Skill Toy Club</div>
+          </div>
+          <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--red);"></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px;">Social Profile Banner (1500×500px · Twitter/X)</div>
+        <div style="height:88px; background:var(--navy); position:relative; overflow:hidden;" class="dot-bg">
+          <div style="position:absolute; inset:0; display:flex; align-items:center; padding:0 36px; gap:20px;">
+            <img src="assets/logos/dmvt-logo.png" style="height:44px; filter:brightness(0) invert(1);" alt="">
+            <div>
+              <div style="font-family:var(--font-display); font-weight:900; font-size:24px; line-height:0.95; color:#fff;">DMV Throwers</div>
+              <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red);">Yo-Yo &amp; Skill Toy Club · DC/MD/VA · Est. 2021</div>
+            </div>
+          </div>
+          <img src="assets/images/dc-skyline.svg" style="position:absolute; right:0; bottom:0; width:40%; opacity:0.12;" alt="">
+          <div style="position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--red);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">19 / 22</div>
+  </section>
+
+
+  <!-- 20 VSYC-26 BRAND -->
+  <section data-screen-label="20 VSYC-26 Brand" style="background:var(--navy-deep); display:flex; flex-direction:column;" class="dot-bg">
+    <div style="height:5px; background:var(--gold); flex-shrink:0;"></div>
+    <div style="padding:60px 72px; flex:1; display:flex; flex-direction:column;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:28px;">
+        <div>
+          <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">Virginia State Yo-Yo Contest</div>
+          <h2 style="font-family:var(--font-display); font-weight:900; font-size:44px; line-height:0.95; color:#fff; margin:0 0 16px;">VSYC-26<br>Brand System</h2>
+          <div style="width:48px; height:3px; background:var(--gold);"></div>
+        </div>
+        <img src="assets/logos/vsyc26-va-logo-512.png" style="height:80px; object-fit:contain;" alt="VSYC-26 logo">
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; flex:1; align-content:start;">
+        <div>
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(200,168,76,0.7); margin-bottom:12px;">VSYC-26 Color Palette</div>
+          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid rgba(255,255,255,0.1);">
+            <div><div style="height:52px; background:#C9A84C;"></div><div style="padding:8px; background:rgba(255,255,255,0.04); border-top:1px solid rgba(255,255,255,0.08);"><div style="font-size:9px; font-weight:700; color:#fff;">Gold</div><div style="font-family:monospace; font-size:8px; color:var(--gold); margin-top:1px;">#C9A84C</div><div style="font-size:8px; color:rgba(200,212,230,0.5);">Primary</div></div></div>
+            <div><div style="height:52px; background:#e8c97a;"></div><div style="padding:8px; background:rgba(255,255,255,0.04); border-top:1px solid rgba(255,255,255,0.08);"><div style="font-size:9px; font-weight:700; color:#fff;">Gold Lt</div><div style="font-family:monospace; font-size:8px; color:var(--gold); margin-top:1px;">#e8c97a</div><div style="font-size:8px; color:rgba(200,212,230,0.5);">Hover</div></div></div>
+            <div><div style="height:52px; background:#C8102E;"></div><div style="padding:8px; background:rgba(255,255,255,0.04); border-top:1px solid rgba(255,255,255,0.08);"><div style="font-size:9px; font-weight:700; color:#fff;">Red</div><div style="font-family:monospace; font-size:8px; color:var(--gold); margin-top:1px;">#C8102E</div><div style="font-size:8px; color:rgba(200,212,230,0.5);">Accent</div></div></div>
+            <div><div style="height:52px; background:#1a2744;"></div><div style="padding:8px; background:rgba(255,255,255,0.04); border-top:1px solid rgba(255,255,255,0.08);"><div style="font-size:9px; font-weight:700; color:#fff;">Navy</div><div style="font-family:monospace; font-size:8px; color:var(--gold); margin-top:1px;">#1a2744</div><div style="font-size:8px; color:rgba(200,212,230,0.5);">Surface</div></div></div>
+          </div>
+          <div style="margin-top:16px; display:flex; gap:10px;">
+            <button style="background:var(--gold); color:#0d1428; border:none; padding:12px 22px; font-family:var(--font-body); font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; border-radius:0;">Register Now</button>
+            <button style="background:transparent; color:var(--gold); border:2px solid var(--gold); padding:12px 22px; font-family:var(--font-body); font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; border-radius:0;">View Rules</button>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:rgba(200,168,76,0.7); margin-bottom:12px;">How VSYC-26 Differs</div>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; gap:12px; padding:9px 14px; background:rgba(255,255,255,0.04); border-left:3px solid var(--gold);"><div><div style="font-size:11px; font-weight:700; color:#fff;">Primary Accent</div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:1px;">Red → Gold (#C9A84C)</div></div></div>
+            <div style="display:flex; gap:12px; padding:9px 14px; background:rgba(255,255,255,0.04); border-left:3px solid var(--gold);"><div><div style="font-size:11px; font-weight:700; color:#fff;">Tone</div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:1px;">More formal — official competition voice</div></div></div>
+            <div style="display:flex; gap:12px; padding:9px 14px; background:rgba(255,255,255,0.04); border-left:3px solid var(--gold);"><div><div style="font-size:11px; font-weight:700; color:#fff;">Background</div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:1px;">Navy deep #0d1428 (darker than main)</div></div></div>
+            <div style="display:flex; gap:12px; padding:9px 14px; background:rgba(255,255,255,0.04); border-left:3px solid var(--gold);"><div><div style="font-size:11px; font-weight:700; color:#fff;">Logo</div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:1px;">Use VSYC-26 specific logo only</div></div></div>
+            <div style="display:flex; gap:12px; padding:9px 14px; background:rgba(255,255,255,0.04); border-left:3px solid var(--gold);"><div><div style="font-size:11px; font-weight:700; color:#fff;">Sharp corners</div><div style="font-size:10px; color:rgba(200,212,230,0.6); margin-top:1px;">Same border-radius: 0 rule applies</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height:5px; background:var(--gold);"></div>
+    <div style="font-family:var(--font-condensed); font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.35); position:absolute; bottom:12px; right:40px;">20 / 22</div>
+  </section>
+
+
+  <!-- 21 VSYC APPLICATIONS -->
+  <section data-screen-label="21 VSYC Applications" style="background:var(--navy-deep); position:relative;" class="dot-bg">
+    <div style="height:5px; background:var(--gold);"></div>
+    <div style="padding:52px 72px; display:flex; flex-direction:column; gap:24px;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:10px; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:6px;">Applications</div>
+        <h2 style="font-family:var(--font-display); font-weight:900; font-size:36px; line-height:1; color:#fff; margin:0 0 6px;">VSYC-26 Assets</h2>
+        <div style="width:48px; height:3px; background:var(--gold);"></div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px;">
+        <div>
+          <div style="font-size:9px; font-weight:700; color:rgba(200,168,76,0.6); margin-bottom:8px; font-family:var(--font-condensed); letter-spacing:0.14em; text-transform:uppercase;">Contest Flyer</div>
+          <div style="height:200px; background:#1a2744; border:1px solid rgba(201,168,76,0.25); position:relative; overflow:hidden;">
+            <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--gold);"></div>
+            <div style="padding:16px; height:100%; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <img src="assets/logos/vsyc26-va-logo-512.png" style="height:32px; object-fit:contain;" alt="">
+                <span style="background:var(--gold); color:#0d1428; font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; padding:3px 7px;">2026</span>
+              </div>
+              <div>
+                <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:4px;">Virginia State</div>
+                <div style="font-family:var(--font-display); font-weight:900; font-size:24px; line-height:0.9; color:#fff;">Yo-Yo<br><span style="font-style:italic;">Contest</span></div>
+                <div style="width:20px; height:1px; background:var(--gold); margin:8px 0;"></div>
+                <div style="font-size:8px; color:rgba(200,212,230,0.7); line-height:1.6;">Arlington VA · 2026</div>
+              </div>
+              <div style="background:var(--gold); padding:6px 12px; display:inline-block;">
+                <span style="font-family:var(--font-body); font-size:7px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#0d1428;">Register Now</span>
+              </div>
+            </div>
+            <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:9px; font-weight:700; color:rgba(200,168,76,0.6); margin-bottom:8px; font-family:var(--font-condensed); letter-spacing:0.14em; text-transform:uppercase;">Social Post · 1:1</div>
+          <div style="height:200px; width:200px; background:#0d1428; border:1px solid rgba(201,168,76,0.2); position:relative; overflow:hidden;" class="dot-bg">
+            <div style="position:absolute; top:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+            <div style="padding:18px; display:flex; flex-direction:column; justify-content:space-between; height:100%; box-sizing:border-box;">
+              <img src="assets/logos/vsyc26-va-logo-512.png" style="height:28px; object-fit:contain; object-position:left;" alt="">
+              <div>
+                <div style="font-family:var(--font-condensed); font-size:8px; font-weight:800; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:6px;">Now Accepting</div>
+                <div style="font-family:var(--font-display); font-weight:900; font-size:28px; line-height:0.9; color:#fff; margin-bottom:8px;">Registrations<br><span style="font-style:italic;">Open</span></div>
+              </div>
+              <div style="font-family:var(--font-condensed); font-size:7px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(200,168,76,0.5);">@dmv_throwers</div>
+            </div>
+            <div style="position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--gold);"></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:9px; font-weight:700; color:rgba(200,168,76,0.6); margin-bottom:8px; font-family:var(--font-condensed); letter-spacing:0.14em; text-transform:uppercase;">Division Badges</div>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:center; gap:10px; padding:8px 12px; background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15);"><span style="background:var(--gold); color:#0d1428; font-family:var(--font-condensed); font-size:12px; font-weight:800; letter-spacing:0.1em; padding:4px 8px; min-width:28px; text-align:center;">1A</span><span style="font-family:var(--font-condensed); font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.8);">String Trick</span></div>
+            <div style="display:flex; align-items:center; gap:10px; padding:8px 12px; background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15);"><span style="background:var(--gold); color:#0d1428; font-family:var(--font-condensed); font-size:12px; font-weight:800; letter-spacing:0.1em; padding:4px 8px; min-width:28px; text-align:center;">2A</span><span style="font-family:var(--font-condensed); font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.8);">Looping</span></div>
+            <div style="display:flex; align-items:center; gap:10px; padding:8px 12px; background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15);"><span style="background:var(--gold); color:#0d1428; font-family:var(--font-condensed); font-size:12px; font-weight:800; letter-spacing:0.1em; padding:4px 8px; min-width:28px; text-align:center;">3A</span><span style="font-family:var(--font-condensed); font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.8);">Double String</span></div>
+            <div style="display:flex; align-items:center; gap:10px; padding:8px 12px; background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15);"><span style="background:var(--gold); color:#0d1428; font-family:var(--font-condensed); font-size:12px; font-weight:800; letter-spacing:0.1em; padding:4px 8px; min-width:28px; text-align:center;">4A</span><span style="font-family:var(--font-condensed); font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.8);">Offstring</span></div>
+            <div style="display:flex; align-items:center; gap:10px; padding:8px 12px; background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15);"><span style="background:var(--gold); color:#0d1428; font-family:var(--font-condensed); font-size:12px; font-weight:800; letter-spacing:0.1em; padding:4px 8px; min-width:28px; text-align:center;">5A</span><span style="font-family:var(--font-condensed); font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.8);">Counterweight</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height:5px; background:var(--gold); position:absolute; bottom:0; left:0; right:0;"></div>
+    <div style="font-family:var(--font-condensed); font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.35); position:absolute; bottom:12px; right:40px;">21 / 22</div>
+  </section>
+
+
+  <!-- 22 QUICK REFERENCE -->
+  <section data-screen-label="22 Quick Reference" style="padding:64px 72px; display:flex; flex-direction:column;">
+    <div class="eyebrow" style="margin-bottom:6px;">Reference</div>
+    <h2 style="font-family:var(--font-display); font-weight:900; font-size:40px; line-height:1; margin:0 0 6px;">Quick Reference</h2>
+    <div class="rule"></div>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; flex:1; align-content:start;">
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid var(--red);">Colors</div>
+        <div style="display:flex; flex-direction:column;">
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Red</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#B80000</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Navy</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#102040</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Cream</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#fffdfa</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Cream Mid</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#f7f3ec</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Red Dark</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#7a0000</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Teal</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#13C3A3</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Muted</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#4a5a7a</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">Border</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#b0a890</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:10px; font-weight:600; color:var(--navy);">VSYC Gold</span><span style="font-size:10px; color:var(--red); font-family:monospace;">#C9A84C</span></div>
+        </div>
+        <div style="margin-top:14px;">
+          <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); margin-bottom:8px; padding-bottom:6px; border-bottom:2px solid var(--red);">Contact</div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:9px; font-weight:700; color:var(--navy);">Website</span><span style="font-size:9px; color:var(--text-muted);">dmvthrowers.club</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:9px; font-weight:700; color:var(--navy);">Instagram</span><span style="font-size:9px; color:var(--text-muted);">@dmv_throwers</span></div>
+          <div style="display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid var(--border);"><span style="font-size:9px; font-weight:700; color:var(--navy);">Email</span><span style="font-size:9px; color:var(--text-muted);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c3a0acadb7a2a0b783a7aeb5b7abb1acb4a6b1b0eda0afb6a1">[email&#160;protected]</a></span></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid var(--red);">Typography</div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="padding:10px 12px; background:var(--cream-mid); border-left:3px solid var(--navy);"><div style="font-size:11px; font-weight:700; color:var(--navy);">Playfair Display</div><div style="font-size:9px; color:var(--red); font-family:monospace; margin:1px 0;">700, 900</div><div style="font-size:9px; color:var(--text-muted);">Hero, headings, brand</div></div>
+          <div style="padding:10px 12px; background:var(--cream-mid); border-left:3px solid var(--navy);"><div style="font-size:11px; font-weight:700; color:var(--navy);">DM Sans</div><div style="font-size:9px; color:var(--red); font-family:monospace; margin:1px 0;">400, 600, 700</div><div style="font-size:9px; color:var(--text-muted);">Body, UI, buttons</div></div>
+          <div style="padding:10px 12px; background:var(--cream-mid); border-left:3px solid var(--navy);"><div style="font-size:11px; font-weight:700; color:var(--navy);">Barlow Condensed</div><div style="font-size:9px; color:var(--red); font-family:monospace; margin:1px 0;">700, 800 ALL CAPS</div><div style="font-size:9px; color:var(--text-muted);">Labels, tags, eyebrows</div></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); margin-bottom:10px; padding-bottom:6px; border-bottom:2px solid var(--red);">Key Rules</div>
+        <div style="display:flex; flex-direction:column; gap:0;">
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ border-radius: 0 always</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ Canonical red = #B80000</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ Playfair Display for all headings</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ Barlow Condensed labels ALL CAPS</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ Nav links: DM Sans 700 ALL CAPS</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ Min button height 44px</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ White logo on dark via CSS filter</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ Dot pattern on navy surfaces only</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ Teal = donate button only</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ VSYC gold replaces red accents</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0; border-bottom:1px solid var(--border);">✓ No emoji except ☕ donate button</div>
+          <div style="font-size:10px; color:var(--navy); line-height:1.5; padding:4px 0;">✓ Transitions: 0.2s ease only</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:20px; background:var(--navy); padding:14px 20px; display:flex; align-items:center; justify-content:space-between;" class="dot-bg">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/logos/dmvt-logo.png" style="height:20px; filter:brightness(0) invert(1);" alt="">
+        <span style="font-family:var(--font-condensed); font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.6);">DMV Throwers Brand Guidelines 2026</span>
+      </div>
+      <span style="font-size:10px; color:rgba(255,255,255,0.4);">dmvthrowers.club</span>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="slide-num">22 / 22</div>
+  </section>
+
+</deck-stage>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/json" id="speaker-notes">
+[
+  "Welcome to the DMV Throwers Brand Guidelines. This document covers all brand assets for the club and its sub-brands.",
+  "Use the table of contents to jump to any section. Brand Identity covers core visual and verbal standards; Applications shows real-world usage.",
+  "DMV Throwers was founded in 2021 as the Mid-Atlantic's home for yo-yo and skill toy players. Community first, always free.",
+  "Our voice is direct and welcoming. Short sentences, second person, no corporate language. These examples show the difference.",
+  "The glyph combines a yo-yo, DC monuments, and three stars from the DC flag. Always use from the approved assets folder.",
+  "Six approved logo variations covering light, dark, red, B&W, and compact uses. Clear space = 0.5× glyph height on all sides.",
+  "Logo do's and don'ts. The most critical rules: never alter colors, never add effects, never place on busy photography.",
+  "Three primary colors: Brand Red #B80000, Navy #102040, Cream #fffdfa. These form the core of all products.",
+  "Six approved color pairings. Always check contrast. Red on cream is large-text only.",
+  "Three-font system: Playfair Display for authority, DM Sans for clarity, Barlow Condensed for emphasis. No other fonts.",
+  "Type scale from 88px hero down to 10px eyebrow. Every step has a defined role.",
+  "Four core design elements: dot pattern, DC skyline ornament, red rule dividers, and sharp corners everywhere.",
+  "Button and tag system. All buttons square, uppercase, minimum 44px height. Tags use Barlow Condensed.",
+  "Instagram post templates in three formats. Always show @dmv_throwers handle.",
+  "Story templates at 9:16. Three types: event reminder, brand quote, and CTA.",
+  "Event flyer in two variants: dark navy and light cream. Letter format, two-column layout.",
+  "Business cards in three variants: club card, back, and organizer contact card. Standard 3.5×2 inch.",
+  "Merchandise: navy tee, red tee, snapback cap, and stickers. Logo always white on dark.",
+  "Banner formats: website hero, email header, social profile banner, and pull-up retractable stand.",
+  "VSYC-26 uses gold instead of red, deeper navy backgrounds, and a more formal tone. Same sharp-corner system.",
+  "VSYC-26 applications: contest flyer, social post, and division badges.",
+  "Quick reference card. Print this and keep it handy. All colors, fonts, contacts, and rules in one place."
+]
+</script>
+<script>
+  document.fonts.ready.then(() => {
+    setTimeout(() => window.print(), 500);
+  });
+</script>
+</body>
+</html>

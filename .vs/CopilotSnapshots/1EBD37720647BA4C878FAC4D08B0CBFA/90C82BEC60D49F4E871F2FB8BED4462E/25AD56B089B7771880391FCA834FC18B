@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jotfor.ms; frame-src https://form.jotform.com https://formspree.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cdn.jotfor.ms https://form.jotform.com https://formspree.io; form-action 'self' https://formspree.io;"/>
+  <title>Events - DMV Throwers · Yo-Yo & Skill Toy Club · DC MD VA</title>
+  <meta name="description" content="Upcoming yo-yo meetups and events for DMV Throwers. Free monthly meetups every 3rd Sunday at Arlington Central Library in Arlington, VA. All ages welcome."/>
+  <meta property="og:title" content="Events - DMV Throwers · Yo-Yo & Skill Toy Club"/>
+  <meta property="og:description" content="Free monthly yo-yo meetups every 3rd Sunday at Arlington Central Library · No registration required"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta property="og:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:site_name" content="DMV Throwers"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@dmv_throwers"/>
+  <meta name="twitter:title" content="Events - DMV Throwers · Yo-Yo & Skill Toy Club"/>
+  <meta name="twitter:description" content="Free monthly yo-yo meetups every 3rd Sunday at Arlington Central Library · No registration required"/>
+  <meta name="twitter:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta name="twitter:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:url" content="https://dmvthrowers.club/events.html"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="keywords" content="yo-yo meetup DC, yo-yo meetup Virginia, yo-yo events Arlington VA, skill toy meetup DMV, free yo-yo event Northern Virginia, DMV Throwers events"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="geo.region" content="US-VA"/>
+  <meta name="geo.placename" content="Arlington, Virginia"/>
+  <link rel="icon" type="image/png" href="assets/images/logo.png"/>
+  <link rel="canonical" href="https://dmvthrowers.club/events.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dmvthrowers.club/"},
+        {"@type": "ListItem", "position": 2, "name": "Events", "item": "https://dmvthrowers.club/events.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "DMV Throwers April 2026 Monthly Meetup",
+      "startDate": "2026-04-19T13:00:00-04:00",
+      "endDate": "2026-04-19T16:00:00-04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {"@type": "Place", "name": "Arlington Central Library — Barbara M. Donnellan Auditorium", "address": {"@type": "PostalAddress", "streetAddress": "1015 N Quincy St", "addressLocality": "Arlington", "addressRegion": "VA", "postalCode": "22201", "addressCountry": "US"}},
+      "organizer": {"@type": "Organization", "name": "DMV Throwers Yo-Yo & Skill Toy Club", "url": "https://dmvthrowers.club"},
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
+      "image": "https://dmvthrowers.club/assets/images/events/DMV%20Throwers%20April%202026.png",
+      "url": "https://dmvthrowers.club/events.html",
+      "isAccessibleForFree": true
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "DMV Throwers May 2026 Monthly Meetup",
+      "startDate": "2026-05-17T13:00:00-04:00",
+      "endDate": "2026-05-17T16:00:00-04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {"@type": "Place", "name": "Arlington Central Library — Barbara M. Donnellan Auditorium", "address": {"@type": "PostalAddress", "streetAddress": "1015 N Quincy St", "addressLocality": "Arlington", "addressRegion": "VA", "postalCode": "22201", "addressCountry": "US"}},
+      "organizer": {"@type": "Organization", "name": "DMV Throwers Yo-Yo & Skill Toy Club", "url": "https://dmvthrowers.club"},
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
+      "image": "https://dmvthrowers.club/assets/images/events/DMV%20Throwers%20May%202026.png",
+      "url": "https://dmvthrowers.club/events.html",
+      "isAccessibleForFree": true
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "DMV Throwers June 2026 Monthly Meetup",
+      "startDate": "2026-06-21T13:00:00-04:00",
+      "endDate": "2026-06-21T16:00:00-04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {"@type": "Place", "name": "Arlington Central Library — Barbara M. Donnellan Auditorium", "address": {"@type": "PostalAddress", "streetAddress": "1015 N Quincy St", "addressLocality": "Arlington", "addressRegion": "VA", "postalCode": "22201", "addressCountry": "US"}},
+      "organizer": {"@type": "Organization", "name": "DMV Throwers Yo-Yo & Skill Toy Club", "url": "https://dmvthrowers.club"},
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
+      "image": "https://dmvthrowers.club/assets/images/events/DMV%20Throwers%20June%202026.png",
+      "url": "https://dmvthrowers.club/events.html",
+      "isAccessibleForFree": true
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "DMV Throwers July 2026 Monthly Meetup",
+      "startDate": "2026-07-19T13:00:00-04:00",
+      "endDate": "2026-07-19T16:00:00-04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {"@type": "Place", "name": "Arlington Central Library — Barbara M. Donnellan Auditorium", "address": {"@type": "PostalAddress", "streetAddress": "1015 N Quincy St", "addressLocality": "Arlington", "addressRegion": "VA", "postalCode": "22201", "addressCountry": "US"}},
+      "organizer": {"@type": "Organization", "name": "DMV Throwers Yo-Yo & Skill Toy Club", "url": "https://dmvthrowers.club"},
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
+      "image": "https://dmvthrowers.club/assets/images/events/DMV%20Throwers%20July%202026.png",
+      "url": "https://dmvthrowers.club/events.html",
+      "isAccessibleForFree": true
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "DMV Throwers August 2026 Monthly Meetup",
+      "startDate": "2026-08-16T13:00:00-04:00",
+      "endDate": "2026-08-16T16:00:00-04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {"@type": "Place", "name": "Arlington Central Library — Barbara M. Donnellan Auditorium", "address": {"@type": "PostalAddress", "streetAddress": "1015 N Quincy St", "addressLocality": "Arlington", "addressRegion": "VA", "postalCode": "22201", "addressCountry": "US"}},
+      "organizer": {"@type": "Organization", "name": "DMV Throwers Yo-Yo & Skill Toy Club", "url": "https://dmvthrowers.club"},
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"},
+      "image": "https://dmvthrowers.club/assets/images/events/DMV%20Throwers%20August%202026.png",
+      "url": "https://dmvthrowers.club/events.html",
+      "isAccessibleForFree": true
+    }
+  ]
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <style>
+    /* Page-specific styles only; shared base styles come from assets/css/main.css */
+    /* Fixed event card structure */
+    .event-card { background: #fffaf2; border: 1px solid #ece3d2; border-left: 4px solid var(--navy); margin-bottom: 24px; overflow: hidden; transition: transform 0.15s, box-shadow 0.15s; }
+    .event-card:hover { transform: translateX(4px); box-shadow: -4px 4px 0 var(--red); }
+    .event-card-special { background: #1f4f8a; border-left-color: #153b66; }
+    .event-card-special:hover { box-shadow: -4px 4px 0 #153b66; }
+    .event-card-special .event-type,
+    .event-card-special .event-name,
+    .event-card-special .event-loc,
+    .event-card-special .event-date,
+    .event-card-special .event-day { color: white; }
+    .event-card-special .event-type { opacity: 0.92; }
+    .event-card-holiday { background: #2f7d4c; border-left-color: #1e5b36; }
+    .event-card-holiday:hover { box-shadow: -4px 4px 0 #1e5b36; }
+    .event-card-holiday .event-type,
+    .event-card-holiday .event-name,
+    .event-card-holiday .event-loc,
+    .event-card-holiday .event-date,
+    .event-card-holiday .event-day { color: white; }
+    .event-card-holiday .event-type { opacity: 0.95; }
+    .event-card-body { padding: 20px 24px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; }
+    .event-type { font-size: 0.65rem; letter-spacing: 0.18em; font-weight: 700; color: var(--red); margin-bottom: 6px; }
+    .event-name { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.3rem; color: var(--navy); }
+    .event-loc { font-size: 0.88rem; color: var(--text-muted); margin-top: 4px; line-height: 1.5; }
+    .event-date { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--red); text-align: right; white-space: nowrap; letter-spacing: 0.01em; }
+    .event-day { font-size: 0.8rem; color: var(--text-muted); text-align: right; }
+    .badge-row { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--cream-mid); border: 1px solid var(--border); padding: 8px 16px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; }
+    .events-section-bg { background: white; }
+    .events-desc { color: var(--text-muted); margin-bottom: 32px; font-size: 0.95rem; }
+    .event-btn-small { margin-top: 10px; padding: 7px 18px; font-size: 0.75rem; display: inline-block; }
+    .event-btn-disabled { background: #9aa3b8; color: white; cursor: not-allowed; pointer-events: none; }
+    @media (max-width: 768px) {
+      .event-card-body { flex-direction: column; align-items: flex-start; }
+      .event-date, .event-day { text-align: left; }
+    }
+    @media (max-width: 480px) {
+      .event-card-body { padding: 18px 16px; }
+      .event-name { font-size: 1.15rem; }
+      .event-date { font-size: 1.05rem; }
+      .event-loc { font-size: 0.84rem; }
+      .events-desc { font-size: 0.88rem; line-height: 1.65; }
+      .badge-row { margin-top: 24px; gap: 8px; }
+      .badge { font-size: 0.72rem; letter-spacing: 0.06em; padding: 7px 12px; }
+      .event-btn-small { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="top-bar">
+  <span>NEXT MEET: APRIL 19, 2026 · ARLINGTON CENTRAL LIBRARY · ARLINGTON VA</span>
+  <a href="https://arlingtonva.libcal.com/event/15203836" target="_blank" rel="noopener noreferrer">RSVP →</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/images/logo.png" alt="DMV Throwers Logo" class="header-logo"/>
+      <div>
+        <div class="nav-brand-text-main">DMV THROWERS</div>
+        <div class="nav-brand-text-sub">YO-YO & SKILL TOY CLUB</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">ABOUT</a>
+      <a href="team.html" class="nav-link">TEAM</a>
+      <a href="events.html" class="nav-link active">EVENTS</a>
+      <a href="gallery.html" class="nav-link">GALLERY</a>
+      <a href="resources.html" class="nav-link">RESOURCES</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="nav-link nav-donate">☕ DONATE</a>
+      <a href="vsyc26.html" class="nav-link nav-vsyc">VSYC-26 →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">ABOUT</a>
+  <a href="team.html">TEAM</a>
+  <a href="events.html">EVENTS</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="resources.html">RESOURCES</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="mobile-donate">☕ DONATE</a>
+  <a href="vsyc26.html" class="mobile-vsyc">VSYC-26 → VIRGINIA STATE YO-YO CONTEST</a>
+</div>
+
+<main>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="red-tag">DMV THROWERS</span>
+    <h1 class="page-hero-title">Events</h1>
+    <p class="page-hero-sub">DC · MD · VA</p>
+  </div>
+  <div class="page-hero-skyline">
+    <img src="assets/images/dc-skyline-photo.png" alt="" aria-hidden="true"/>
+  </div>
+</div>
+
+<section id="events" class="events-section-bg">
+  <div class="section">
+    <div class="red-tag">SCHEDULE</div>
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="divider"></div>
+    <p class="events-desc">
+      Free monthly meetups every 3rd Sunday, 1–4 PM, at Arlington Central Library. No registration required, and loaner yo-yos are available.
+    </p>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">April 19</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <a href="https://arlingtonva.libcal.com/event/15203836" target="_blank" rel="noopener noreferrer" class="btn btn-red event-btn-small">RSVP →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">May 17</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <a href="https://arlingtonva.libcal.com/event/15919319" target="_blank" rel="noopener noreferrer" class="btn btn-red event-btn-small">RSVP →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-special">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">★ SPECIAL EVENT WORKSHOP</div>
+          <div class="event-name">Cascades Library Yo-Yo Workshop</div>
+          <div class="event-loc">21030 Whitfield Pl, Potomac Falls, VA 20165</div>
+        </div>
+        <div>
+          <div class="event-date">May 2</div>
+          <div class="event-day">Saturday · 2–4 PM</div>
+          <span class="btn event-btn-small event-btn-disabled" aria-disabled="true">RSVP COMING SOON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-holiday">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● NATIONAL HOLIDAY</div>
+          <div class="event-name">Memorial Day</div>
+          <div class="event-loc">Federal holiday — no regular meetup. Enjoy the long weekend!</div>
+        </div>
+        <div>
+          <div class="event-date">May 25</div>
+          <div class="event-day">Monday</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-holiday">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● HOLIDAY / INFORMATIONAL</div>
+          <div class="event-name">National Yo-Yo Day</div>
+          <div class="event-loc">Informational post only on June 6. No regular meetup this day.</div>
+        </div>
+        <div>
+          <div class="event-date">June 6</div>
+          <div class="event-day">Saturday</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">June 21</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <a href="https://arlingtonva.libcal.com/event/15919320" target="_blank" rel="noopener noreferrer" class="btn btn-red event-btn-small">RSVP →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-special">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">★ SPECIAL EVENT</div>
+          <div class="event-name">Adult-Focused Meetup at Continues Arcade</div>
+          <div class="event-loc">1050 N Fayette St, Alexandria, VA 22314</div>
+        </div>
+        <div>
+          <div class="event-date">June TBD</div>
+          <div class="event-day">Date in June TBD</div>
+          <span class="btn event-btn-small event-btn-disabled" aria-disabled="true">RSVP COMING SOON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-holiday">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● NATIONAL HOLIDAY</div>
+          <div class="event-name">Independence Day</div>
+          <div class="event-loc">Federal holiday — no regular meetup. Happy Fourth of July!</div>
+        </div>
+        <div>
+          <div class="event-date">July 4</div>
+          <div class="event-day">Saturday</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">July 19</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <a href="https://arlingtonva.libcal.com/event/15919321" target="_blank" rel="noopener noreferrer" class="btn btn-red event-btn-small">RSVP →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">August 16</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <a href="https://arlingtonva.libcal.com/event/15919322" target="_blank" rel="noopener noreferrer" class="btn btn-red event-btn-small">RSVP →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-holiday">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● NATIONAL HOLIDAY</div>
+          <div class="event-name">Labor Day</div>
+          <div class="event-loc">Federal holiday — no regular meetup. Enjoy the holiday weekend!</div>
+        </div>
+        <div>
+          <div class="event-date">September 7</div>
+          <div class="event-day">Monday</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-special">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">★ SPECIAL EVENT</div>
+          <div class="event-name">Virginia State Yo-Yo Contest 2026</div>
+          <div class="event-loc">Dulles Town Center · 21100 Dulles Town Circle, Sterling VA 20166</div>
+        </div>
+        <div>
+          <div class="event-date">September 19</div>
+          <div class="event-day">Saturday · 10 AM – 7 PM</div>
+          <a href="vsyc26.html" class="btn btn-red event-btn-small">DETAILS →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">September 20</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <span class="btn event-btn-small event-btn-disabled" aria-disabled="true">RSVP COMING SOON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">October 18</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <span class="btn event-btn-small event-btn-disabled" aria-disabled="true">RSVP COMING SOON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">November 15</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <span class="btn event-btn-small event-btn-disabled" aria-disabled="true">RSVP COMING SOON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-holiday">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● NATIONAL HOLIDAY</div>
+          <div class="event-name">Thanksgiving</div>
+          <div class="event-loc">Federal holiday — no regular meetup. Happy Thanksgiving!</div>
+        </div>
+        <div>
+          <div class="event-date">November 26</div>
+          <div class="event-day">Thursday</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● MONTHLY MEETUP</div>
+          <div class="event-name">Arlington Central Library</div>
+          <div class="event-loc">1015 N Quincy St, Arlington VA 22201 · Barbara M. Donnellan Auditorium</div>
+        </div>
+        <div>
+          <div class="event-date">December 20</div>
+          <div class="event-day">Sunday · 1–4 PM</div>
+          <span class="btn event-btn-small event-btn-disabled" aria-disabled="true">RSVP COMING SOON</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card event-card-holiday">
+      <div class="event-card-body">
+        <div>
+          <div class="event-type">● NATIONAL HOLIDAY</div>
+          <div class="event-name">Christmas</div>
+          <div class="event-loc">Federal holiday — no regular meetup. Happy Holidays!</div>
+        </div>
+        <div>
+          <div class="event-date">December 25</div>
+          <div class="event-day">Friday</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="badge-row">
+      <span class="badge">🎟 FREE ENTRY</span>
+      <span class="badge">🪀 ALL SKILL LEVELS</span>
+      <span class="badge">👨‍👩‍👧 FAMILY FRIENDLY</span>
+      <span class="badge">📍 DC · MD · VA</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="DMV Throwers" class="footer-logo" loading="lazy"/>
+        <div>
+          <div class="footer-brand-main">DMV THROWERS</div>
+          <div class="footer-brand-sub">YO-YO & SKILL TOY CLUB · DC · VA · MD</div>
+        </div>
+      </div>
+      <div>
+        <a href="index.html" class="footer-link">About</a>
+        <a href="team.html" class="footer-link">Team</a>
+        <a href="events.html" class="footer-link">Events</a>
+        <a href="gallery.html" class="footer-link">Gallery</a>
+        <a href="resources.html" class="footer-link">Resources</a>
+        <a href="faq.html" class="footer-link">FAQ</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+        <a href="vsyc26.html" class="footer-link footer-vsyc">VSYC-26</a>
+        <a href="https://github.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 DMV Throwers · Est. 2021 · Yo-Yo & Skill Toy Club · DC · Northern Virginia · Maryland</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('mobile-menu').classList.remove('open'));
+  });
+</script>
+  <script src="assets/js/mobile-enhancements.js" defer></script>
+</body>
+</html>

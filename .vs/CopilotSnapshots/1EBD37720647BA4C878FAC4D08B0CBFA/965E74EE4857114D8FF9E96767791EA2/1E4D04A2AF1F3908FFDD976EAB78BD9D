@@ -1,0 +1,12 @@
+﻿User-agent: *
+Allow: /
+Disallow: /.github/
+Disallow: /.claude/
+Disallow: /.vs/
+Disallow: /.vscode/
+Disallow: /scripts/
+Disallow: /agents/
+Disallow: /skills/
+Disallow: /*.md
+
+Sitemap: https://dmvthrowers.club/sitemap.xml

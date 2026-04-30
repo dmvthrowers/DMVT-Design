@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jotfor.ms; frame-src https://form.jotform.com https://formspree.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cdn.jotfor.ms https://form.jotform.com https://formspree.io; form-action 'self' https://formspree.io;"/>
+  <title>FAQ - DMV Throwers · Yo-Yo & Skill Toy Club · DC MD VA</title>
+  <meta name="description" content="Frequently asked questions about DMV Throwers yo-yo and skill toy club. Free meetups, all ages welcome."/>
+  <meta property="og:title" content="FAQ - DMV Throwers · Yo-Yo & Skill Toy Club"/>
+  <meta property="og:description" content="Answers to common questions about our free yo-yo meetups in the DMV area"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://dmvthrowers.club/faq.html"/>
+  <meta property="og:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta property="og:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:site_name" content="DMV Throwers"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@dmv_throwers"/>
+  <meta name="twitter:title" content="FAQ - DMV Throwers · Yo-Yo & Skill Toy Club"/>
+  <meta name="twitter:description" content="Answers to common questions about our free yo-yo meetups in the DMV area"/>
+  <meta name="twitter:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta name="twitter:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="keywords" content="DMV Throwers FAQ, yo-yo club questions, yo-yo meetup FAQ Arlington VA, skill toy club information DC Maryland Virginia"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="geo.region" content="US-VA"/>
+  <meta name="geo.placename" content="Arlington, Virginia"/>
+  <meta name="theme-color" content="#D42B2B"/>
+  <link rel="canonical" href="https://dmvthrowers.club/faq.html"/>
+  <link rel="icon" type="image/png" href="assets/images/logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dmvthrowers.club/"},
+        {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://dmvthrowers.club/faq.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is DMV Throwers?",
+          "acceptedAnswer": {"@type": "Answer", "text": "DMV Throwers is a free, community-run yo-yo and skill toy club serving the Washington DC, Maryland, and Virginia area. We bring together throwers of all ages and experience levels — from total beginners to national competitors. Our goal is simple: build a fun, welcoming community around yo-yo and skill toys."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a membership fee or dues?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. Attending our events is completely free. We accept voluntary donations if you'd like to support the club, but there are no required fees, dues, or memberships of any kind."}
+        },
+        {
+          "@type": "Question",
+          "name": "When and where do you meet?",
+          "acceptedAnswer": {"@type": "Answer", "text": "We hold monthly meetups at Arlington Central Library — Barbara M. Donnellan Auditorium / Bluemont Room, 1015 N Quincy St, Arlington, VA 22201. During warmer months we sometimes hold outdoor meetups at Quincy Park in Arlington, VA."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to register or RSVP?",
+          "acceptedAnswer": {"@type": "Answer", "text": "For special events we may request an RSVP to help with planning — if so, it will be noted in the event announcement. For regular monthly meetups, no registration is required. Just show up."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is there parking?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Street parking is available on N Quincy St and surrounding streets. The library is about a 5-minute walk from the Virginia Square–GMU Metro station on the Orange and Silver lines."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to know how to yo-yo to come?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Not at all. Total beginners are just as welcome as experienced players. If you've never thrown a yo-yo before, we'll help you get started. There's no performance requirement — just come and have fun."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to bring my own yo-yo?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. We have loaner yo-yos available at every meetup. If you own one, bring it — but if you don't, that's completely fine."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is it just yo-yos, or other skill toys too?",
+          "acceptedAnswer": {"@type": "Answer", "text": "All skill toys are welcome. Kendama, diabolo, juggling, and other flow/skill toys are all fair game at our meetups. The club's focus is yo-yo but we're a welcoming space for the broader skill toy community."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is the club family-friendly?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. DMV Throwers is designed to be welcoming for families. We regularly have kids and parents attend together, and we make sure the environment is positive and inclusive for all ages."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an age minimum?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No official age minimum. We welcome all ages. Younger children should be accompanied by a parent or guardian. For formal officer roles, we do require members to be 18 or older."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is VSYC-26?",
+          "acceptedAnswer": {"@type": "Answer", "text": "VSYC-26 is the Virginia State Yo-Yo Contest 2026 — a confirmed competitive yo-yo event taking place September 19, 2026 at Dulles Town Center, Center Court, in Sterling, VA. It is the 16th Annual Virginia State Yo-Yo Contest, organized by DMV Throwers. Free to spectate. Competitor entry is $15–25 per division."}
+        },
+        {
+          "@type": "Question",
+          "name": "How do I become a member?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Just show up! There's no application or sign-up process. Anyone who attends a DMV Throwers event is part of the community."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I volunteer to help at events?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes — and we'd love it. If you're a regular attendee and want to help with setup, greeting newcomers, running activities, or other tasks, just let us know at a meetup or reach out at contact@dmvthrowers.club."}
+        }
+      ]
+    }
+  ]
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <style>
+    .section-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 32px; }
+    .divider { width: 60px; margin-bottom: 32px; }
+    /* Page-specific styles only; shared base styles come from assets/css/main.css */
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q { cursor: pointer; padding: 20px 0; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1rem; -webkit-user-select: none; user-select: none; touch-action: manipulation; }
+    .faq-q:hover { color: var(--red); }
+    .faq-toggle { color: var(--red); font-size: 1.4rem; font-weight: 300; line-height: 1; }
+    .faq-a { font-size: 0.92rem; line-height: 1.7; padding-bottom: 20px; color: var(--text-body); display: none; }
+    .faq-a.open { display: block; }
+    .faq-intro { color: var(--text-muted); margin-bottom: 32px; font-size: 0.95rem; }
+    .faq-section-title { color: var(--navy); font-weight: 700; font-size: 1.1rem; margin-top: 28px; margin-bottom: 16px; }
+    .red-link { color: var(--red); }
+    .red-link-bold { color: var(--red); font-weight: 600; }
+    @media (max-width: 480px) {
+      .section-title { font-size: 1.9rem; margin-bottom: 24px; }
+      .divider { margin-bottom: 24px; }
+      .faq-q { font-size: 0.95rem; }
+      .faq-a { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="top-bar">
+  <span>NEXT MEET: APRIL 19, 2026 · ARLINGTON CENTRAL LIBRARY · ARLINGTON VA</span>
+  <a href="https://arlingtonva.libcal.com/event/15203836" target="_blank" rel="noopener noreferrer">RSVP →</a>
+</div>
+
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/images/logo.png" alt="DMV Throwers Logo" class="nav-logo"/>
+      <div>
+        <div class="nav-brand-text-main">DMV THROWERS</div>
+        <div class="nav-brand-text-sub">YO-YO & SKILL TOY CLUB</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">ABOUT</a>
+      <a href="team.html" class="nav-link">TEAM</a>
+      <a href="events.html" class="nav-link">EVENTS</a>
+      <a href="gallery.html" class="nav-link">GALLERY</a>
+      <a href="resources.html" class="nav-link">RESOURCES</a>
+      <a href="faq.html" class="nav-link active" aria-current="page">FAQ</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="nav-link nav-donate">☕ DONATE</a>
+      <a href="vsyc26.html" class="nav-link nav-vsyc">VSYC-26 →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">ABOUT</a>
+  <a href="team.html">TEAM</a>
+  <a href="events.html">EVENTS</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="resources.html">RESOURCES</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="mobile-donate">☕ DONATE</a>
+  <a href="vsyc26.html" class="mobile-vsyc">VSYC-26 → VIRGINIA STATE YO-YO CONTEST</a>
+</div>
+
+<main>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="red-tag">DMV THROWERS</span>
+    <h1 class="page-hero-title">FAQ</h1>
+    <p class="page-hero-sub">DC · MD · VA</p>
+  </div>
+  <div class="page-hero-skyline">
+    <img src="assets/images/dc-skyline-photo.png" alt="" aria-hidden="true"/>
+  </div>
+</div>
+
+<section id="faq" class="section">
+  <div class="red-tag">FAQ</div>
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="divider"></div>
+  <p class="faq-intro">Got a question? Chances are it's answered below. If not, reach us at <strong>contact@dmvthrowers.club</strong> or <strong>@DMV_THROWERS</strong> on Instagram.</p>
+
+  <div class="faq-section-title">General</div>
+  
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>What is DMV Throwers?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">DMV Throwers is a free, community-run yo-yo and skill toy club serving the Washington DC, Maryland, and Virginia area. We bring together throwers of all ages and experience levels — from total beginners to national competitors. Our goal is simple: build a fun, welcoming community around yo-yo and skill toys.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Who runs the club?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">The club was founded by Arthur Foley (President/Founder) and is coordinated day-to-day by Brandon Rogers (Vice President). Our current officer team also includes Abby Brodsky (Co-Coordinator). We're a volunteer-run organization.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Is there a membership fee or dues?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">No. Attending our events is completely free. We accept voluntary donations if you'd like to support the club, but there are no required fees, dues, or memberships of any kind.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Does the club have social media?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Yes! Find us at Instagram: <a href="https://instagram.com/dmv_throwers" target="_blank" rel="noopener noreferrer" class="red-link">@DMV_THROWERS</a>, Facebook: DMV Throwers, Email: <a href="mailto:contact@dmvthrowers.club" class="red-link">contact@dmvthrowers.club</a>, and Linktree: <a href="https://linktr.ee/dmvthrowers" target="_blank" rel="noopener noreferrer" class="red-link">linktr.ee/dmvthrowers</a></div>
+  </div>
+
+  <div class="faq-section-title">Meetup Logistics</div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>When and where do you meet?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Monthly meetups are held at Arlington Central Library — Barbara M. Donnellan Auditorium / Bluemont Room, 1015 N Quincy St, Arlington, VA 22201, every 3rd Sunday from 1–4 PM. Anytime in that window works — people come and go throughout. If it's your first time, arriving a little earlier gives you more time to get settled. During warmer months we sometimes hold outdoor meetups at Quincy Park in Arlington, VA.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Do I need to register or RSVP?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">For regular monthly meetups, no registration required — just show up. For special events, an RSVP may be requested and will be noted in the event announcement. If a meetup is ever cancelled, it will be announced as early as possible on Instagram (@DMV_THROWERS) and our Facebook page — always check social media close to the date if you're unsure.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Is there parking?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Yes. Street parking is available on N Quincy St and surrounding streets. The library is about a 5-minute walk from the Virginia Square–GMU Metro station on the Orange and Silver lines.</div>
+  </div>
+
+  <div class="faq-section-title">Skill Levels & What to Bring</div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Do I need to know how to yo-yo to come?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Not at all. Total beginners are just as welcome as experienced players. If you've never thrown a yo-yo before, we'll help you get started. There's no performance requirement — just come and have fun.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>What should I bring?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">No equipment required — we have loaner yo-yos at every meetup. If you own a yo-yo, bring it. Wear comfortable clothes you can move in. Everything else we'll handle.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>What yo-yo should I buy if I want to get one?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">That's a great question to ask at a meetup! Our members have a wide range of experience and are happy to give recommendations based on your budget and style. We'd rather give you in-person advice than a generic answer.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Is it just yo-yos, or other skill toys too?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">All skill toys are welcome. Kendama, diabolo, juggling, and other flow/skill toys are all fair game at our meetups. The club's focus is yo-yo but we're a welcoming space for the broader skill toy community.</div>
+  </div>
+
+  <div class="faq-section-title">Kids & Families</div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Is the club family-friendly?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Absolutely. DMV Throwers is designed to be welcoming for families. We regularly have kids and parents attend together, and we make sure the environment is positive and inclusive for all ages.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Is there an age minimum, or can kids attend alone?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">No official age minimum — all ages are welcome. Older teens are fine attending independently. For younger children, we recommend a parent or guardian be present, particularly for a first visit. For formal officer roles, members must be 18 or older.</div>
+  </div>
+
+  <div class="faq-section-title">Contests & VSYC-26</div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>What is VSYC-26?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">VSYC-26 is the Virginia State Yo-Yo Contest 2026 — a confirmed competitive yo-yo event taking place September 19, 2026 at Dulles Town Center, Center Court, in Sterling, VA. It is the 16th Annual Virginia State Yo-Yo Contest, organized by DMV Throwers. The event features multiple competitive divisions and is free to spectate. <a href="vsyc26.html" class="red-link-bold">Learn more →</a></div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Do I have to be competitive to come to the club?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Not at all. The vast majority of our members come to socialize, learn tricks, and have fun — not to compete. Competition is one part of the broader community we're building, not a requirement.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Will there be a fee to enter VSYC-26?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Spectating VSYC-26 is free — no ticket required. Competitor registration is $15–25 per division. You can also register for 1A + X Division together for $40 ($5 off the combined price). Regular monthly club meetups will always remain free.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>How do I stay updated on VSYC-26?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Follow <a href="https://instagram.com/vastateyoyocontest" target="_blank" rel="noopener noreferrer" class="red-link">@vastateyoyocontest</a> on Instagram for contest-specific updates, and <a href="https://instagram.com/dmv_throwers" target="_blank" rel="noopener noreferrer" class="red-link">@DMV_THROWERS</a> for club-wide announcements. Registration and logistics info will be posted to both. You can also visit <a href="vsyc26.html" class="red-link-bold">vsyc26.html</a> for the latest details.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Does the club attend other contests?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Members individually attend regional and national yo-yo contests, and we support those efforts as a community. As the club grows we may organize group attendance at events like nationals or regionals.</div>
+  </div>
+
+  <div class="faq-section-title">Getting More Involved</div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>How do I become a member?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Just show up! There's no application or sign-up process. Anyone who attends a DMV Throwers event is part of the community. If you want to get more involved in running things, read on.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Can I volunteer or suggest ideas?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Yes to both. If you want to help with setup, greeting newcomers, or running activities, just let Brandon know at a meetup or email contact@dmvthrowers.club. For ideas, bring them up at a meetup, DM us on Instagram, or email us — we can't promise everything happens immediately, but we genuinely consider all suggestions.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Are there open officer roles?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Yes. We currently have two open officer positions: Alternate Location Co-Coordinator — leads logistics for non-primary venues, and Moderator/Activity Coordinator — plans in-event activities and community programming. If you're interested in either role, reach out to Brandon at contact@dmvthrowers.club.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" aria-expanded="false"><span>Can my organization partner with DMV Throwers?</span><span class="faq-toggle" aria-hidden="true">+</span></button>
+    <div class="faq-a">Yes. We're open to venue partnerships, co-promotions, sponsorships, and community collaborations. Reach out to Brandon at contact@dmvthrowers.club with your idea and we'll go from there.</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+          <div class="footer-brand-sub">YO-YO & SKILL TOY CLUB · DC · VA · MD</div>
+        </div>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html" class="footer-link">About</a>
+        <a href="team.html" class="footer-link">Team</a>
+        <a href="events.html" class="footer-link">Events</a>
+        <a href="gallery.html" class="footer-link">Gallery</a>
+        <a href="resources.html" class="footer-link">Resources</a>
+        <a href="faq.html" class="footer-link">FAQ</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+        <a href="vsyc26.html" class="footer-link footer-vsyc">VSYC-26</a>
+        <a href="https://github.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 DMV Throwers · Est. 2021 · Yo-Yo & Skill Toy Club · DC · Northern Virginia · Maryland</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('mobile-menu').classList.remove('open'));
+  });
+  function toggleFaq(btn) {
+    var answer = btn.nextElementSibling;
+    var toggle = btn.querySelector('.faq-toggle');
+    var isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(function(a) { a.classList.remove('open'); });
+    document.querySelectorAll('.faq-toggle').forEach(function(t) { t.textContent = '+'; });
+    document.querySelectorAll('.faq-q').forEach(function(q) { q.setAttribute('aria-expanded', 'false'); });
+    if (!isOpen) {
+      answer.classList.add('open');
+      toggle.textContent = '−';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+  document.querySelectorAll('.faq-q').forEach(function(btn) {
+    btn.addEventListener('click', function() { toggleFaq(this); });
+  });
+  const sections = ['faq'];
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.nav-link[href="faq.html"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el); });
+</script>
+  <script src="assets/js/mobile-enhancements.js" defer></script>
+</body>
+</html>

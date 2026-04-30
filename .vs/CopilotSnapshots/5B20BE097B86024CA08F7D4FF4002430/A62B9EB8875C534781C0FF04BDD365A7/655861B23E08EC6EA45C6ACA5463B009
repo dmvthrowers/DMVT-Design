@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jotfor.ms; frame-src https://form.jotform.com https://formspree.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cdn.jotfor.ms https://form.jotform.com https://formspree.io; form-action 'self' https://formspree.io;"/>
+  <title>Resources - DMV Throwers · Yo-Yo & Skill Toy Club · DC MD VA</title>
+  <meta name="description" content="Free resources for yo-yo players in DC, Virginia, and Maryland. Download workshop run sheets, trick guides, and maintenance guides from DMV Throwers."/>
+  <meta property="og:title" content="Resources - DMV Throwers · Yo-Yo & Skill Toy Club"/>
+  <meta property="og:description" content="Free downloadable resources for yo-yo players and skill toy enthusiasts"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://dmvthrowers.club/resources.html"/>
+  <meta property="og:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta property="og:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:site_name" content="DMV Throwers"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@dmv_throwers"/>
+  <meta name="twitter:title" content="Resources - DMV Throwers · Yo-Yo &amp; Skill Toy Club"/>
+  <meta name="twitter:description" content="Free downloadable resources for yo-yo players and skill toy enthusiasts"/>
+  <meta name="twitter:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta name="twitter:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="keywords" content="yo-yo resources free download, yo-yo trick guide, kendama guide, skill toy workshop materials, DMV Throwers resources"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="geo.region" content="US-VA"/>
+  <meta name="geo.placename" content="Arlington, Virginia"/>
+  <meta name="theme-color" content="#D42B2B"/>
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon-48.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png"/>
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
+  <link rel="canonical" href="https://dmvthrowers.club/resources.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dmvthrowers.club/"},
+        {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://dmvthrowers.club/resources.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "DMV Throwers Free Resources",
+      "url": "https://dmvthrowers.club/resources.html",
+      "description": "Free downloadable resources for yo-yo players and skill toy enthusiasts from DMV Throwers.",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Workshop Run Sheet", "url": "https://dmvthrowers.club/resources.html"},
+        {"@type": "ListItem", "position": 2, "name": "Beginner Trick Guide", "url": "https://dmvthrowers.club/resources.html"},
+        {"@type": "ListItem", "position": 3, "name": "Club Display Loop", "url": "https://dmvthrowers.club/resources.html"},
+        {"@type": "ListItem", "position": 4, "name": "Event Planning Kit", "url": "https://dmvthrowers.club/resources.html"},
+        {"@type": "ListItem", "position": 5, "name": "Maintenance Guide", "url": "https://dmvthrowers.club/resources.html"},
+        {"@type": "ListItem", "position": 6, "name": "Club Charter", "url": "https://dmvthrowers.club/resources.html"},
+        {"@type": "ListItem", "position": 7, "name": "Officer Roles", "url": "https://dmvthrowers.club/resources.html"},
+        {"@type": "ListItem", "position": 8, "name": "Press Kit", "url": "https://dmvthrowers.club/resources.html"}
+      ]
+    }
+  ]
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <style>
+    /* Page-specific styles only; shared base styles come from assets/css/main.css */
+    .resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 32px; }
+    .resource-card { background: white; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; }
+    .resource-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .resource-icon { font-size: 2rem; margin-bottom: 16px; }
+    .resource-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.3rem; color: var(--navy); margin-bottom: 8px; }
+    .resource-desc { color: var(--text-muted); margin-bottom: 20px; line-height: 1.5; }
+    .resource-link { display: inline-flex; align-items: center; gap: 6px; background: var(--navy); color: white; padding: 8px 16px; font-size: 0.85rem; font-weight: 600; text-decoration: none; border-radius: 4px; transition: background 0.2s; }
+    .resource-link:hover { background: var(--red); }
+    .resources-section-bg { background: white; }
+    .resources-desc { color: var(--text-muted); margin-bottom: 8px; font-size: 0.95rem; }
+    .support-section { margin-top: 48px; text-align: center; }
+    .support-box { background: var(--navy); color: white; padding: 32px; border-radius: 8px; max-width: 600px; margin: 0 auto; }
+    .support-h3 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; margin-bottom: 16px; }
+    .support-p { margin-bottom: 20px; color: var(--text-muted); }
+    .support-link { display: inline-block; background: var(--red); color: white; padding: 12px 24px; font-weight: 700; text-decoration: none; border-radius: 4px; transition: background 0.2s; }
+    .support-link:hover { background: var(--red-dark); }
+    @media (max-width: 768px) {
+      .resource-grid { grid-template-columns: 1fr; }
+      .resource-card { padding: 20px; }
+      .resource-title { font-size: 1.2rem; }
+    }
+    @media (max-width: 480px) {
+      .resource-grid { gap: 16px; margin-top: 24px; }
+      .resources-desc { font-size: 0.88rem; line-height: 1.65; }
+      .resource-card { padding: 18px 16px; }
+      .resource-icon { font-size: 1.7rem; margin-bottom: 12px; }
+      .resource-title { font-size: 1.08rem; margin-bottom: 7px; }
+      .resource-desc { font-size: 0.86rem; margin-bottom: 14px; line-height: 1.55; }
+      .resource-link { width: 100%; justify-content: center; font-size: 0.8rem; padding: 10px 12px; }
+      .support-section { margin-top: 32px; }
+      .support-box { padding: 24px 18px; }
+      .support-h3 { font-size: 1.2rem; }
+      .support-p { font-size: 0.9rem; margin-bottom: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="top-bar">
+  <span>NEXT MEET: APRIL 19, 2026 · ARLINGTON CENTRAL LIBRARY · ARLINGTON VA</span>
+  <a href="https://arlingtonva.libcal.com/event/15203836" target="_blank" rel="noopener noreferrer">RSVP →</a>
+</div>
+
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/images/logo.png" alt="DMV Throwers Logo" class="header-logo" width="38" height="38"/>
+      <div>
+        <div class="nav-brand-text-main">DMV THROWERS</div>
+        <div class="nav-brand-text-sub">YO-YO & SKILL TOY CLUB</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">ABOUT</a>
+      <a href="team.html" class="nav-link">TEAM</a>
+      <a href="events.html" class="nav-link">EVENTS</a>
+      <a href="gallery.html" class="nav-link">GALLERY</a>
+      <a href="resources.html" class="nav-link active" aria-current="page">RESOURCES</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="nav-link nav-donate">☕ DONATE</a>
+      <a href="vsyc26.html" class="nav-link nav-vsyc">VSYC-26 →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">ABOUT</a>
+  <a href="team.html">TEAM</a>
+  <a href="events.html">EVENTS</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="resources.html">RESOURCES</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="mobile-donate">☕ DONATE</a>
+  <a href="vsyc26.html" class="mobile-vsyc">VSYC-26 → VIRGINIA STATE YO-YO CONTEST</a>
+</div>
+
+<main>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="red-tag">DMV THROWERS</span>
+    <h1 class="page-hero-title">Resources</h1>
+    <p class="page-hero-sub">DC · MD · VA</p>
+  </div>
+  <div class="page-hero-skyline">
+    <picture><source srcset="assets/images/dc-skyline-photo.webp" type="image/webp"/><img src="assets/images/dc-skyline-photo.png" alt="" aria-hidden="true" width="1536" height="1024"/></picture>
+  </div>
+</div>
+
+<section id="resources" class="resources-section-bg">
+  <div class="section">
+    <div class="red-tag">DOWNLOADS</div>
+    <h2 class="section-title">Resources</h2>
+    <div class="divider"></div>
+    <p class="resources-desc">Guides, downloads, and trusted links for new and returning yo-yo players.</p>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <div class="resource-icon">📋</div>
+        <div class="resource-title">Workshop Run Sheet</div>
+        <div class="resource-desc">Workshop lesson plan with warm-ups, core tricks, and beginner-to-intermediate progressions.</div>
+        <a href="assets/documents/workshop-run-sheet.docx" class="resource-link" target="_blank" rel="noopener noreferrer">📄 View DOCX</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🎯</div>
+        <div class="resource-title">Beginner Trick Guide</div>
+        <div class="resource-desc">Step-by-step fundamentals for new players learning core throws and mounts.</div>
+        <a href="assets/documents/trick-reference-guide.pptx" class="resource-link" target="_blank" rel="noopener noreferrer">📄 View PPTX</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">📺</div>
+        <div class="resource-title">Club Display Loop</div>
+        <div class="resource-desc">Slide deck used at club events and public displays for quick club intro loops.</div>
+        <a href="assets/documents/club-display-loop.pptx" class="resource-link" target="_blank" rel="noopener noreferrer">📄 View PPTX</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🎪</div>
+        <div class="resource-title">Event Planning Kit</div>
+        <div class="resource-desc">Templates and checklists for planning meetups, demos, and contests in the DMV.</div>
+        <a href="assets/documents/event-checklist.docx" class="resource-link" target="_blank" rel="noopener noreferrer">📄 View DOCX</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🛠️</div>
+        <div class="resource-title">Maintenance Guide</div>
+        <div class="resource-desc">Cleaning, setup, and repair basics to keep your throws performing well.</div>
+        <a href="assets/documents/maintenance-guide.pptx" class="resource-link" target="_blank" rel="noopener noreferrer">📄 View PPTX</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">📜</div>
+        <div class="resource-title">Club Charter</div>
+        <div class="resource-desc">The official DMV Throwers club charter outlining our mission, structure, and governing guidelines.</div>
+        <a href="assets/documents/DMV%20Throwers%20Charter%20v5.docx" class="resource-link" target="_blank" rel="noopener noreferrer">📄 View DOCX</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🏅</div>
+        <div class="resource-title">Officer Roles</div>
+        <div class="resource-desc">Officer position overview covering responsibilities, expectations, and how to join club leadership.</div>
+        <a href="assets/documents/DMV%20Throwers%20Officer%20Roles.docx" class="resource-link" target="_blank" rel="noopener noreferrer">📄 View DOCX</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">📰</div>
+        <div class="resource-title">Press Kit</div>
+        <div class="resource-desc">Club info, branding assets, and media-ready materials for organizers and journalists.</div>
+        <a href="assets/documents/DMV%20Throwers%20Press%20Kit.pdf" class="resource-link" target="_blank" rel="noopener noreferrer">📥 View PDF</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🌲</div>
+        <div class="resource-title">Scouts Yo-Yo Adventure</div>
+        <div class="resource-desc">Official Scouting America Cub Scout Yo-Yo Adventure requirements and guide for youth progression.</div>
+        <a href="https://www.scouting.org/cub-scout-adventures/yo-yo/" class="resource-link" target="_blank" rel="noopener noreferrer">🔗 Open Scout Adventure</a>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🪀</div>
+        <div class="resource-title">Beginner Yo-Yos at YoYoSam</div>
+        <div class="resource-desc">Starter yo-yos for new players. Use ambassador discount code: <strong>Captnyoyos</strong>.</div>
+        <a href="https://www.yoyosam.com/collections/beginner-yoyo" class="resource-link" target="_blank" rel="noopener noreferrer">🛒 Shop Beginner Yo-Yos</a>
+      </div>
+
+    </div>
+
+    <div class="support-section">
+      <div class="support-box">
+        <h3 class="support-h3">Help Keep Meetups Free</h3>
+        <p class="support-p">Help us create more free resources and host better events across DC, Virginia, and Maryland</p>
+        <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="support-link">☕ Support DMV Throwers</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+          <div class="footer-brand-sub">YO-YO & SKILL TOY CLUB · DC · VA · MD</div>
+        </div>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html" class="footer-link">About</a>
+        <a href="team.html" class="footer-link">Team</a>
+        <a href="events.html" class="footer-link">Events</a>
+        <a href="gallery.html" class="footer-link">Gallery</a>
+        <a href="resources.html" class="footer-link">Resources</a>
+        <a href="faq.html" class="footer-link">FAQ</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+        <a href="vsyc26.html" class="footer-link footer-vsyc">VSYC-26</a>
+        <a href="https://github.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 DMV Throwers · Est. 2021 · Yo-Yo & Skill Toy Club · DC · Northern Virginia · Maryland</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('mobile-menu').classList.remove('open'));
+  });
+</script>
+  <script src="assets/js/mobile-enhancements.js" defer></script>
+</body>
+</html>

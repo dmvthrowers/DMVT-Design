@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; frame-src https://formspree.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; form-action 'self' https://formspree.io/f/mlgojooe;"/>
+  <title>Contact - DMV Throwers · Yo-Yo & Skill Toy Club · DC MD VA</title>
+  <meta name="description" content="Get in touch with DMV Throwers yo-yo club. Contact us for event information, membership, or general inquiries."/>
+  <meta property="og:title" content="Contact - DMV Throwers · Yo-Yo & Skill Toy Club"/>
+  <meta property="og:description" content="Contact DMV Throwers for yo-yo club information and events"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://dmvthrowers.club/contact.html"/>
+  <meta property="og:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta property="og:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:site_name" content="DMV Throwers"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@dmv_throwers"/>
+  <meta name="twitter:title" content="Contact - DMV Throwers · Yo-Yo & Skill Toy Club"/>
+  <meta name="twitter:description" content="Contact DMV Throwers for yo-yo club information and events"/>
+  <meta name="twitter:image" content="https://dmvthrowers.club/assets/images/logo.png"/>
+  <meta name="twitter:image:alt" content="DMV Throwers logo"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="keywords" content="contact DMV Throwers, yo-yo club contact DC Virginia Maryland, DMV Throwers email, yo-yo meetup inquiry"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="geo.region" content="US-VA"/>
+  <meta name="geo.placename" content="Arlington, Virginia"/>
+  <link rel="canonical" href="https://dmvthrowers.club/contact.html"/>
+  <link rel="icon" type="image/png" href="assets/images/logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dmvthrowers.club/"},
+        {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://dmvthrowers.club/contact.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact DMV Throwers",
+      "url": "https://dmvthrowers.club/contact.html",
+      "description": "Get in touch with DMV Throwers yo-yo club. Contact us for event information, membership, or general inquiries.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "DMV Throwers Yo-Yo & Skill Toy Club",
+        "email": "contact@dmvthrowers.club",
+        "url": "https://dmvthrowers.club",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1015 N Quincy St",
+          "addressLocality": "Arlington",
+          "addressRegion": "VA",
+          "postalCode": "22201",
+          "addressCountry": "US"
+        },
+        "sameAs": ["https://instagram.com/dmv_throwers","https://linktr.ee/dmvthrowers","https://ko-fi.com/dmvthrowers","https://github.com/dmvthrowers"]
+      }
+    }
+  ]
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <style>
+    /* Page-specific styles only; shared base styles come from assets/css/main.css */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 32px; }
+    .contact-info { background: white; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .contact-info h3 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; color: var(--navy); margin-bottom: 20px; }
+    .contact-item { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
+    .contact-icon { font-size: 1.5rem; color: var(--red); flex-shrink: 0; }
+    .contact-text h4 { font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+    .contact-text p { color: var(--text-muted); line-height: 1.5; }
+    .contact-form { background: white; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .form-group { margin-bottom: 20px; }
+    .form-label { display: block; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+    .form-input, .form-textarea { width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; transition: border-color 0.2s, box-shadow 0.2s; -webkit-appearance: none; appearance: none; }
+    .form-input:focus, .form-textarea:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(212,43,43,0.18); }
+    .form-textarea { resize: vertical; min-height: 120px; }
+    .btn { border-radius: 4px; }
+    .social-links { margin-top: 32px; }
+    .social-links h4 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.2rem; color: var(--navy); margin-bottom: 16px; }
+    .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .social-link { display: flex; align-items: center; gap: 12px; padding: 16px; background: var(--cream-mid); border-radius: 4px; text-decoration: none; color: var(--navy); transition: background 0.2s; }
+    .social-link:hover { background: var(--border); }
+    .social-icon { font-size: 1.5rem; }
+    .social-text h5 { font-weight: 600; margin-bottom: 2px; }
+    .social-text p { font-size: 0.85rem; color: var(--text-muted); }
+    .contact-desc { color: var(--text-muted); margin-bottom: 32px; font-size: 0.95rem; }
+    .contact-email-link { color: var(--red); text-decoration: none; }
+    .contact-drive-link { color: var(--red); text-decoration: none; }
+    .form-privacy-note { margin-top: 12px; font-size: 0.75rem; color: var(--text-muted); }
+    .honeypot-field { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="top-bar">
+  <span>NEXT MEET: APRIL 19, 2026 · ARLINGTON CENTRAL LIBRARY · ARLINGTON VA</span>
+  <a href="https://arlingtonva.libcal.com/event/15203836" target="_blank" rel="noopener noreferrer">RSVP →</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/images/logo.png" alt="DMV Throwers Logo" class="header-logo"/>
+      <div>
+        <div class="nav-brand-text-main">DMV THROWERS</div>
+        <div class="nav-brand-text-sub">YO-YO & SKILL TOY CLUB</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">ABOUT</a>
+      <a href="team.html" class="nav-link">TEAM</a>
+      <a href="events.html" class="nav-link">EVENTS</a>
+      <a href="gallery.html" class="nav-link">GALLERY</a>
+      <a href="resources.html" class="nav-link">RESOURCES</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link active">CONTACT</a>
+      <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="nav-link nav-donate">☕ DONATE</a>
+      <a href="vsyc26.html" class="nav-link nav-vsyc">VSYC-26 →</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">ABOUT</a>
+  <a href="team.html">TEAM</a>
+  <a href="events.html">EVENTS</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="resources.html">RESOURCES</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="mobile-donate">☕ DONATE</a>
+  <a href="vsyc26.html" class="mobile-vsyc">VSYC-26 → VIRGINIA STATE YO-YO CONTEST</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="red-tag">DMV THROWERS</span>
+    <h1 class="page-hero-title">Contact</h1>
+    <p class="page-hero-sub">DC · MD · VA</p>
+  </div>
+  <div class="page-hero-skyline">
+    <img src="assets/images/dc-skyline-photo.png" alt="" aria-hidden="true"/>
+  </div>
+</div>
+
+<section id="contact" class="section-bg-white">
+  <div class="section">
+    <div class="red-tag">GET IN TOUCH</div>
+    <h2 class="section-title">Contact Us</h2>
+    <div class="divider"></div>
+    <p class="contact-desc">Have questions about our club, events, or yo-yo in general? We'd love to hear from you!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-text">
+            <h4>Email</h4>
+            <p><a href="mailto:contact@dmvthrowers.club" class="contact-email-link">contact@dmvthrowers.club</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text">
+            <h4>Meeting Location</h4>
+            <p>Arlington Central Library<br>1015 N Quincy St<br>Arlington, VA 22201</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div class="contact-text">
+            <h4>Meeting Times</h4>
+            <p>Every 3rd Sunday of the month<br>1:00 PM – 4:00 PM</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🌐</div>
+          <div class="contact-text">
+            <h4>Online</h4>
+            <p><a href="https://instagram.com/dmv_throwers" target="_blank" rel="noopener noreferrer" class="contact-drive-link">Instagram</a> - Photos &amp; updates<br><a href="https://drive.google.com/drive/folders/1F3VgnuFvT0niUwc9lqwddleZ2oz1cjfV?usp=drive_link" target="_blank" rel="noopener noreferrer" class="contact-drive-link">Google Drive</a> - Club resources<br><a href="https://www.facebook.com/share/g/1DbrxESDDc/" target="_blank" rel="noopener noreferrer" class="contact-drive-link">Facebook Group</a> - Join our community<br><a href="https://dmvthrowers.yoyoclub.info/" target="_blank" rel="noopener noreferrer" class="contact-drive-link">YoYo Club</a> - Official club page<br><a href="https://www.facebook.com/share/g/1Gn4AT88Ry/" target="_blank" rel="noopener noreferrer" class="contact-drive-link">Facebook Page</a> - Follow us<br><a href="https://linktr.ee/dmvthrowers" target="_blank" rel="noopener noreferrer" class="contact-drive-link">Linktree</a> - All our links<br><a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="contact-drive-link">Ko-fi</a> - Support us<br><a href="https://github.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="contact-drive-link">GitHub</a> - Open source</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send us a Message</h3>
+        <form action="https://formspree.io/f/mlgojooe" method="POST">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot-field"/>
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input class="form-input" type="text" id="subject" name="subject" autocomplete="off" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" name="message" required></textarea>
+          </div>
+
+          <button class="btn btn-red" type="submit">Send Message</button>
+          <p class="form-privacy-note">We'll only use your info to respond to your message. No spam, no mailing lists.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <h4>Follow Us</h4>
+      <div class="social-grid">
+        <a href="https://www.facebook.com/share/g/1DbrxESDDc/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">👥</div>
+          <div class="social-text">
+            <h5>Facebook Group</h5>
+            <p>Join our community</p>
+          </div>
+        </a>
+
+        <a href="https://www.facebook.com/share/g/1Gn4AT88Ry/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">📘</div>
+          <div class="social-text">
+            <h5>Facebook Page</h5>
+            <p>Follow our updates</p>
+          </div>
+        </a>
+
+        <a href="https://dmvthrowers.yoyoclub.info/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">🪀</div>
+          <div class="social-text">
+            <h5>YoYo Club</h5>
+            <p>Official club page</p>
+          </div>
+        </a>
+
+        <a href="https://linktr.ee/dmvthrowers" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">🔗</div>
+          <div class="social-text">
+            <h5>Linktree</h5>
+            <p>All our links</p>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/1F3VgnuFvT0niUwc9lqwddleZ2oz1cjfV?usp=drive_link" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">📁</div>
+          <div class="social-text">
+            <h5>Google Drive</h5>
+            <p>Club resources</p>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/dmv_throwers" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">📸</div>
+          <div class="social-text">
+            <h5>Instagram</h5>
+            <p>Photos &amp; updates</p>
+          </div>
+        </a>
+
+        <a href="https://ko-fi.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">☕</div>
+          <div class="social-text">
+            <h5>Ko-fi</h5>
+            <p>Support the club</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="social-icon">💻</div>
+          <div class="social-text">
+            <h5>GitHub</h5>
+            <p>Open source</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="DMV Throwers" class="footer-logo" loading="lazy"/>
+        <div>
+          <div class="footer-brand-main">DMV THROWERS</div>
+          <div class="footer-brand-sub">YO-YO & SKILL TOY CLUB · DC · VA · MD</div>
+        </div>
+      </div>
+      <div>
+        <a href="index.html" class="footer-link">About</a>
+        <a href="team.html" class="footer-link">Team</a>
+        <a href="events.html" class="footer-link">Events</a>
+        <a href="gallery.html" class="footer-link">Gallery</a>
+        <a href="resources.html" class="footer-link">Resources</a>
+        <a href="faq.html" class="footer-link">FAQ</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+        <a href="vsyc26.html" class="footer-link footer-vsyc">VSYC-26</a>
+        <a href="https://github.com/dmvthrowers" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 DMV Throwers · Est. 2021 · Yo-Yo & Skill Toy Club · DC · Northern Virginia · Maryland</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('mobile-menu').classList.remove('open'));
+  });
+</script>
+  <script src="assets/js/mobile-enhancements.js" defer></script>
+</body>
+</html>
